@@ -3,7 +3,7 @@
 	<info>
 		<name>Way of Mercy</name>
 		<update version="0.0.1">
-			<file name="monk-wayofmercy.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/monk-wayofmercy.xml" />
+			<file name="monk-wayofmercy.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/monk-wayofmercy.xml" />
 		</update>
 	</info>
     <element name="Way of Mercy" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_MONK_WAY_OF_MERCY">

@@ -3,7 +3,7 @@
 	<info>
 		<name>Rune Knight</name>
 		<update version="0.0.1">
-			<file name="fighter-runeknight.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/fighter-runeknight.xml" />
+			<file name="fighter-runeknight.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/fighter-runeknight.xml" />
 		</update>
 	</info>
 	<element name="Rune Knight" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FIGHTER_RUNE_KNIGHT">

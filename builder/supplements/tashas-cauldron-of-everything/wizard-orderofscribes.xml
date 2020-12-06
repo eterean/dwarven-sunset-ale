@@ -5,7 +5,7 @@
 		<description>The Order of Scribes Wizard Tradition from Tasha’s Cauldron of Everything.</description>
 		<author url="">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="wizard-orderofscribes.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/wizard-orderofscribes.xml" />
+			<file name="wizard-orderofscribes.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/wizard-orderofscribes.xml" />
 		</update>
 	</info>
 

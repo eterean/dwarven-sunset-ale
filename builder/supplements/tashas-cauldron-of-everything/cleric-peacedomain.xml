@@ -3,7 +3,7 @@
 	<info>
 		<name>Peace Domain</name>
 		<update version="0.0.1">
-			<file name="cleric-peacedomain.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/cleric-peacedomain.xml" />
+			<file name="cleric-peacedomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/cleric-peacedomain.xml" />
 		</update>
 	</info>
 	

@@ -5,7 +5,7 @@
     <description>The Genie Otherworldly Patron from Tasha’s Cauldron of Everything</description>
     <author url="">Tasha’s Cauldron of Everything</author>
     <update version="0.0.1">
-      <file name="warlock-genie.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/warlock-genie.xml" />
+      <file name="warlock-genie.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/warlock-genie.xml" />
     </update>
   </info>
   <element name="The Genie" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_GENIE">

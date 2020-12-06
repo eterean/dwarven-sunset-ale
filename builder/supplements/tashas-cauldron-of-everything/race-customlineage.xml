@@ -3,7 +3,7 @@
 	<info>
 		<name>Custom Lineage</name>
 		<update version="0.0.1">
-			<file name="race-customlineage.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/race-customlineage.xml" />
+			<file name="race-customlineage.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/race-customlineage.xml" />
 		</update>
 	</info>
 

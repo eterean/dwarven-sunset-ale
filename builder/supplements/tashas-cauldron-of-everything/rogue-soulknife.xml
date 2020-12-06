@@ -3,7 +3,7 @@
 	<info>
 		<name>Soulknife</name>
 		<update version="0.0.1">
-			<file name="rogue-soulknife.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/rogue-soulknife.xml" />
+			<file name="rogue-soulknife.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/rogue-soulknife.xml" />
 		</update>
 	</info>
 	<element name="Soulknife" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE">

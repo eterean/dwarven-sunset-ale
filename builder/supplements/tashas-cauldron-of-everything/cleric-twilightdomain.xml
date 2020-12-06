@@ -3,7 +3,7 @@
 	<info>
 		<name>Twilight Domain</name>
 		<update version="0.0.1">
-			<file name="cleric-twilightdomain.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/cleric-twilightdomain.xml" />
+			<file name="cleric-twilightdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/cleric-twilightdomain.xml" />
 		</update>
 	</info>
 	
