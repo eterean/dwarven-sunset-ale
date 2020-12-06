@@ -3,9 +3,9 @@
   <info>
     <name>The Fathomless</name>
     <description>The Fathomless Otherworldly Patron from Tasha’s Cauldron of Everything</description>
-    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/xanathars-guide-everything">Tasha’s Cauldron of Everything</author>
+    <author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-of-everything">Tasha’s Cauldron of Everything</author>
     <update version="0.0.1">
-      <file name="warlock-fathomless.xml" url="" />
+      <file name="warlock-fathomless.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/warlock-fathomless.xml" />
     </update>
   </info>
   <element name="The Fathomless" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FATHOMLESS">

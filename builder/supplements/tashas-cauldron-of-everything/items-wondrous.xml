@@ -3,7 +3,7 @@
 	<info>
 		<name>Wondrous Items</name>
 		<update version="0.0.1">
-			<file name="items-wondrous.xml" url="" />
+			<file name="items-wondrous.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/items-wondrous.xml" />
 		</update>
 	</info>
 	<element name="Absorbing Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO">

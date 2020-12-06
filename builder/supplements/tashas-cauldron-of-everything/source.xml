@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<update version="0.0.1">
-			<file name="source.xml" url="" />
+			<file name="source.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/source.xml" />
 		</update>
 	</info>
 	<element name="Tasha’s Cauldron of Everything" type="Source" source="Core" id="ID_WOTC_SOURCE_TASHAS_CAULDRON_OF_EVERYTHING">
@@ -15,7 +15,7 @@
 			<set name="url">http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything</set>
 			<set name="image">https://media.dnd.wizards.com/styles/product_image_left_scale/public/images/product/Uq3hw0xJwb.png</set>
 			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
-			<set name="errata">https://media.wizards.com/2020/dnd/downloads/XGtE-Errata.pdf</set>
+			<set name="errata">-</set>
 			<set name="official">true</set>
 			<set name="supplement">true</set>
 			<set name="release">20201117</set>

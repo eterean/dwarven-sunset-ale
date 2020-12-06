@@ -5,7 +5,7 @@
 		<description>The Bladesinging Wizard Tradition from Tasha’s Cauldron of Everything.</description>
 		<author url="">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="wizard-bladesinging.xml" url="" />
+			<file name="wizard-bladesinging.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/wizard-bladesinging.xml" />
 		</update>
 	</info>
 

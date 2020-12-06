@@ -3,7 +3,7 @@
 	<info>
 		<name>College of Eloquence</name>
 		<update version="0.0.1">
-			<file name="bard-eloquence.xml" url="" />
+			<file name="bard-eloquence.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/bard-eloquence.xml" />
 		</update>
 	</info>
 	<element name="College of Eloquence" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_BARD_COLLEGE_OF_ELOQUENCE">

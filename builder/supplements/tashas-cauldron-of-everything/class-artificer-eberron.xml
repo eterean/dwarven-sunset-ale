@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.6">
-			<file name="class-artificer.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/eberron-rising-from-the-last-war/class-artificer.xml" />
+		<update version="0.0.1">
+			<file name="class-artificer-eberron.xml" url="https://github.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/class-artificer-eberron.xml" />
 		</update>
 	</info>
 	
