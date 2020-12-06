@@ -12,8 +12,8 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/source.xml" />
 
 		<!-- archetypes -->
-		<file name="barbarian-pathofthebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-pathofthebeast.xml" />
-		<file name="barbarian-pathofwildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/pathofwildmagic.xml" />
+		<file name="barbarian-hebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-thebeast.xml" />
+		<file name="barbarian-wildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-wildmagic.xml" />
 		<file name="bard-creation.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/bard-creation.xml" />
 		<file name="bard-eloquence.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/bard-eloquence.xml" />
 		<file name="class-artificer.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/class-artificer.xml" />
@@ -29,7 +29,7 @@
 		<file name="monk-astralself.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/monk-astralself.xml" />
 		<file name="monk-wayofmercy.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/monk-wayofmercy.xml" />
 		<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/paladin-glory.xml" />
-		<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/paladin-watchers.xml" />
+		<file name="paladin-watchers.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/paladin-watchers.xml" />
 		<file name="ranger-feywanderer.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/ranger-feywanderer.xml" />
 		<file name="ranger-swarmkeeper.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/ranger-swarmkeeper.xml" />
 		<file name="rogue-phantom.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/rogue-phantom.xml" />
