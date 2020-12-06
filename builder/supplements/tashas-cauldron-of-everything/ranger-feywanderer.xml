@@ -3,7 +3,7 @@
 	<info>
 		<name>Fey Wanderer</name>
 		<update version="0.0.1">
-			<file name="ranger-feywanderer.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/ranger-feywanderer.xml" />
+			<file name="ranger-feywanderer.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/ranger-feywanderer.xml" />
 		</update>
 	</info>
 	<element name="Fey Wanderer" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_RANGER_FEY_WANDERER">

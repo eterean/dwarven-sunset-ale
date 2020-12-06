@@ -3,7 +3,7 @@
 	<info>
 		<name>Order Domain</name>
 		<update version="0.0.4">
-			<file name="cleric-orderdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/cleric-orderdomain.xml" />
+			<file name="cleric-orderdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/cleric-orderdomain.xml" />
 		</update>
 	</info>
 	

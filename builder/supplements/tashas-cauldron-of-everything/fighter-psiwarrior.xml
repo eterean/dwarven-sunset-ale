@@ -3,7 +3,7 @@
 	<info>
 		<name>Psi Warrior</name>
 		<update version="0.0.1">
-			<file name="fighter-psiwarrior.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/fighter-psiwarrior.xml" />
+			<file name="fighter-psiwarrior.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/fighter-psiwarrior.xml" />
 		</update>
 	</info>
 	<element name="Psi Warrior" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FIGHTER_PSI_WARRIOR">

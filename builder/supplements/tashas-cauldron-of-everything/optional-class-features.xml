@@ -5,7 +5,7 @@
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/optional-class-features.xml" />
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/optional-class-features.xml" />
 		</update>
 	</info>
 

@@ -3,7 +3,7 @@
 	<info>
 		<name>Path of the Beast</name>
 		<update version="0.0.1">
-			<file name="barbarian-pathofwildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/pathofwildmagic.xml" />
+			<file name="barbarian-pathofwildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/pathofwildmagic.xml" />
 		</update>
 	</info>
 	

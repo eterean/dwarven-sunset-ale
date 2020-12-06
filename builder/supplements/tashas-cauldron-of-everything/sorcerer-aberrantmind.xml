@@ -4,7 +4,7 @@
 		<name>Aberrant Mind Sorcerous Origin</name>
 		<description>The Aberrant Mind Sorcerous Origin from Tasha’s Cauldron of Everything</description>
 		<update version="0.0.1">
-			<file name="sorcerer-aberrantmind.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/sorcerer-aberrantmind.xml" />
+			<file name="sorcerer-aberrantmind.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/sorcerer-aberrantmind.xml" />
 		</update>
 	</info>
 	<element name="Aberrant Mind" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_ABERRANT_MIND">

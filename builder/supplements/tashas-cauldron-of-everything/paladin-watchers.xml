@@ -3,7 +3,7 @@
 	<info>
 		<name>Oath of the Watchers</name>
 		<update version="0.0.1">
-			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/paladin-watchers.xml" />
+			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/paladin-watchers.xml" />
 		</update>
 	</info>
 	<element name="Oath of the Watchers" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_PALADIN_OATH_OF_THE_WATCHERS">

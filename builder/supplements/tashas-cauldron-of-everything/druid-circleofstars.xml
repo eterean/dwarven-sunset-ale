@@ -5,7 +5,7 @@
 		<description></description>
 		<author url="">Tasha’s Cauldron of Everything</author>
 		<update version="0.0.1">
-			<file name="druid-circleofstars.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/druid-circleofstars.xml" />
+			<file name="druid-circleofstars.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/druid-circleofstars.xml" />
 		</update>
 	</info>
 

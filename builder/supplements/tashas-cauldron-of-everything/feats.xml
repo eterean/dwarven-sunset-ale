@@ -5,7 +5,7 @@
 		<description>Feats from Tasha’s Cauldron of Everything.</description>
 		<author url="">Wizards of the Coast</author>
 		<update version="0.0.1">
-			<file name="feats.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/tree/master/builder/supplements/tashas-cauldron-of-everything/feats.xml" />
+			<file name="feats.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/feats.xml" />
 		</update>
 	</info>
 
