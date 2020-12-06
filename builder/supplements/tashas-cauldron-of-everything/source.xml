@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="" />
+		</update>
+	</info>
+	<element name="Tasha’s Cauldron of Everything" type="Source" source="Core" id="ID_WOTC_SOURCE_TASHAS_CAULDRON_OF_EVERYTHING">
+		<description>
+			<![CDATA[<p><em>Tasha’s Cauldron of Everything</em> offers a host of new options for DUNGEONS &amp; DRAGONS. Creator of the spell <em>Tasha's hideous laughter</em>, Tasha's life is one of the most storied in the D&amp;D multiverse. Raised by Baba Yaga, the Mother of Witches herself, Tasha adventured across the world of Greyhawk and became the friend and sometimes enemy of other famous adventurers, like Mordenkainen. In time, she ruled as the Witch Queen and later changed her name to Iggwilv-a figure of legend who is whispered about, feared, and admired.</p><p><strong>Beauty and guile are in the eyes of the beholder!</strong></p>]]>
+			<p class="indent">Written for players and Dungeon Masters alike, this book offers options to enhance characters and campaigns in any D&amp;D world. whether you're adventuring in Greyhawk, another official D&amp;D setting, or a world of your own creation.</p>
+		</description>
+		<setters>
+			<set name="abbreviation">TCOH</set>
+			<set name="url">http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything</set>
+			<set name="image">https://media.dnd.wizards.com/styles/product_image_left_scale/public/images/product/Uq3hw0xJwb.png</set>
+			<set name="author" abbreviation="WOTC" url="http://dnd.wizards.com">Wizards of the Coast</set>
+			<set name="errata">https://media.wizards.com/2020/dnd/downloads/XGtE-Errata.pdf</set>
+			<set name="official">true</set>
+			<set name="supplement">true</set>
+			<set name="release">20201117</set>
+		</setters>
+	</element>
+</elements>

@@ -1,0 +1,1862 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Tasha’s Optional Class Features</name>
+		<description>Tasha’s Optional Class Features.</description>
+		<author url="">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="optional-class-features.xml" url="" />
+		</update>
+	</info>
+
+	<!-- Option to enable Tasha’s optionals -->
+	<element name="Tasha’s Optional Class Features" type="Option" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES">
+		<description>
+			<p class="indent"><center><em>Option to specifically enable the new optional (additional and variants) class features, not the subclasses.</em></center></p>
+			<p></p>
+			<p class="indent">Unlike the features in the Player's Handbook, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<p class="indent">Each group, guided by the DM, decides which of these options, if any, to incorporate into a campaign. You can use some, all, or none of them. We encourage you to choose the ones that fit best with your campaign's story and with your group's style of play.</p>
+		</description>
+		<setters>
+			<set name="short">Additional optional features for the different classes.</set>
+		</setters>
+		<rules>
+            <grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN" requirements="[barbarian:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD" requirements="[bard:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC" requirements="[cleric:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID" requirements="[druid:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER" requirements="[fighter:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK" requirements="[monk:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN" requirements="[paladin:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER" requirements="[ranger:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE" requirements="[rogue:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER" requirements="[sorcerer:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK" requirements="[warlock:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD" requirements="[wizard:1]" />
+        </rules>
+	</element>
+	
+	<!-- Barbarian Optionals -->
+	<element name="Optional Class Features: Barbarian" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN" requirements="[barbarian:3]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The barbarian class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a barbarian.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN_PRIMAL_KNOWLEDGE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN_INSTINCTIVE_POUNCE" />		
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Barbarian Optional Class Feature Lv. 3" supports="Barbarian Optional Class Feature Lv. 3" optional="true" requirements="[barbarian:3]" />
+			<select type="Class Feature" name="Barbarian Optional Class Feature Lv. 7" supports="Barbarian Optional Class Feature Lv. 7" optional="true" requirements="[barbarian:7]" />
+		</rules>
+	</element>
+    <element name="Primal Knowledge" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN_PRIMAL_KNOWLEDGE">
+		<supports>Barbarian Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>PRIMAL KNOWLEDGE</h2>
+			<p><em>3rd-level barbarian feature</em></p>
+			<p>When you reach 3rd level and again at 10th level, you gain proficiency in one skill of your choice from the list of skills available to barbarians at 1st level.</p>
+		</description>
+        <sheet>
+			<description>Gain proficiency in one skill from barbarians list at 1st level. Gain an additional skill proficiency at barbarian level 10.</description>
+        </sheet>
+		<rules>
+            <select type="Proficiency" name="Skill Proficiency (Primal Knowledge, Level 3)" supports="Skill,Barbarian" requirements="[barbarian:3]" />
+            <select type="Proficiency" name="Skill Proficiency (Primal Knowledge, Level 10)" supports="Skill,Barbarian" requirements="[barbarian:10]" />
+		</rules>
+    </element>
+	<element name="Instinctive Pounce" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN_INSTINCTIVE_POUNCE">
+		<supports>Barbarian Optional Class Feature Lv. 7</supports>
+        <description>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+            <p><em>7th-level barbarian feature</em></p>
+			<p>As part of the bonus action you take to enter your rage, you can move up to half your speed.</p>
+		</description>
+		<sheet>
+			<p>As part of the bonus action you take to enter your rage, you can move up to half your speed.</p>
+		</sheet>
+	</element>
+	<!-- /Barbarian Optionals -->
+
+	<!-- Bard Optionals -->
+	<element name="Optional Class Features: Bard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD" requirements="[bard:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The bard class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a bard.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_ADDITIONAL_BARD_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_MAGICAL_INSPIRATION" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_BARDIC_VERSATILITY" />			
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Bard Optional Class Feature Lv. 1" supports="Bard Optional Class Feature Lv. 1" optional="true" requirements="[bard:1]" />
+			<select type="Class Feature" name="Bard Optional Class Feature Lv. 2" supports="Bard Optional Class Feature Lv. 2" optional="true" requirements="[bard:2]" />
+			<select type="Class Feature" name="Bard Optional Class Feature Lv. 4" supports="Bard Optional Class Feature Lv. 4" optional="true" requirements="[bard:4]" />
+		</rules>
+	</element>
+	<element name="Additional Bard Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_ADDITIONAL_BARD_SPELLS">
+		<supports>Bard Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL BARD SPELLS</h2>
+			<p><em>1st-level bard feature</em></p>
+			<p>The spells in the following list expand the bard spell list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st Level</td><td><em>Color spray, Command</em></td></tr>
+				<tr><td>2nd Level</td><td><em>Aid, Enlarge/feduce, Mirror image</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Intellect fortress*, Mass healing word, Slow</em></td></tr>
+				<tr><td>4th Level</td><td><em>Phantasmal killer</em></td></tr>
+				<tr><td>5th Level</td><td><em>Rary's telepathic bond (ritual)</em></td></tr>
+				<tr><td>6th Level</td><td><em>Heroes' feast</em></td></tr>
+				<tr><td>7th Level</td><td><em>Dream of the blue veil*, Prismatic spray</em></td></tr>
+				<tr><td>8th Level</td><td><em>Antipathy/sympathy</em></td></tr>
+				<tr><td>9th Level</td><td><em>Prismatic wall</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a bard spell.</description>
+		</sheet>
+		<spellcasting name="Bard" extend="true">
+			<extend>ID_PHB_SPELL_COLOR_SPRAY</extend>
+			<extend>ID_PHB_SPELL_COMMAND</extend>
+			<extend>ID_PHB_SPELL_AID</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_PHB_SPELL_MIRROR_IMAGE</extend>
+			<extend>ID_TCOE_SPELL_INTELLECT_FORTRESS</extend>
+			<extend>ID_PHB_SPELL_MASS_HEALING_WORD</extend>
+			<extend>ID_PHB_SPELL_SLOW</extend>
+			<extend>ID_PHB_SPELL_PHANTASMAL_KILLER</extend>
+			<extend>ID_PHB_SPELL_RARYS_TELEPATHIC_BOND</extend>
+			<extend>ID_PHB_SPELL_HEROES_FEAST</extend>
+			<extend>ID_TCOE_SPELL_DREAM_OF_THE_BLUE_VEIL</extend>
+			<extend>ID_PHB_SPELL_PRISMATIC_SPRAY</extend>
+			<extend>ID_PHB_SPELL_ANTIPATHY_SYMPATHY</extend>
+			<extend>ID_PHB_SPELL_PRISMATIC_WALL</extend>
+		</spellcasting>
+    </element>
+	<element name="Magical Inspiration" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_MAGICAL_INSPIRATION">
+		<supports>Bard Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>MAGICAL INSPIRATION</h2>
+            <p><em>2nd-level bard feature</em></p>
+			<p>If a creature has a Bardic Inspiration die from you and casts a spell that restores hit points or deals damage, the creature can roll that die and choose a target affected by the spell. Add the number rolled as a bonus to the hit points regained or the damage dealt. The Bardic Inspiration die is then lost.</p>
+		</description>
+		<sheet>
+			<description>If a creature has Bardic Inspiration die and cast a spell that restores hit points or deals damage, it can expend that die to roll it as a bonus to the healing or damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Bardic Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD_BARDIC_VERSATILITY">
+		<supports>Bard Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>BARDIC VERSATILITY</h2>
+            <p><em>4th-level bard feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change in focus as you use your skills and magic:</p>
+			<ul>
+				<li>Replace one of the skills you chose for the Expertise feature with one of your other skill proficiencies that isn't benefiting from Expertise.</li>
+				<li>Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the bard spell list.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a skill from Expertise for another that isn't benefiting from Expertise or retrain a Cantrip from the bard spell list.</description>
+		</sheet>
+	</element>
+	<!-- /Bard Optionals -->
+
+	<!-- Cleric Optionals -->
+	<element name="Optional Class Features: Cleric" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC" requirements="[cleric:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The cleric class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a cleric.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_ADDITIONAL_CLERIC_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_HARNESS_DIVINE_POWER" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_CANTRIP_VERSATILITY" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_BLESSED_STRIKES" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Cleric Optional Class Feature Lv. 1" supports="Cleric Optional Class Feature Lv. 1" optional="true" requirements="[cleric:1]" />
+			<select type="Class Feature" name="Cleric Optional Class Feature Lv. 2" supports="Cleric Optional Class Feature Lv. 2" optional="true" requirements="[cleric:2]" />
+			<select type="Class Feature" name="Cleric Optional Class Feature Lv. 4" supports="Cleric Optional Class Feature Lv. 4" optional="true" requirements="[cleric:4]" />
+			<select type="Class Feature" name="Cleric Divine Domain Feature Lv. 8" supports="Cleric Divine Domain Feature Lv. 8" optional="false" requirements="[cleric:8]" />
+		</rules>
+	</element>
+	<element name="Additional Cleric Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_ADDITIONAL_CLERIC_SPELLS">
+		<supports>Cleric Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL CLERIC SPELLS</h2>
+			<p><em>1st-level cleric feature</em></p>
+			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>3rd Level</td><td><em>Aura of vitality, Spirit shroud*</em></td></tr>
+				<tr><td>4th Level</td><td><em>Aura of life, Aura of purity</em></td></tr>
+				<tr><td>5th Level</td><td><em>Summon celestial*</em></td></tr>
+				<tr><td>6th Level</td><td><em>Sunbeam</em></td></tr>
+				<tr><td>8th Level</td><td><em>Sunburst</em></td></tr>
+				<tr><td>9th Level</td><td><em>Power word heal</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a cleric spell.</description>
+		</sheet>
+		<spellcasting name="Cleric" extend="true">
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_LIFE</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_PURITY</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_CELESTIAL</extend>
+			<extend>ID_PHB_SPELL_SUNBEAM</extend>
+			<extend>ID_PHB_SPELL_SUNBURST</extend>
+			<extend>ID_PHB_SPELL_POWER_WORD_HEAL</extend>
+		</spellcasting>
+    </element>
+	<element name="Harness Divine Power" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_HARNESS_DIVINE_POWER">
+		<supports>Cleric Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>HARNESS DIVINE POWER</h2>
+            <p><em>2nd-level cleric feature</em></p>
+			<p>You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 2nd level, once; 6th level, twice; and 18th level, thrice. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet alt="Harness Divine Power" action="Bonus Action" usage="{{harness divine power:usage}}/Long Rest">
+            <description>Expend one use of your Channel Divinity, regain an expended spell slot up to spell level {{harness divine power:spellslot}}.</description>
+        </sheet>
+		<rules>
+			<stat name="harness divine power:spellslot" value="proficiency:half:up" bonus="base" />
+			<stat name="harness divine power:usage" value="1" bonus="base" requirements="[cleric:2]" />
+			<stat name="harness divine power:usage" value="2" bonus="base" requirements="[cleric:6]" />
+			<stat name="harness divine power:usage" value="3" bonus="base" requirements="[cleric:18]" />
+		</rules>
+	</element>
+	<element name="Cantrip Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_CANTRIP_VERSATILITY">
+		<supports>Cleric Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>CANTRIP VERSATILITY</h2>
+            <p><em>4th-level cleric feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the cleric spell list.</p>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a cantrip from the cleric spell list.</description>
+		</sheet>
+	</element>
+	<element name="Variant Feature: Blessed Strikes" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_BLESSED_STRIKES">
+		<supports>Cleric Divine Domain Feature Lv. 8</supports>
+		<prerequisities>Divine Domain</prerequisities>		
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC</requirements>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>BLESSED STRIKES</h2>
+            <p><em>8th-level cleric feature, which replaces the Divine Strike or Potent Spellcasting feature</em></p>
+			<p>You are blessed with divine might in battle. When a creature takes damage from one of your cantrips or weapon attacks, you can also deal 1d8 radiant damage to that creature. Once you deal this damage, you can't use this feature again until the start of your next turn.</p>
+		</description>
+		<sheet>
+			<description>Once per turn when a creature takes damage from your cantrip or weapon attack, you can also deal an additional 1d8 radiant damage. Can't use feature again until start of next turn.</description>
+		</sheet>
+	</element>
+	<element name="Default Feature: Divine Strike" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE">
+		<compendium display="false" />
+		<supports>Cleric Divine Domain Feature Lv. 8</supports>
+		<prerequisities>Divine Domain</prerequisities>
+		<requirements>(ID_WOTC_PHB_ARCHETYPE_LIFEDOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_NATURE_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_TEMPEST_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_Trickery_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_War_DOMAIN||ID_WOTC_GGTR_ARCHETYPE_CLERIC_ORDER_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_ORDER_DOMAIN||ID_WOTC_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_TWILIGHT_DOMAIN)</requirements>
+        <description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal extra damage to the target, the type of damage dealt depends of your Divine Domain choice. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIFE_DIVINESTRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_LIFEDOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_NATURE_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_NATURE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_TEMPEST_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_Trickery_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_War_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_GGTR_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_GGTR_ARCHETYPE_CLERIC_ORDER_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_ORDER_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_TWILIGHT_DOMAIN" />
+		</rules>
+	</element>
+	<element name="Default Feature: Potent Spellcasting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING">
+		<compendium display="false" />
+		<supports>Cleric Divine Domain Feature Lv. 8</supports>
+		<prerequisities>Divine Domain</prerequisities>
+		<requirements>(ID_WOTC_PHB_ARCHETYPE_CLERIC_KNOWLEDGE_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_LIGHT_DOMAIN||ID_WOTC_SCAG_ARCHETYPE_ARCANA_DOMAIN||ID_WOTC_XGTE_ARCHETYPE_CLERIC_GRAVE_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_PEACE_DOMAIN)</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_KNOWLEDGE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_LIGHT_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_ARCANA_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_SCAG_ARCHETYPE_ARCANA_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_XGTE_ARCHETYPE_CLERIC_GRAVE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_PEACE_DOMAIN" />
+		</rules>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIFE_DIVINESTRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turn +1d8 radiant damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 radiant damage with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_NATURE_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 cold, fire, or lightning damage (your choice) to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>		
+			<description>Once on each of your turn +1d8 cold, fire, or lightning damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 cold, fire, or lightning damage with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 thunder damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>			
+			<description>Once on each of your turn +1d8 thunder damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 thunder damage with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with poison—a gift from your deity. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 poison damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turn +1d8 poison damage with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 poison damage with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage of the same type dealt by the weapon to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+		</description>
+		<sheet>
+			<description>Once on each of your turn +1d8 damage of the same type dealt by the weapon with a weapon attack.</description>
+			<description level="14">Once on each of your turn +2d8 damage of the same type dealt by the weapon with a weapon attack.</description>
+		</sheet>
+	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Guildmasters’ Guide to Ravnica" id="ID_WOTC_GGTR_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE">
+        <requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target.</description>
+            <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 psychic damage to the target.</description>
+        </sheet>
+    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+        <description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 psychic damage to the target.</description>
+            <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 psychic damage to the target.</description>
+        </sheet>
+    </element>
+	<element name="Divine Strike" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE">
+    	<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+      		<p>At 8th level, you gain the ability to infuse your weapon strikes with the fiery power of the forge. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+    	</description>
+    	<sheet>
+      		<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 fire damage to the target.</description>
+      		<description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 fire damage to the target.</description>
+    	</sheet>
+  	</element>
+	<element name="Divine Strike" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_DIVINE_STRIKE">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_DIVINE_STRIKE||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+        <description>
+			<p>At 8th level, you gain the ability to infuse your weapon strikes with divine energy. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+        </description>
+        <sheet>
+            <description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 radiant damage to the target.</description>
+            <description level="14">Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 2d8 radiant damage to the target.</description>
+        </sheet>
+    </element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>+{{wisdom:modifier}} to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Sword Coast Adventurer’s Guide" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_ARCANA_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+		</description>
+		<sheet>
+			<description>You add your Wisdom modifier (+{{wisdom:modifier}}) to the damage you deal with any cleric cantrip.</description>
+		</sheet>
+	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+      		<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+    	</description>
+    	<sheet>
+      		<description>Add {{wisdom:modifier}} to damage dealt with a cleric cantrip.</description>
+    	</sheet>
+  	</element>
+	<element name="Potent Spellcasting" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC_POTENT_SPELLCASTING||!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+      		<p>Starting at 8th level, you add your Wisdom modifier to the damage you deal with any cleric cantrip.</p>
+    	</description>
+    	<sheet>
+      		<description>Add {{wisdom:modifier}} to damage dealt with a cleric cantrip.</description>
+    	</sheet>
+  	</element>
+	<!-- /Cleric Optionals -->
+
+	<!-- Default Divine Strike and Potent Spellcasting assignments, a "go back and work normally" if one doesn't want the optionals -->
+	<element name="Divine Domain Feature" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLERIC_ARCHETYPE_FEATURE_LEVELEIGHT" >
+		<prerequisities>Divine Domain</prerequisities>
+		<requirements>!ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_ARCHETYPE_LIFEDOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_NATURE_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_TEMPEST_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_Trickery_DOMAIN||ID_WOTC_PHB_ARCHETYPE_CLERIC_War_DOMAIN||ID_WOTC_GGTR_ARCHETYPE_CLERIC_ORDER_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_ORDER_DOMAIN||ID_WOTC_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_PEACE_DOMAIN||ID_WOTC_TCOE_ARCHETYPE_CLERIC_TWILIGHT_DOMAIN)</requirements>
+		<compendium display="false" />
+		<description></description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIFE_DIVINESTRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_LIFEDOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_NATURE_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_NATURE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TEMPEST_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_TEMPEST_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_TRICKERY_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_Trickery_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_WAR_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_War_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_KNOWLEDGE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_KNOWLEDGE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_LIGHT_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_PHB_ARCHETYPE_CLERIC_LIGHT_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_GGTR_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_GGTR_ARCHETYPE_CLERIC_ORDER_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_SCAG_ARCHETYPE_FEATURE_ARCANA_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_SCAG_ARCHETYPE_ARCANA_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_FORGE_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_XGTE_ARCHETYPE_CLERIC_FORGE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_GRAVE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_XGTE_ARCHETYPE_CLERIC_GRAVE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_ORDER_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_ORDER_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PEACE_DOMAIN_POTENT_SPELLCASTING" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_PEACE_DOMAIN" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_TWILIGHT_DOMAIN_DIVINE_STRIKE" requirements="ID_WOTC_TCOE_ARCHETYPE_CLERIC_TWILIGHT_DOMAIN" />
+		</rules>
+	</element>
+	<!-- /Default Divine Strike or Potent Spellcasting assignments -->
+
+	<!-- Druid Optionals -->
+	<element name="Optional Class Features: Druid" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID" requirements="[druid:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The druid class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a druid.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_ADDITIONAL_DRUID_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_WILD_COMPANION" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_CANTRIP_VERSATILITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Druid Optional Class Feature Lv. 1" supports="Druid Optional Class Feature Lv. 1" optional="true" requirements="[druid:1]" />
+			<select type="Class Feature" name="Druid Optional Class Feature Lv. 2" supports="Druid Optional Class Feature Lv. 2" optional="true" requirements="[druid:2]" />
+			<select type="Class Feature" name="Druid Optional Class Feature Lv. 4" supports="Druid Optional Class Feature Lv. 4" optional="true" requirements="[druid:4]" />
+		</rules>
+	</element>
+	<element name="Additional Druid Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_ADDITIONAL_DRUID_SPELLS">
+		<supports>Druid Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL DRUID SPELLS</h2>
+			<p><em>1st-level druid feature</em></p>
+			<p>The spells in the following list expand the druid spell list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st Level</td><td><em>Protection from evil and good</em></td></tr>
+				<tr><td>2nd Level</td><td><em>Augury (ritual), Continual flame, Enlarge/reduce, Summon beast*</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Aura of vitality, Elemental weapon, Revivify, Summon fey*</em></td></tr>
+				<tr><td>4th Level</td><td><em>Divination (ritual), Fire shield, Summon elemental*</em></td></tr>
+				<tr><td>5th Level</td><td><em>Cone of cold</em></td></tr>
+				<tr><td>6th Level</td><td><em>Flesh to stone</em></td></tr>
+				<tr><td>7th Level</td><td><em>Symbol</em></td></tr>
+				<tr><td>8th Level</td><td><em>Incendiary cloud</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a druid spell.</description>
+		</sheet>
+		<spellcasting name="Druid" extend="true">
+			<extend>ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD</extend>
+			<extend>ID_PHB_SPELL_AUGURY</extend>
+			<extend>ID_PHB_SPELL_CONTINUAL_FLAME</extend>
+			<extend>ID_PHB_SPELL_ENLARGE_REDUCE</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_BEAST</extend>
+			<extend>ID_PHB_SPELL_AURA_OF_VITALITY</extend>
+			<extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FEY</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_ELEMENTAL</extend>
+			<extend>ID_PHB_SPELL_CONE_OF_COLD</extend>
+			<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+			<extend>ID_PHB_SPELL_SYMBOL</extend>
+			<extend>ID_PHB_SPELL_INCENDIARY_CLOUD</extend>
+		</spellcasting>
+    </element>
+	<element name="Wild Companion" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_WILD_COMPANION">
+		<supports>Druid Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>WILD COMPANION</h2>
+            <p><em>2nd-level druid feature</em></p>
+			<p>You gain the ability to summon a spirit that assumes an animal form: as an action, you can expend a use of your Wild Shape feature to cast the <em>find familiar</em> spell, without material components.</p>
+			<p class="indent">When you cast the spell in this way, the familiar is a fey instead of a beast, and the familiar disappears after a number of hours equal to half your druid level.</p>
+		</description>
+		<sheet action="Action">
+			<description>Expend one Wild Shape use to cast <em>find familiar</em> without material components, the familiar is fey and disappears after {{wild companion:hours}} hours.</description>
+		</sheet>
+		<rules>
+			<stat name="wild companion:hours" value="level:druid:half" bonus="base" />
+		</rules>
+	</element>
+	<element name="Cantrip Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID_CANTRIP_VERSATILITY">
+		<supports>Druid Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>CANTRIP VERSATILITY</h2>
+            <p><em>4th-level druid feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the druid spell list.</p>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a cantrip from the druid spell list.</description>
+		</sheet>
+	</element>
+	<!-- /Druid Optionals -->
+
+	<!-- Fighter Optionals -->
+	<element name="Optional Class Features: Fighter" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER" requirements="[fighter:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The fighter class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a cleric.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_MARTIAL_VERSATILITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Fighter Optional Class Feature Lv. 1" supports="Fighter Optional Class Feature Lv. 1" optional="true" requirements="[fighter:1]" />
+			<select type="Class Feature" name="Fighter Optional Class Feature Lv. 4" supports="Fighter Optional Class Feature Lv. 4" optional="true" requirements="[fighter:4]" />
+		</rules>
+	</element>
+	<element name="Fighting Styles Options" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE">
+		<supports>Fighter Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<h2>FIGHTING STYLE OPTIONS</h2>
+			<p><em>1st-level fighter feature</em></p>
+			<p>When you choose a fighting style, the following styles are added to your list of options.</p>
+			<h5 class="caption">BLIND FIGHTING</h5>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<h5 class="caption">INTERCEPTION</h5>
+			<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
+			<h5 class="caption">SUPERIOR TECHNIQUE</h5>
+			<p>You learn one maneuver of your choice from among those available to the Battle Master archetype. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			<p>You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest.</p>
+			<h5 class="caption">THROWN WEAPON FIGHTING</h5>
+			<p>You can draw a weapon that has the thrown property as part of the attack you make with the weapon.</p>
+			<p>In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.</p>
+			<h5 class="caption">UNARMED FIGHTING</h5>
+			<p>Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.</p>
+			<p>At the start of each of your turns, you can deal ld4 bludgeoning damage to one creature grappled by you.</p>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that adds additional fighting style options.</description>
+		</sheet>
+	</element>
+	<element name="Martial Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_MARTIAL_VERSATILITY">
+		<supports>Fighter Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>MARTIAL VERSATILITY</h2>
+            <p><em>4th-level fighter feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, as you shift the focus of your martial practice:</p>
+			<ul>
+				<li>Replace a fighting style you know with another fighting style available to fighters.</li>
+				<li>If you know any maneuvers from the Battle Master archetype, you can replace one maneuver you know with a different maneuver.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a fighting style for another of your available options or replace one of the maneuvers of the Battle Master archetype for a different maneuver.</description>
+		</sheet>
+	</element>
+	<!-- /Fighter Optionals -->
+
+	<!-- Monk Optionals -->
+	<element name="Optional Class Features: Monk" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK" requirements="[monk:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The monk class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a cleric.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_DEDICATED_WEAPON" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_KI_FUELED_ATTACK" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_QUICKENED_HEALING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_FOCUSED_AIM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Monk Optional Class Feature Lv. 2" supports="Monk Optional Class Feature Lv. 2" optional="true" requirements="[monk:2]" />
+			<select type="Class Feature" name="Monk Optional Class Feature Lv. 3" supports="Monk Optional Class Feature Lv. 3" optional="true" requirements="[monk:3]" />
+			<select type="Class Feature" name="Monk Optional Class Feature Lv. 4" supports="Monk Optional Class Feature Lv. 4" optional="true" requirements="[monk:4]" />
+			<select type="Class Feature" name="Monk Optional Class Feature Lv. 5" supports="Monk Optional Class Feature Lv. 5" optional="true" requirements="[monk:5]" />
+		</rules>
+	</element>
+	<element name="Dedicated Weapon" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_DEDICATED_WEAPON">
+		<supports>Monk Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h3>OPTIONAL CLASS FEATURES</h3>
+			<p></p>
+			<h4>DEDICATED WEAPON</h4>
+			<p><em>2nd-level monk feature</em></p>
+			<p>You train yourself to use a variety of weapons as monk weapons, not just simple melee weapons and shortswords. Whenever you finish a short or long rest, you can touch one weapon, focus your ki on it, and then count that weapon as a monk weapon until you use this feature again.</p>
+			<p class="indent">The chosen weapon must meet these criteria:</p>
+			<ul>
+				<li>The weapon must be a simple or martial weapon.</li>
+				<li>You must be proficient with it.</li>
+				<li>It must lack the heavy and special properties.</li>
+			</ul>
+		</description>
+        <sheet usage="Short or Long Rest">
+			<description>Touch a weapon that meet requirements, weapon counts as monk weapon until you use this feature again.</description>
+		</sheet>
+	</element>
+	<element name="Ki-Fueled Attack" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_KI_FUELED_ATTACK">
+		<supports>Monk Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h3>OPTIONAL CLASS FEATURES</h3>
+			<p></p>
+			<h4>KI-FUELED ATTACK</h4>
+			<p><em>3rd-level monk feature</em></p>
+			<p>If you spend 1 ki point or more as part of your action on your turn, you can make one attack with an unarmed strike or a monk weapon as a bonus action before the end of the turn.</p>
+		</description>
+        <sheet>
+			<description>Spend 1+ ki point as part of your action on your turn, you can make one attack with unarmed strike or monk weapon as bonus action before the end of turn.</description>
+		</sheet>
+	</element>
+	<element name="Quickened Healing" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_QUICKENED_HEALING">
+		<supports>Monk Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h3>OPTIONAL CLASS FEATURES</h3>
+			<p></p>
+			<h4>QUICKENED HEALING</h4>
+			<p><em>4th-level monk feature</em></p>
+			<p>As an action, you can spend 2 ki points and roll a Martial Arts die. You regain a number of hit points equal to the number rolled plus your proficiency bonus.</p>
+		</description>
+        <sheet action="Action">
+			<description>Spend 2 ki points and roll a Martial Arts die. Regain a number of hit points equal to the roll + {{proficiency}}.</description>
+		</sheet>
+	</element>
+	<element name="Focused Aim" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK_FOCUSED_AIM">
+		<supports>Monk Optional Class Feature Lv. 5</supports>
+		<description>
+        	<h3>OPTIONAL CLASS FEATURES</h3>
+			<p></p>
+			<h4>FOCUSED AIM</h4>
+			<p><em>5th-level monk feature</em></p>
+			<p>When you miss with an attack roll, you can spend 1 to 3 ki points to increase your attack roll by 2 for each of these ki points you spend, potentially turning the miss into a hit.</p>
+		</description>
+        <sheet>
+			<description>When you miss an attack roll, you can spend 1-3 ki points to increase your attack roll by 2 for each point spent, potentially turning the miss into a hit.</description>
+		</sheet>
+	</element>
+	<!-- /Monk Optionals -->
+
+	<!-- Paladin Optionals -->
+	<element name="Optional Class Features: Paladin" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN" requirements="[paladin:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The fighter class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a cleric.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_ADDITIONAL_PALADIN_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_ADDITIONAL_FIGHTING_STYLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_HARNESS_DIVINE_POWER" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_MARTIAL_VERSATILITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 2" supports="Paladin Optional Class Feature Lv. 2" optional="true" requirements="[paladin:2]" />
+			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 2" supports="Paladin Optional Class Feature Lv. 2" optional="true" requirements="[paladin:2]" />
+			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 3" supports="Paladin Optional Class Feature Lv. 3" optional="true" requirements="[paladin:3]" />
+			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 4" supports="Paladin Optional Class Feature Lv. 4" optional="true" requirements="[paladin:4]" />
+		</rules>
+	</element>
+	<element name="Additional Paladin Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_ADDITIONAL_PALADIN_SPELLS">
+		<supports>Paladin Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL PALADIN SPELLS</h2>
+			<p><em>2st-level paladin feature</em></p>
+			<p>The spells in the following list expand the paladin spell list in the Player's Handbook. The list is organized by spell level, not character level. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>2nd Level</td><td><em>Gentle repose, Prayer of healing, Warding bond</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Spirit shroud*</em></td></tr>				
+				<tr><td>5th Level</td><td><em>Summon celestial*</em></td></tr>				
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a druid spell.</description>
+		</sheet>
+		<spellcasting name="Paladin" extend="true">
+			<extend>ID_PHB_SPELL_GENTLE_REPOSE</extend>
+			<extend>ID_PHB_SPELL_PRAYER_OF_HEALING</extend>
+			<extend>ID_PHB_SPELL_WARDING_BOND</extend>			
+			<extend>ID_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_CELESTIAL</extend>
+		</spellcasting>
+    </element>
+	<element name="Fighting Styles Options" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_ADDITIONAL_FIGHTING_STYLE">
+		<supports>Paladin Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<h2>FIGHTING STYLE OPTIONS</h2>
+			<p><em>2nd-level paladin feature</em></p>
+			<p>When you choose a fighting style, the following styles are added to your list of options.</p>
+			<h5 class="caption">BLESSED WARRIOR</h5>
+			<p>You learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</p>
+			<h5 class="caption">BLIND FIGHTING</h5>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<h5 class="caption">INTERCEPTION</h5>
+			<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>			
+		</description>
+        <sheet display="false">
+			<description>Optional feature that adds additional fighting style options.</description>
+		</sheet>
+	</element>
+	<element name="Harness Divine Power" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_HARNESS_DIVINE_POWER">
+		<supports>Paladin Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>HARNESS DIVINE POWER</h2>
+            <p><em>3th-level paladin feature</em></p>
+			<p>You can expend a use of your Channel Divinity to fuel your spells. As a bonus action, you touch your holy symbol, utter a prayer, and regain one expended spell slot, the level of which can be no higher than half your proficiency bonus (rounded up). The number of times you can use this feature is based on the level you've reached in this class: 3rd level, once; 7th level, twice; and 15th level, thrice. You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{harness divine:usage}}/Long Rest">
+			<description>Expend Channel Divinity, regain one spell slot up to level {{harness divine:max}}.</description>
+		</sheet>
+		<rules>
+			<stat name="harness divine:max" value="proficiency:half:up" bonus="base" />
+			<stat name="harness divine:usage" value="1" bonus="base" />
+			<stat name="harness divine:usage" value="1" requirements="[paladin:7]" />
+			<stat name="harness divine:usage" value="1" requirements="[paladin:15]" />
+		</rules>
+	</element>
+	<element name="Martial Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_MARTIAL_VERSATILITY">
+		<supports>Paladin Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>MARTIAL VERSATILITY</h2>
+            <p><em>4th-level paladin feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to paladins. This replacement represents a shift of focus in your martial practice.</p>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a fighting style for another available to paladins.</description>
+		</sheet>
+	</element>
+	<!-- /Paladin Optionals -->
+	
+	<!-- Ranger Optionals -->
+	<element name="Optional Class Features: Ranger" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER" requirements="[ranger:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The ranger class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a cleric.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<p class="indent">If you take a feature that replaces another feature, you gain no benefit from the replaced one and don't qualify for anything in the game that requires it.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_FAVORED_FOE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ADDITIONAL_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_FIGHTING_STYLE" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_SPELLCASTING_FOCUS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_PRIMAL_AWARENESS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_MARTIAL_VERSATILITY" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_NATURES_VEIL" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Ranger Optional Class Feature Lv. 1" supports="Ranger Optional Class Feature Lv. 1" optional="true" number="2" requirements="[ranger:1]" />
+			<select type="Class Feature" name="Ranger Optional Class Feature Lv. 2" supports="Ranger Optional Class Feature Lv. 2" optional="true" number="3" requirements="[ranger:2]" />
+			<select type="Class Feature" name="Ranger Optional Class Feature Lv. 3" supports="Ranger Optional Class Feature Lv. 3" optional="true" requirements="[ranger:3]" />
+			<select type="Class Feature" name="Ranger Optional Class Feature Lv. 4" supports="Ranger Optional Class Feature Lv. 4" optional="true" requirements="[ranger:4]" />
+			<select type="Class Feature" name="Ranger Optional Class Feature Lv. 10" supports="Ranger Optional Class Feature Lv. 10" optional="true" requirements="[ranger:10]" />
+			<select type="Class Feature" name="Beast Master Companion Feature" supports="Beast Master Companion Feature" optional="true" requirements="ID_WOTC_ARCHETYPE_RANGER_BEAST_MASTER" />
+		</rules>
+	</element>
+	<element name="Favored Enemy" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_FAVORED_ENEMY">
+		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_FAVORED_FOE</requirements>
+		<description>
+			<p>Beginning at 1st level, you have significant experience studying, tracking, hunting, and even talking to a certain type of enemy.</p>
+			<p class="indent">Choose a type of favored enemy: aberrations, beasts, celestials, constructs, dragons, elementals, fey, fiends, giants, monstrosities, oozes, plants, or undead. Alternatively, you can select two races of humanoid (such as gnolls and orcs) as favored enemies.</p>
+			<p class="indent">You have advantage on Wisdom (Survival) checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</p>
+			<p class="indent">When you gain this feature, you also learn one language of your choice that is spoken by your favored enemies, if they speak one at all.</p>
+			<p class="indent">You choose one additional favored enemy, as well as an associated language, at 6th and 14th level. As you gain levels, your choices should reflect the types of monsters you have encountered on your adventures.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on Survival checks to track your favored enemies, as well as on Intelligence checks to recall information about them.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="1" />
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="6" />
+			<select type="Class Feature" name="Favored Enemy" supports="Favored Enemy" level="14" />			
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="1" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_1" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="6" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_2" />
+			<select type="Class Feature" name="Favored Enemy, Humanoid" supports="Humanoid Favored Enemy" number="2" level="14" requirements="ID_WOTC_PHB_CLASS_FEATURE_RANGER_FAVORED_ENEMY_HUMANOIDS_3" />
+			<select type="Language" name="Language (Favored Enemy)" level="1" />
+			<select type="Language" name="Language (Favored Enemy)" level="6" />
+			<select type="Language" name="Language (Favored Enemy)" level="14" />
+		</rules>
+	</element>
+	<element name="Natural Explorer" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_NATURAL_EXPLORER">
+		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<description>
+			<p>You are particularly familiar with one type of natural environment and are adept at traveling and surviving in such regions. Choose one type of favored terrain: arctic, coast, desert, forest, grassland, mountain, swamp, or the Underdark. When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in.</p>
+			<p class="indent">While traveling for an hour or more in your favored terrain, you gain the following benefits:</p>
+			<ul>
+				<li>Difficult terrain doesn’t slow your group’s travel.</li>
+				<li>Your group can’t become lost except by magical means.</li>
+				<li>Even when you are engaged in another activity while traveling (such as foraging, navigating, or tracking), you remain alert to danger.</li>
+				<li>If you are traveling alone, you can move stealthily at a normal pace.</li>
+				<li>When you forage, you find twice as much food as you normally would.</li>
+				<li>While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</li>
+			</ul>
+			<p class="indent">You choose additional favored terrain types at 6th and 10th level.</p>
+		</description>
+		<sheet>
+			<description>When you make an Intelligence or Wisdom check related to your favored terrain, your proficiency bonus is doubled if you are using a skill that you’re proficient in. While traveling for an hour or more in your favored terrain, you gain the following benefits:
+			Difficult terrain doesn’t slow your group’s travel.
+			Your group can’t become lost except by magical means.
+			Even when you are engaged in another activity while traveling, you remain alert to danger.
+			If you are traveling alone, you can move stealthily at a normal pace.
+			When you forage, you find twice as much food as you normally would.
+			While tracking other creatures, you also learn their exact number, their sizes, and how long ago they passed through the area.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="1" />
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="6" />
+			<select type="Class Feature" name="Favored Terrain" supports="Favored Terrain" level="10" />
+		</rules>
+	</element>
+	<element name="Favored Foe" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_FAVORED_FOE">
+		<supports>Ranger Optional Class Feature Lv. 1</supports>
+		<prerequisites>Replaces "Favored Enemy" feature</prerequisites>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER</requirements>
+        <description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>FAVORED FOE</h2>
+            <p><em>1st-level ranger feature, which replaces the Favored Enemy feature and works with Foe Slayer feature</em></p>
+			<p>When you hit a creature with an attack roll, you can call on your mystical bond with nature to mark the target as your favored enemy for 1 minute or until you lose your concentration (as if you were concentrating on a spell).</p>
+			<p class="indent">The first time on each of your turns that you hit the favored enemy and deal damage to it, including when you mark it, you can increase that damage by 1d4.</p>
+			<p class="indent">You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">This feature's extra damage increases when you reach certain levels in this class: to 1d6 at 6th level and to 1d8 at 14th level.</p>
+		</description>
+		<sheet usage="{{favored foe:usage}}/Long Rest">
+			<description>When you attack and hit a creature, can mark it for 1 minute or until concentration is lost. First hit each turn that damages can be increased by 1d{{favored foe:die:size}}.</description>
+		</sheet>
+		<rules>
+			<stat name="favored foe:usage" value="proficiency" bonus="base" />
+			<stat name="favored foe:die:size" value="4" bonus="base" />
+			<stat name="favored foe:die:size" value="2" requirements="[ranger:6]" />
+			<stat name="favored foe:die:size" value="2" requirements="[ranger:14]" />
+		</rules>
+	</element>
+	<element name="Deft Explorer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER">
+		<supports>Ranger Optional Class Feature Lv. 1</supports>
+		<prerequisites>Replaces the "Natural Explorer" feature</prerequisites>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER</requirements>
+        <description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>FAVORED FOE</h2>
+            <p><em>1st-level ranger feature, which replaces the Natural Explorer feature</em></p>
+			<p>You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER_2" />
+		</rules>	
+	</element>
+	<element name="Variant Feature: Deft Explorer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER_2">
+		<compendium display="false" />
+		<rules>
+			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:1]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY" />
+			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:6]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING" />
+			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:10]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS" />
+		</rules>
+	</element>
+	<element name="Canny" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY">
+		<supports>Deft Explorer</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<description>
+			<p><em>1st-level ranger ability</em></p>
+			<p>Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.</p>
+			<p class="indent">You can also speak, read, and write two additionallanguages of your choice.</p>
+		</description>
+		<sheet>
+			<description>Double proficiency on one skill and 2 additional languages.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Double Proficiency (Canny)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+			<select type="Language" name="Canny" number="2" supports="Standard||Exotic||Secret" />
+		</rules>
+	</element>
+	<element name="Roving" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING">
+		<supports>Deft Explorer</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<description>
+			<p><em>6th-level ranger ability</em></p>
+			<p>Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.</p>
+		</description>
+		<sheet>
+			<description>Walking speed increased by 5ft, also gain climb and swim speed equal to your walking speed.</description>
+		</sheet>
+		<rules>
+			<stat name="roving:speed" value="5" bonus="base" />
+			<stat name="speed" value="roving:speed" />
+			<stat name="speed:climb" value="speed" bonus="base" />
+			<stat name="speed:swim" value="speed" bonus="base" />
+		</rules>
+	</element>
+	<element name="Tireless" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS">
+		<supports>Deft Explorer</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<description>
+			<p><em>10th-level ranger ability</em></p>
+			<p>As an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent">In addition, whenever you finish a short rest, your exhaustion level, if any, is decreased by 1.</p>
+		</description>
+		<sheet alt="Tireless" action="Action" usage="{{tireless:usage}}/Long Rest">
+			<description>Gain 1d8 + {{wisdom:modifier}} temporal hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="tireless:usage" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Additional Ranger Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ADDITIONAL_SPELLS">
+		<supports>Ranger Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL CLERIC SPELLS</h2>
+			<p><em>2nd-level ranger feature</em></p>
+			<p>The spells in the following list expand the ranger list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>1st Level</td><td><em>Entangle, Searing Smite</em></td></tr>
+				<tr><td>2nd Level</td><td><em>Aid, Enhance ability, Gust of wind, Magic weapon, Summon beast*</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Elemental weapon, Meld into stone, Revivify, Summon fey*</em></td></tr>
+				<tr><td>4th Level</td><td><em>Dominate beast, Summon elemental*</em></td></tr>
+				<tr><td>5th Level</td><td><em>Greater restoration</em></td></tr>				
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a ranger spell.</description>
+		</sheet>
+		<spellcasting name="Ranger" extend="true">
+			<extend>ID_PHB_SPELL_ENTANGLE</extend>
+			<extend>ID_PHB_SPELL_AID</extend>
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+			<extend>ID_PHB_SPELL_GUST_OF_WIND</extend>
+			<extend>ID_PHB_SPELL_MAGIC_WEAPON</extend>			
+			<extend>ID_PHB_SPELL_ELEMENTAL_WEAPON</extend>
+			<extend>ID_PHB_SPELL_MELD_INTO_STONE</extend>
+			<extend>ID_PHB_SPELL_REVIVIFY</extend>
+			<extend>ID_PHB_SPELL_DOMINATE_BEAST</extend>
+			<extend>ID_PHB_SPELL_GREATER_RESTORATION</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_BEAST</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FEY</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_ELEMENTAL</extend>
+		</spellcasting>
+    </element>
+	<element name="Fighting Styles Options" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ADDITIONAL_FIGHTING_STYLE">
+		<supports>Ranger Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<h2>FIGHTING STYLE OPTIONS</h2>
+			<p><em>2nd-level ranger feature</em></p>
+			<p>When you choose a fighting style, the following styles are added to your list of options.</p>			
+			<h5 class="caption">BLIND FIGHTING</h5>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+			<h5 class="caption">DRUIDIC WARRIOR</h5>
+			<p>You learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</p>
+			<h5 class="caption">THROWN WEAPON FIGHTING</h5>
+			<p>You can draw a weapon that has the thrown property as part of the attack you make with the weapon.</p>
+			<p>In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.</p>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that adds additional fighting style options.</description>
+		</sheet>
+	</element>
+	<element name="Spellcasting Focus" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_SPELLCASTING_FOCUS">
+		<supports>Ranger Optional Class Feature Lv. 2</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>HARNESS DIVINE POWER</h2>
+            <p><em>2nd-level ranger feature</em></p>
+			<p>You can use a druidic focus as a spellcasting focus for your ranger spells. A druidic focus might be a sprig of mistletoe or holly, a wand or rod made of yew or another special wood, a staff drawn whole from a living tree, or an object incorporating feathers, fur, bones, and teeth from sacred animals.</p>
+		</description>
+		<sheet>
+            <description>Can use druid spellcasting focus.</description>
+        </sheet>
+	</element>
+	<element name="Primeval Awareness" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_PRIMEVAL_AWARENESS">
+		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_PRIMAL_AWARENESS</requirements>
+		<description>
+			<p>Beginning at 3rd level, you can use your action and expend one ranger spell slot to focus your awareness on the region around you. For 1 minute per level of the spell slot you expend, you can sense whether the following types of creatures are present within 1 mile of you (or within up to 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</p>
+		</description>
+		<sheet action="Action">
+			<description>Can expend one ranger spell slot to focus for 1 minute/level of the spell slot you expend, you can sense if the following types of creatures are present within 1 mile (within 6 miles if you are in your favored terrain): aberrations, celestials, dragons, elementals, fey, fiends, and undead. This feature doesn’t reveal the creatures’ location or number.</description>
+		</sheet>
+	</element>
+	<element name="Primal Awareness" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_PRIMAL_AWARENESS">
+		<supports>Ranger Optional Class Feature Lv. 3</supports>
+		<prerequisites>Replaces the "Primeval Awareness" feature</prerequisites>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER</requirements>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL RANGER SPELLS</h2>
+			<p><em>3rd-level ranger feature. which replaces Primeval Awareness feature</em></p>
+			<p>You can focus your awareness through the interconnections of nature: you learn additional spells when you reach certain levels in this class if you don't already know them, as shown in the Primal Awareness Spells table. These spells don't count against the number of ranger spells you know.</p>
+			<h5 class="caption">Primal Awareness Spells</h5>
+			<table>
+				<thead>
+					<tr><td>Ranger Level</td><td>Spell</td></tr>
+				</thead>
+				<tr><td>3rd Level</td><td><em>speak with animals</em></td></tr>
+				<tr><td>5th Level</td><td><em>beast sense</em></td></tr>
+				<tr><td>7th Level</td><td><em>speak with plants</em></td></tr>
+				<tr><td>13th Level</td><td><em>locate creature</em></td></tr>
+				<tr><td>17th Level</td><td><em>commune with nature</em></td></tr>				
+			</table>
+			<p class="indent">You can cast each of these spells once without expending a spell slot. Once you cast a spell in this way, you can't do so again until you finish a long rest.</p>
+		</description>
+        <sheet usage="1/Long Rest">
+			<description>Gained extra spells, which can be cast once each without a spell slot.</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" spellcasting="Ranger" requirements="[ranger:3]" />
+			<grant type="Spell" id="ID_PHB_SPELL_BEAST_SENSE" spellcasting="Ranger" requirements="[ranger:5]" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPEAK_WITH_PLANTS" spellcasting="Ranger" requirements="[ranger:9]" />
+			<grant type="Spell" id="ID_PHB_SPELL_LOCATE_CREATURE" spellcasting="Ranger" requirements="[ranger:13]" />
+			<grant type="Spell" id="ID_PHB_SPELL_COMMUNE_WITH_NATURE" spellcasting="Ranger" requirements="[ranger:17]" />
+		</rules>
+	</element>
+	<element name="Martial Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_MARTIAL_VERSATILITY">
+		<supports>Ranger Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>MARTIAL VERSATILITY</h2>
+            <p><em>4th-level ranger feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can replace a fighting style you know with another fighting style available to rangers. This replacement represents a shift of focus in your martial practice.</p>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain a fighting style for another available to rangers.</description>
+		</sheet>
+	</element>
+	<element name="Hide in Plain Sight" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT">
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_NATURES_VEIL</requirements>
+		<description>
+			<p>Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.</p>
+			<p class="indent">Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</p>
+		</description>
+		<sheet>
+			<description>Spend 1 minute creating camouflage for yourself. You must have access to naturally occurring materials with which to create your camouflage. Once you are camouflaged, attempt to hide against a solid surface, such as a tree or wall, that is at least as tall and wide as you. Gain a +10 bonus to Stealth while remaining still nor taking actions. Once you move, take an action or reaction, you must camouflage again.</description>
+		</sheet>
+	</element>
+	<element name="Nature's Veil" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_NATURES_VEIL">
+		<supports>Ranger Optional Class Feature Lv. 10</supports>
+		<prerequisites>Replaces Hide in Plain Sight</prerequisites>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER</requirements>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>NATURE'S VEIL</h2>
+            <p><em>10th-level ranger feature, which replaces the Hide in Plain Sight feature</em></p>
+			<p>You draw on the powers of nature to hide yourself from view briefly. As a bonus action, you can magically become invisible, along with any equipmentyou are wearing or carrying, until the start of your next turn.</p>
+			<p class="indent">You can use this feature a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Bonus Action" usage="{{natures veil:usage}}/Long Rest">
+			<description>Become magically invisible with your equipment until start of your next turn.</description>
+		</sheet>
+		<rules>
+			<stat name="natures veil:usage" value="proficiency" bonus="base" />
+		</rules>
+	</element>	
+	<element name="Ranger’s Companion" type="Archetype Feature" source="Player’s Handbook" id="ID_WOTC_ARCHETYPEFEATURE_RANGER_RANGERS_COMPANION">
+		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_PRIMAL_COMPANION</requirements>
+		<description>
+			<p>At 3rd level, you gain a beast companion that accompanies you on your adventures and is trained to fight alongside you. Choose a beast that is no larger than Medium and that has a challenge rating of 1/4 or lower (appendix D presents statistics for the hawk, mastiff, and panther as examples). Add your proficiency bonus to the beast’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your ranger level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points.</p>
+			<p class="indent">The beast obeys your commands as best as it can. It takes its turn on your initiative. On your turn, you can verbally command the beast where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action. If you don’t issue a command, the beast takes the Dodge action.</p>
+			<p class="indent">If you are incapacitated or absent, the beast acts on its own, focusing on protecting you and itself. The beast never requires your command to use its reaction, such as when making an opportunity attack.</p>
+			<p class="indent">While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.</p>
+			<p class="indent">If the beast dies, you can obtain a new companion by spending 8 hours magically bonding with a beast that isn’t hostile to you and that meets the requirements.</p>
+		</description>
+		<sheet>
+			<description>The beast obeys your commands as best as it can. It takes its turn on your initiative, though it doesn’t take an action unless you command it to. On your turn, you can verbally command the beast where to move. You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the beast to take the Attack action.
+			While traveling through your favored terrain with only the beast, you can move stealthily at a normal pace.
+			If the beast dies, you can obtain another one by spending 8 hours magically bonding with another beast that isn’t hostile to you, either the same type of beast as before or a different one.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Ranger’s Companion" supports="Beast,(Tiny||Small||Medium),(1/4||1/8||0)" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:attack" value="proficiency" />
+			<stat name="companion:damage" value="proficiency" />			
+			<stat name="additional:hp:max" value="level:ranger" />
+			<stat name="additional:hp:max" value="level:ranger" />
+			<stat name="additional:hp:max" value="level:ranger" />
+			<stat name="additional:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="additional:hp:max" bonus="base" />
+		</rules>
+	</element>
+	<element name="Variant: Primal Companion" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_PRIMAL_COMPANION">
+		<supports>Beast Master Companion Feature</supports>
+		<prerequisites>Replaces "Ranger's Companion" feature</prerequisites>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER</requirements>
+        <description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>			
+			<h2>BEAST MASTER COMPANIONS</h2>
+			<p>The Beast Master in the <em>Player's Handbook</em> forms a mystical bond with an animal. As an alternative, a Beast Master can take the feature below to form a bond with a special primal beast instead.</p>
+			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_OPTIONAL_RANGER_PRIMAL_COMPANION" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_OPTIONAL_RANGER_PRIMAL_COMPANION" level="3" />
+		</rules>
+	</element>
+	<element name="Primal Companion" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_OPTIONAL_RANGER_PRIMAL_COMPANION">
+		<description>			
+            <p><em>3rd-level ranger feature, which replaces the Ranger's Companion feature</em></p>
+			<p>You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands. Choose its stat block-Beast of the Land, Beast of the Sea, or Beast of the Sky-which uses your proficiency bonus (PB) in several places. You also determine the kind of animal the beast is, choosing a kind appropriate for the stat block. Whatever kind you choose, the beast bears primal markings, indicating its mystical origin.</p>
+			<p class="indent">In combat, the beast acts during your turn. It can move and use its reaction on its own, but the only action it takes is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. You can also sacrifice one of your attacks when you take the Attack action to command the beast to take the Attack action. If you are incapacitated, the beast can take any action of its choice, not just Dodge.</p>
+			<p class="indent">If the beast has died within the last hour, you can use your action to touch it and expend a spell slot of 1st level or higher. The beast returns to life after 1 minute with all its hit points restored.</p>
+			<p class="indent">When you finish a long rest, you can summon a different primal beast. The new beast appears in an unoccupied space within 5 feet of you, and you choose its stat block and appearance. If you already have a beast from this feature, it vanishes when the new beast appears. The beast also vanishes if you die.</p>
+		</description>
+		<sheet>
+			<description>In combat, the beast acts during your turn. It can move and use its reaction on its own, the only action it takes is the Dodge action until you spend your bonus action or one of your attacks to command it. If died within last hr, spend a 1st level or higher spell slot to revive it full hit points after 1 minute.</description>
+		</sheet>
+		<rules>
+			<select type="Companion" name="Primal Companion" supports="Primal Companion" default="ID_WOTC_TCOE_COMPANION_RANGER_PRIMAL_COMPANION" />
+		</rules>
+	</element>
+	<element name="Beast of the Land" type="Companion" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_RANGER_BEAST_OF_THE_LAND">
+		<supports>Primal Companion</supports>
+		<description>
+			<p>You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands.</p>
+		</description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + PB (natural armor)</set>
+			<set name="hp">5 + five times your ranger level (the beast has a number of Hit Die [d8] equal to your ranger level)</set>
+			<set name="speed">40 ft., climb 40 ft.</set>
+			<set name="immunities" />
+			<set name="conditionImmunities" />			
+			<set name="saves">bonus to saves equal to proficiency bonus</set>
+			<set name="skills">bonus to skills equal to proficiency bonus</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+            <set name="alignment">unaligned</set>
+			<set name="challenge">-</set>
+			<set name="proficency bonus">equal to your bonus</set>
+			<set name="traits">ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_CHARGE,ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_PRIMAL_BOND</set>
+			<set name="actions">ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_MAUL</set>
+			<set name="reactions" />
+		</setters>
+        <rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:hp:max" value="5" />			
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="40" bonus="base" />
+			<stat name="companion:speed:climb" value="40" bonus="base" />
+            <stat name="companion:proficiency" value="-2" bonus="base PB removal" />
+            <stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:acrobatics:proficiency" value="companion:proficiency" />
+			<stat name="companion:animal handling:proficiency" value="companion:proficiency" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" />
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" />
+			<stat name="companion:investigation:proficiency" value="companion:proficiency" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" />
+			<stat name="companion:performance:proficiency" value="companion:proficiency" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" />
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+    </element>
+    <element name="Charge" type="Companion Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_CHARGE">
+		<description>
+			<p>If the beast moves at least 20 feet straight toward a target and then hits it with a maul attack on the same turn, the target takes an extra 1d6 slashing damage. If the target is a creature, it must succeed on a Strength saving throw against your spell save DC or be knocked prone.</p>
+		</description>
+		<sheet>
+			<description>If the beast moves at least 20 feet straight toward a target and then hits it with a maul attack on the same turn, the target takes an extra 1d6 slashing damage. If the target is a creature, it must succeed on a Strength saving throw spell save DC or be knocked prone.</description>
+		</sheet>
+		<rules>
+			<stat name="companion charge:dc:base" value="8" bonus="base" />
+			<stat name="companion charge:dc:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion charge:dc:ability" value="wisdom:modifier" bonus="ability" />
+			<stat name="companion charge:dc" value="companion charge:dc:base" />
+			<stat name="companion charge:dc" value="companion charge:dc:proficiency" />
+			<stat name="companion charge:dc" value="companion charge:dc:ability" />	
+		</rules>
+	</element>
+	<element name="Primal Bond" type="Companion Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_PRIMAL_BOND">
+		<description>
+			<p>You can add your proficiency bonus to any ability check or saving throw that the beast makes.</p>
+		</description>
+		<sheet>
+			<description>You can add your proficiency bonus to any ability check or saving throw that the beast makes. (Already added to the stats)</description>
+		</sheet>
+	</element>
+	<element name="Maul" type="Companion Action" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_MAUL">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d8 + 2 + PB slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d8 + 2 + PB slashing damage.</description>
+		</sheet>
+	</element>
+	<element name="Beast of the Sea" type="Companion" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_RANGER_BEAST_OF_THE_SEA">
+		<supports>Primal Companion</supports>
+		<description>
+			<p>You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands.</p>
+		</description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + PB (natural armor)</set>
+			<set name="hp">5 + five times your ranger level (the beast has a number of Hit Die [d8] equal to your ranger level)</set>
+			<set name="speed">5 ft., swim 60 ft.</set>
+			<set name="immunities" />
+			<set name="conditionImmunities" />			
+			<set name="saves">bonus to saves equal to proficiency bonus</set>
+			<set name="skills">bonus to skills equal to proficiency bonus</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="type">Beast</set>
+			<set name="size">Medium</set>
+            <set name="alignment">unaligned</set>
+			<set name="challenge">-</set>
+			<set name="proficency bonus">equal to your bonus</set>
+			<set name="traits">ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_AMPHIBIOUS,ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_PRIMAL_BOND</set>
+			<set name="actions">ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_BLINDING_STRIKE</set>
+			<set name="reactions" />
+		</setters>
+        <rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:hp:max" value="5" />			
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="5" bonus="base" />
+			<stat name="companion:speed:swim" value="60" bonus="base" />
+            <stat name="companion:proficiency" value="-2" bonus="base PB removal" />
+            <stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:acrobatics:proficiency" value="companion:proficiency" />
+			<stat name="companion:animal handling:proficiency" value="companion:proficiency" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" />
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" />
+			<stat name="companion:investigation:proficiency" value="companion:proficiency" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" />
+			<stat name="companion:performance:proficiency" value="companion:proficiency" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" />
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+    </element>
+	<element name="Amphibious" type="Companion Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_AMPHIBIOUS">
+		<description>
+			<p>The beast can breathe both air and water.</p>
+		</description>
+		<sheet>
+			<description>The beast can breathe both air and water.</description>
+		</sheet>
+	</element>
+	<element name="Blinding Strike" type="Companion Action" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_BLINDING_STRIKE">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d6 4 2 + PB piercing or bludgeoning damage (your choice), and the target is grappled (escape DC equals your spell save DC). Until this grapple ends, the beast can't use this attack on another target.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d6 4 2 + PB piercing or bludgeoning damage (your choice), and the target is grappled (escape DC equals your spell save DC). Until this grapple ends, the beast can't use this attack on another target.</description>
+		</sheet>
+	</element>
+	<element name="Beast of the Sky" type="Companion" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_RANGER_BEAST_OF_THE_SKY">
+		<supports>Primal Companion</supports>
+		<description>
+			<p>You magically summon a primal beast, which draws strength from your bond with nature. The beast is friendly to you and your companions and obeys your commands.</p>
+		</description>
+		<setters>
+			<set name="strength">6</set>
+			<set name="dexterity">16</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">8</set>
+			<set name="wisdom">14</set>
+			<set name="charisma">11</set>
+			<set name="ac">13 + PB (natural armor)</set>
+			<set name="hp">4 + five times your ranger level (the beast has a number of Hit Die [d6] equal to your ranger level)</set>
+			<set name="speed">10 ft., fly 60 ft.</set>
+			<set name="immunities" />
+			<set name="conditionImmunities" />			
+			<set name="saves">bonus to saves equal to proficiency bonus</set>
+			<set name="skills">bonus to skills equal to proficiency bonus</set>
+			<set name="senses">darkvision 60 ft., passive Perception 12</set>
+			<set name="languages">understands the languages you speak</set>
+			<set name="type">Beast</set>
+			<set name="size">Small</set>
+            <set name="alignment">unaligned</set>
+			<set name="challenge">-</set>
+			<set name="proficency bonus">equal to your bonus</set>
+			<set name="traits">ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_FLYBY,ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_PRIMAL_BOND</set>
+			<set name="actions">ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_SHRED</set>
+			<set name="reactions" />
+		</setters>
+        <rules>
+			<stat name="companion:ac" value="13" bonus="base" />
+			<stat name="companion:ac" value="proficiency" />
+			<stat name="companion:hp:max" value="4" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:hp:max" value="level:ranger" />
+			<stat name="companion:speed" value="10" bonus="base" />
+			<stat name="companion:speed:fly" value="60" bonus="base" />
+            <stat name="companion:proficiency" value="-2" bonus="base PB removal" />
+            <stat name="companion:proficiency" value="proficiency" bonus="base" />
+			<stat name="companion:acrobatics:proficiency" value="companion:proficiency" />
+			<stat name="companion:animal handling:proficiency" value="companion:proficiency" />
+			<stat name="companion:athletics:proficiency" value="companion:proficiency" />
+			<stat name="companion:insight:proficiency" value="companion:proficiency" />
+			<stat name="companion:intimidation:proficiency" value="companion:proficiency" />
+			<stat name="companion:investigation:proficiency" value="companion:proficiency" />
+            <stat name="companion:perception:proficiency" value="companion:proficiency" />
+			<stat name="companion:performance:proficiency" value="companion:proficiency" />
+			<stat name="companion:stealth:proficiency" value="companion:proficiency" />
+			<stat name="companion:survival:proficiency" value="companion:proficiency" />
+			<stat name="companion:strength:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:dexterity:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:constitution:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:intelligence:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:wisdom:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+			<stat name="companion:charisma:save:proficiency" value="companion:proficiency" bonus="proficiency" />
+		</rules>
+    </element>
+	<element name="Flyby" type="Companion Trait" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_TRAIT_PRIMAL_BEAST_FLYBY">
+		<description>
+			<p>The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.</p>
+		</description>
+		<sheet>
+			<description>The beast doesn't provoke opportunity attacks when it flies out of an enemy's reach.</description>
+		</sheet>
+	</element>
+	<element name="Shred" type="Companion Action" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_COMPANION_ACTION_PRIMAL_BEAST_SHRED">
+		<description>
+			<p>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d4 + 3 + PB slashing damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: your spell attack modifier to hit, reach 5 ft., one target you can see. Hit: 1d4 + 3 + PB slashing damage.</description>
+		</sheet>
+	</element>
+	<!-- /Ranger -->
+	<!-- Rogue Optionals -->
+	<element name="Optional Class Features: Rogue" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE" requirements="[rogue:3]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The rogue class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a barbarian.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE_STEADY_AIM" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Rogue Optional Class Feature Lv. 3" supports="Rogue Optional Class Feature Lv. 3" optional="true" requirements="[rogue:3]" />
+		</rules>
+	</element>
+	<element name="Steady Aim" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE_STEADY_AIM">
+		<supports>Rogue Optional Class Feature Lv. 3</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE</requirements>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>STEADY AIM</h2>
+            <p><em>3rd-level rogue feature</em></p>
+			<p>As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is O until the end of the current turn.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Haven't moved this turn">
+			<description>Give yourself advantage on next attack roll on your current turn. After using this action, your speed is 0 until end of current turn.</description>
+		</sheet>
+	</element>
+	<!-- /Rogue -->
+	<!-- Sorcerer Optionals -->
+	<element name="Optional Class Features: Sorcerer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER" requirements="[sorcerer:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The sorcerer class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a sorcerer.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_ADDITIONAL_SORCERER_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_OPTIONS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_SORCEROUS_VERSATILITY" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_MAGICAL_GUIDANCE" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Sorcerer Optional Class Feature Lv. 1" supports="Sorcerer Optional Class Feature Lv. 1" optional="true" requirements="[sorcerer:1]" />
+			<select type="Class Feature" name="Sorcerer Optional Class Feature Lv. 3" supports="Sorcerer Optional Class Feature Lv. 3" optional="true" requirements="[sorcerer:3]" />
+			<select type="Class Feature" name="Sorcerer Optional Class Feature Lv. 4" supports="Sorcerer Optional Class Feature Lv. 4" optional="true" requirements="[sorcerer:4]" />
+			<select type="Class Feature" name="Sorcerer Optional Class Feature Lv. 5" supports="Sorcerer Optional Class Feature Lv. 5" optional="true" requirements="[sorcerer:5]" />
+		</rules>
+	</element>
+	<element name="Additional Sorcerer Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_ADDITIONAL_SORCERER_SPELLS">
+		<supports>Sorcerer Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL SORCERER SPELLS</h2>
+			<p><em>1st-level sorcerer feature</em></p>
+			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>Cantrip (0 Level)</td><td><em>Booming blade*, Green-flame blade*, Lightning lure*, Mind sliver, Sword burst</em></td></tr>
+				<tr><td>1st Level</td><td><em>Grease, Tasha's caustic brew*</em></td></tr>
+				<tr><td>2nd Level</td><td><em>Flame blade, Flaming sphere, Magic weapon, Tasha's mind whip*</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Intellect fortress*, Vampiric touch</em></td></tr>
+				<tr><td>4th Level</td><td><em>Fire shield</em></td></tr>
+				<tr><td>5th Level</td><td><em>Bigby's hand</em></td></tr>
+				<tr><td>6th Level</td><td><em>Flesh to stone, Otiluke's freezing sphere, Tasha's otherworldly guise*</em></td></tr>
+				<tr><td>7th Level</td><td><em>Dream of the blue veil*</em></td></tr>
+				<tr><td>8th Level</td><td><em>Demiplane</em></td></tr>
+				<tr><td>9th Level</td><td><em>Blade of disaster*</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_TCOE_SPELL_GREEN_FLAME_BLADE</extend>
+			<extend>ID_TCOE_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_TCOE_SPELL_MIND_SLIVER</extend>
+			<extend>ID_TCOE_SPELL_SWORD_BURST</extend>
+			<extend>ID_PHB_SPELL_GREASE</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+			<extend>ID_PHB_SPELL_FLAME_BLADE</extend>
+			<extend>ID_PHB_SPELL_FLAMING_SPHERE</extend>
+			<extend>ID_PHB_SPELL_MAGIC_WEAPON</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_MIND_WHIP</extend>
+			<extend>ID_TCOE_SPELL_INTELLECT_FORTRESS</extend>
+			<extend>ID_PHB_SPELL_VAMPIRIC_TOUCH</extend>
+			<extend>ID_PHB_SPELL_FIRE_SHIELD</extend>
+			<extend>ID_PHB_SPELL_BIGBYS_HAND</extend>
+			<extend>ID_PHB_SPELL_FLESH_TO_STONE</extend>
+			<extend>ID_PHB_SPELL_OTILUKES_FREEZING_SPHERE</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_OTHERWORLDLY_GUISE</extend>
+			<extend>ID_TCOE_SPELL_DREAM_OF_THE_BLUE_VEIL</extend>
+			<extend>ID_PHB_SPELL_DEMIPLANE</extend>
+			<extend>ID_TCOE_SPELL_BLADE_OF_DISASTER</extend>
+		</spellcasting>
+    </element>
+	<element name="Metamagic Options" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_OPTIONS">
+		<supports>Sorcerer Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>METAMAGIC OPTIONS</h2>
+            <p><em>3rd-level sorcerer feature</em></p>
+			<p>When you choose Metamagic options, you have access to the following additional options.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_SEEKING_SPELL" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_TRANSMUTED_SPELL" />
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Seeking Spell" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_SEEKING_SPELL">
+		<supports>Metamagic</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_OPTIONS</requirements>
+		<description>
+			<p>If you make an attack roll for a spell and miss, you can spend 2 sorcery points to reroll the d20, and you must use the new roll.</p>
+			<p class="indent">You can use Seeking Spell even if you have already used a different Metamagic option during the casting of the spell.</p>
+		</description>
+		<sheet>
+			<description>On a missed spell attack roll, can spend 2 sorcery points to reroll the d20, and you must use the new roll. You can use Seeking Spell even if you already used a different Metamagic option.</description>
+		</sheet>
+	</element>
+	<element name="Transmuted Spell" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_TRANSMUTED_SPELL">
+		<supports>Metamagic</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_METAMAGIC_OPTIONS</requirements>
+		<description>
+			<p>When you cast a spell that deals a type of damage from the following list, you can spend 1 sorcery point to change that damage type to one of the other listed types: acid, cold, fire, lightning, poison, thunder.</p>
+		</description>
+		<sheet>
+			<description>Casting a spell that deals acid, cold, fire, lightning, poison or thunder, spend 1 sorcery point to change the damage type to anocher of the listed.</description>
+		</sheet>
+	</element>
+	<element name="Sorcerous Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_SORCEROUS_VERSATILITY">
+		<supports>Sorcerer Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>SORCEROUS VERSATILITY</h2>
+            <p><em>4th-level cleric feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing the magic within you flowing in new ways:</p>
+			<ul>
+				<li>Replace one of the options you chose for the Metamagic feature with a different Metamagic option available to you.</li>
+				<li>Replace one cantrip you learned from this class's Spellcasting feature with another cantrip from the sorcerer spell list.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain one metamagic for a different one or cantrip from the sorcerer spell list.</description>
+		</sheet>
+	</element>
+	<element name="Magical Guidance" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_MAGICAL_GUIDANCE">
+		<supports>Sorcerer Optional Class Feature Lv. 5</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>MAGICAL GUIDANCE</h2>
+            <p><em>5th-level sorcerer feature</em></p>
+			<p>You can tap into your inner wellspring of magic to try to conjure success from failure. When you make an ability check that fails, you can spend 1 sorcery point to reroll the d20, and you must use the new roll, potentially turning the failure into a success.</p>
+		</description>
+		<sheet>
+			<description>When you fail an ability check, can spend 1 sorcery point to reroll the d20, and you must use the new roll, potentially turning the failure into a success.</description>
+		</sheet>
+	</element>
+	<!-- /Sorcerer -->
+	<!-- Warlock Optionals -->
+	<element name="Optional Class Features: Warlock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK" requirements="[warlock:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The warlock class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a warlock.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_ADDITIONAL_WARLOCK_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_OPTION" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_ELDRITCH_VERSATILITY" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Warlock Optional Class Feature Lv. 1" supports="Warlock Optional Class Feature Lv. 1" optional="true" requirements="[warlock:1]" />
+			<select type="Class Feature" name="Warlock Optional Class Feature Lv. 3" supports="Warlock Optional Class Feature Lv. 3" optional="true" requirements="[warlock:3]" />
+			<select type="Class Feature" name="Warlock Optional Class Feature Lv. 4" supports="Warlock Optional Class Feature Lv. 4" optional="true" requirements="[warlock:4]" />
+		</rules>
+	</element>
+	<element name="Additional Warlock Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_ADDITIONAL_SORCERER_SPELLS">
+		<supports>Warlock Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL WARLOCK SPELLS</h2>
+			<p><em>1st-level warlock feature</em></p>
+			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>Cantrip (0 Level)</td><td><em>Booming blade*, Green-flame blade*, Lightning lure*, Mind sliver*, Sword burst*</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Intellect fortress*, Spirit shroud*, Summon fey*, Summon shadowspawn*, Summon undead*</em></td></tr>
+				<tr><td>4th Level</td><td><em>Summon aberration*</em></td></tr>
+				<tr><td>5th Level</td><td><em>Mislead, Planar binding, Teleportation circle</em></td></tr>
+				<tr><td>6th Level</td><td><em>Summon fiend*, Tasha's otherworldly guise*</em></td></tr>
+				<tr><td>7th Level</td><td><em>Dream of the blue veil*</em></td></tr>
+				<tr><td>9th Level</td><td><em>Blade of disaster*, Gate, Weird</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
+		</sheet>
+		<spellcasting name="Sorcerer" extend="true">
+			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_TCOE_SPELL_GREEN_FLAME_BLADE</extend>
+			<extend>ID_TCOE_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_TCOE_SPELL_MIND_SLIVER</extend>
+			<extend>ID_TCOE_SPELL_SWORD_BURST</extend>
+			<extend>ID_TCOE_SPELL_INTELLECT_FORTRESS</extend>
+			<extend>ID_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FEY</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_SHADOWSPAWN</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_UNDEAD</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_ABERRATION</extend>
+			<extend>ID_PHB_SPELL_MISLEAD</extend>>
+			<extend>ID_PHB_SPELL_PLANAR_BINDING</extend>
+			<extend>ID_PHB_SPELL_TELEPORTATION_CIRCLE</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FIEND</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_OTHERWORLDLY_GUISE</extend>
+			<extend>ID_TCOE_SPELL_DREAM_OF_THE_BLUE_VEIL</extend>
+			<extend>ID_PHB_SPELL_DEMIPLANE</extend>
+			<extend>ID_TCOE_SPELL_BLADE_OF_DISASTER</extend>
+			<extend>ID_PHB_SPELL_GATE</extend>
+			<extend>ID_PHB_SPELL_WEIRD</extend>
+		</spellcasting>
+    </element>
+	<element name="Pact Boon Option" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_OPTION">
+		<supports>Warlock Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>PACT BOON OPTION</h2>
+            <p><em>3rd-level warlock feature</em></p>
+			<p>When you choose your Pact Boon feature, the following option is available to you.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN" />
+		</description>
+		<sheet display="false" />
+	</element>
+	<element name="Pact of the Talisman" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN">
+		<supports>Pact Boon</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_OPTION</requirements>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p>Your patron gives you an amulet, a talisman that can aid the wearer when the need is great. When the wearer fails an ability check, they can add a d4 to the roll, potentially turning the roll into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p>
+			<p class="indent">If you lose the talisman, you can perform a 1-hour ceremony to receive a replacement from your patron. This ceremony can be performed during a short or long rest, and it destroys the previous amulet. The talisman turns to ash when you die.</p>
+		</description>
+		<sheet usage="{{talisman boon:usage}}/Long Rest">
+			<description>When you fail an ability check, roll a d4 potentially making the check a success. If you lose the talisman, you can do a 1-hour ceremony (during a short or long rest) to replace it, the previous one is destroyed.</description>
+		</sheet>
+		<rules>
+			<stat name="talisman boon:usage" value="proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Eldritch Versatility" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_ELDRITCH_VERSATILITY">
+		<supports>Warlock Optional Class Feature Lv. 4</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>SORCEROUS VERSATILITY</h2>
+            <p><em>4th-level warlock feature</em></p>
+			<p>Whenever you reach a level in this class that grants the Ability Score Improvement feature, you can do one of the following, representing a change of focus in your occult studies:</p>
+			<ul>
+				<li>Replace one cantrip you learned from this class's Pact Magic feature with another cantrip from the warlock spell list.</li>
+				<li>Replace the option you chose for the Pact Boon feature with one of that feature's other options.</li>
+				<li>If you're 12th level or higher, replace one spell from your Mystic Arcanum feature with another warlock spell of the same level.</li>
+			</ul>
+			<p>If this change makes you ineligible for any of your Eldritch Invocations, you must also replace them now, choosing invocations for which you qualify.</p>
+		</description>
+		<sheet>
+			<description>When you gain an Ability Improvement, you can also choose to retrain your Pact Boon for a different one, a cantrip from the warlock spell list or if level 12th+ a spell from Mystic Arcanum with another warlock spell of same level. If you find yourself ineligible to your invocations, you have to select a new one as well.</description>
+		</sheet>
+	</element>
+	<!-- /Warlock -->	
+	<!-- Wizard Optionals -->
+	<element name="Optional Class Features: Wizard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD" requirements="[wizard:1]">
+        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
+		<description>
+			<p>The wizard class receives new features and subclasses in this section.</p>
+			<h5>OPTIONAL CLASS FEATURES</h5>
+			<p>You gain class features in the <em>Player's Handbook</em> when you reach certain levels in your class. This section offers additional features that you can gain as a wizard.</p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD_ADDITIONAL_WIZARD_SPELLS" />
+			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD_CANTRIP_FORMULAS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Wizard Optional Class Feature Lv. 1" supports="Wizard Optional Class Feature Lv. 1" optional="true" requirements="[wizard:1]" />
+			<select type="Class Feature" name="Wizard Optional Class Feature Lv. 3" supports="Wizard Optional Class Feature Lv. 3" optional="true" requirements="[wizard:3]" />
+		</rules>
+	</element>
+	<element name="Additional Wizard Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD_ADDITIONAL_WIZARD_SPELLS">
+		<supports>Wizard Optional Class Feature Lv. 1</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>ADDITIONAL WIZARD SPELLS</h2>
+			<p><em>1st-level wizard feature</em></p>
+			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<table>
+				<thead>
+					<tr><td>Spell Level</td><td>Spells</td></tr>
+				</thead>
+				<tr><td>Cantrip (0 Level)</td><td><em>Booming blade* (evoc.), Green-flame blade* (evoc.), Lightning lure* (evoc.), Mind sliver* (ench.), Sword burst* (conj.)</em></td></tr>
+				<tr><td>1st Level</td><td><em>Tasha's caustic brew* (evoc.)</em></td></tr>
+				<tr><td>2nd Level</td><td><em>Augury (divin., ritual), Enhance ability (trans.), Tasha's mind whip* (ench.)</em></td></tr>
+				<tr><td>3rd Level</td><td><em>Intellect fortress* (abjur.), Speak with dead (necro.), Spirit shroud* (necro.), Summon fey* (conj.), Summon shadowspawn* (conj.), Summon undead* (necro.)</em></td></tr>
+				<tr><td>4th Level</td><td><em>Divination (divin., ritual), Summon aberration* (conj.), Summon construct* (conj.), Summon elemental* (conj.)</em></td></tr>
+				<tr><td>6th Level</td><td><em>Summon fiend* (conj.), Tasha's otherworldly guise*</em></td></tr>
+				<tr><td>7th Level</td><td><em>Dream of the blue veil* (conj.)</em></td></tr>
+				<tr><td>9th Level</td><td><em>Blade of disaster* (conj.)</em></td></tr>
+			</table>
+		</description>
+        <sheet display="false">
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
+		</sheet>
+		<spellcasting name="Wizard" extend="true">
+			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>
+			<extend>ID_TCOE_SPELL_GREEN_FLAME_BLADE</extend>
+			<extend>ID_TCOE_SPELL_LIGHTNING_LURE</extend>
+			<extend>ID_TCOE_SPELL_MIND_SLIVER</extend>
+			<extend>ID_TCOE_SPELL_SWORD_BURST</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_CAUSTIC_BREW</extend>
+			<extend>ID_PHB_SPELL_AUGURY</extend>
+			<extend>ID_PHB_SPELL_ENHANCE_ABILITY</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_MIND_WHIP</extend>
+			<extend>ID_TCOE_SPELL_INTELLECT_FORTRESS</extend>
+			<extend>ID_PHB_SPELL_SPEAK_WITH_THE_DEAD</extend>
+			<extend>ID_TCOE_SPELL_SPIRIT_SHROUD</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FEY</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_SHADOWSPAWN</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_UNDEAD</extend>
+			<extend>ID_PHB_SPELL_DIVINATION</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_ABERRATION</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_CONSTRUCT</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_ELEMENTAL</extend>
+			<extend>ID_TCOE_SPELL_SUMMON_FIEND</extend>
+			<extend>ID_TCOE_SPELL_TASHAS_OTHERWORLDLY_GUISE</extend>
+			<extend>ID_TCOE_SPELL_DREAM_OF_THE_BLUE_VEIL</extend>
+			<extend>ID_TCOE_SPELL_BLADE_OF_DISASTER</extend>
+		</spellcasting>
+    </element>
+	<element name="Cantrip Formulas" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD_CANTRIP_FORMULAS">
+		<supports>Wizard Optional Class Feature Lv. 3</supports>
+		<description>
+        	<h5>OPTIONAL CLASS FEATURES</h5>
+			<p></p>
+			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
+			<h2>CANTRIP FORMULAS</h2>
+            <p><em>3rd-level wizard feature</em></p>
+			<p>You have scribed a set of arcane formulas in your spellbook that you can use to formulate a cantrip in your mind. Whenever you finish a long rest and consult those formulas in your spellbook, you can replace one wizard cantrip you know with another cantrip from the wizard spell list.</p>
+		</description>
+		<sheet usage="After Long Rest">
+			<description>Can replace one wizard cantrip for another one of the wizard list.</description>
+		</sheet>
+	</element>
+	<!-- /Wizard -->
+</elements>
