@@ -4,7 +4,7 @@
 		<name>Tasha’s Cauldron of Everything</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/tabletop-games/rpg-products/tashas-cauldron-everything">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="tashas-cauldron-of-everything.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything.index" />
 		</update>
 	</info>
@@ -12,7 +12,7 @@
 		<file name="source.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/source.xml" />
 
 		<!-- archetypes -->
-		<file name="barbarian-hebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-thebeast.xml" />
+		<file name="barbarian-thebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-thebeast.xml" />
 		<file name="barbarian-wildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-wildmagic.xml" />
 		<file name="bard-creation.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/bard-creation.xml" />
 		<file name="bard-eloquence.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/bard-eloquence.xml" />
