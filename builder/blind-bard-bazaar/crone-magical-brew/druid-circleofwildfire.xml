@@ -4,7 +4,7 @@
 		<name>Circle of Wildfire</name>
 		<description></description>
 		<author url="">Tasha’s Cauldron of Everything</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="druid-circleofwildfire.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/druid-circleofwildfire.xml" />
 		</update>
 	</info>
@@ -42,7 +42,7 @@
 			<h5>Circle of Wildfire Spells</h5>
 			<table>
 				<thead><tr><td>Druid Level</td><td>Spells</td></tr></thead>
-				<tr><td>3rd</td><td><em>burning hands, cure wounds</em></td></tr>
+				<tr><td>1st</td><td><em>burning hands, cure wounds</em></td></tr>
 				<tr><td>3rd</td><td><em>flaming sphere, scorching ray</em></td></tr>
 				<tr><td>5th</td><td><em>plant growth, revivify</em></td></tr>
 				<tr><td>7th</td><td><em>aura of life, fire shield</em></td></tr>

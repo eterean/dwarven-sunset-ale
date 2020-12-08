@@ -4,7 +4,7 @@
 		<name>Circle of Spores</name>
 		<description></description>
 		<author url="">Tasha’s Cauldron of Everything</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="druid-circleofspores.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/druid-circleofspores.xml" />
 		</update>
 	</info>
@@ -46,7 +46,7 @@
 			<h5>Circle of Spores Spells</h5>
 			<table>
 				<thead><tr><td>Druid Level</td><td>Spells</td></tr></thead>
-				<tr><td>3rd</td><td><em>chill touch</em></td></tr>
+				<tr><td>1st</td><td><em>chill touch</em></td></tr>
 				<tr><td>3rd</td><td><em>blindness/deafness, gentle repose</em></td></tr>
 				<tr><td>5th</td><td><em>animate dead, gaseous form</em></td></tr>
 				<tr><td>7th</td><td><em>blight, confusion</em></td></tr>
