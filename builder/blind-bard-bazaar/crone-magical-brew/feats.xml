@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats from Tasha’s Cauldron of Everything.</description>
+		<author url="">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="feats.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/feats.xml" />
+		</update>
+	</info>
+
+	<element name="Artificer Initiate" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_ARTIFICER_INITIATE">
+		<description>
+			<p>You've learned some of an artificer's inventiveness:</p>
+			<ul>
+				<li>You learn one cantrip of your choice from the artificer spell list, and you learn one 1st-level spell of your choice from that list. Intelligence is your spellcasting ability for these spells.</li>
+				<li>You can cast this feat's 1st-level spell without a spell slot, and you must finish a long rest before you can cast it in this way again. You can also cast the spell using any spell slots you have.</li>
+				<li>You gain proficiency with one type of artisan's tools of your choice, and you can use that type of tool as a spellcasting focus for any spell you cast that uses Intelligence as its spellcasting ability.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Intelligence.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Artificer Initiate)" supports="Artificer,0" number="1" />
+			<select type="Spell" name="1st-level Spell (Artificer Initiate)" supports="Artificer,1" number="1" />
+			<select type="Proficiency" name="Skill Proficiency (Artificer Initiate)" supports="Tool" number="1" />
+		</rules>
+	</element>
+	<element name="Chef" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_CHEF">
+		<description>
+			<p>You have undergone extensive physical training to gain the following benefits:</p>
+			<ul>
+				<li>Increase your Constitution or Wisdom score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with cook's utensils if you don't already have it.</li>
+				<li>As part of a short rest, you can cook special food, provided you have ingredients and cook's utensils on hand. You can prepare enough of this food for a number of creatures equal to 4 + your proficiency bonus. At the end of the short rest, any creature who eats the food and spends one or more Hit Dice to regain hit points regains an extra 1d8 hit points.</li>
+				<li>With one hour of work or when you finish a long rest, you can cook a number of treats equal to your proficiency bonus. These special treats last 8 hours after being made. A creature can use a bonus action to eat one of those treats to gain temporary hit points equal to your proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As part of short rest, prepare food for {{chef:creatures}} creatures, if any of them eats and spends HDs to regain hit points, regain an extra 1d8 hit points. 
+			With 1 hour or after long rest, cook {{proficiency}} treats that last 8 hours. As a bonus action, a creature can eat one and gain {{proficiency}} temporary hp.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Chef" supports="ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_WISDOM" />
+			<stat name="chef:creatures" value="4" bonus="base" />
+			<stat name="chef:creatures" value="proficiency" bonus="chef:creatures" />
+		</rules>
+	</element>
+	<element name="Crusher" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_CRUSHER">
+		<description>
+			<p>You are practiced in the art of crushing your enemies. granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Constitution score by 1, to a maximum of 20.</li>
+				<li>Once per turn, when you hit a creature with an attack that deals bludgeoning damage, you can move it 5 feet to an unoccupied space, provided the target is no more than one size larger than you.</li>
+				<li>When you score a critical hit that deals bludgeoning damage to a creature, attack rolls against that creature are made with advantage until the start of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>1/turn, when you hit a creature (up to one size larger than you) with attack that deals bludgeoning damage, you can move it 5ft. to an unoccupied space.
+			When scoring critical hit with bludgeoning damage to creature, attack rolls that target it are with advantage until start of your next turn.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Chef" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_CONSTITUTION" />
+		</rules>
+	</element>
+	<element name="Eldritch Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_ELDRITCH_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>[type:spell]||ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC</requirements>		
+		<description>
+			<p>Studying occult lore, you have unlocked eldritch power within yourself: you learn one Eldritch Invocation option of your choice from the warlock class. If the invocation has a prerequisite of any kind, you can choose that invocation only if you're a warlock who meets the prerequisite.</p>
+			<p class="indent">Whenever you gain a level, you can replace the invocation with another one from the warlock class.</p>
+		</description>
+		<sheet>
+			<description>Learned one warlock invocation.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Eldritch Invocation (Eldritch Adept)" supports="Eldritch Invocation" />
+		</rules>
+	</element>
+	<!-- Fey Touched, any spell of level 1 from Divination / Enchantment schools -->
+	<element name="Fey Touched" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_FEY_TOUCHED">
+		<description>
+			<p>Your exposure to the Feywild's magic has changed you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <em>misty step</em> spell and one 1st-level spell of your choice. The 1st-level spell must be from the divination or enchantment school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="fey touched:spellcasting:slots:0" value="1" level="1" />
+			<select type="Feat Feature" name="Fey Touched Attribute" supports="Fey Touched Attribute" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_FEY_TOUCHED_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Fey Touched Attribute</supports>
+		<description>
+			<p>You increase your Intelligence attribute by 1. Your selected spell casting ability is Intelligence.</p>
+		</description>
+		<sheet alt="Fey Touched, Intelligence">
+			<description>Learned misty step and 1 extra divination or enchantment 1st level spell. Your spellcasting ability is Intelligence.</description>
+		</sheet>
+		<spellcasting name="Fey Touched" ability="Intelligence" prepare="false" allowReplace="false">
+			<list>(0),(Divination||Enchantment)</list>
+		</spellcasting>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Fey Touched" />
+			<select type="Spell" name="1st-level Spell (Fey Touched)" supports="(Divination||Enchantment),1,1" number="1" spellcasting="Fey Touched" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_FEY_TOUCHED_WISDOM">
+		<compendium display="false" />
+		<supports>Fey Touched Attribute</supports>
+		<description>
+			<p>You increase your Wisdom attribute by 1. Your selected spell casting ability is Wisdom.</p>
+		</description>
+		<sheet alt="Fey Touched, Wisdom">
+			<description>Learned misty step and 1 extra divination or enchantment 1st level spell. Your spellcasting ability is Wisdom.</description>
+		</sheet>
+		<spellcasting name="Fey Touched" ability="Wisdom" prepare="false" allowReplace="false">
+			<list>(0),(Divination||Enchantment)</list>
+		</spellcasting>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Fey Touched" />
+			<select type="Spell" name="1st-level Spell (Fey Touched)" supports="(Divination||Enchantment),1,1" number="1" spellcasting="Fey Touched" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_FEY_TOUCHED_CHARISMA">
+		<compendium display="false" />
+		<supports>Fey Touched Attribute</supports>
+		<description>
+			<p>You increase your Charisma attribute by 1. Your selected spell casting ability is Charisma.</p>
+		</description>
+		<sheet alt="Fey Touched, Charisma">
+			<description>Learned misty step and 1 extra divination or enchantment 1st level spell. Your spellcasting ability is Charisma.</description>
+		</sheet>
+		<spellcasting name="Fey Touched" ability="Charisma" prepare="false" allowReplace="false">
+			<list>(0),(Divination||Enchantment)</list>
+		</spellcasting>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MISTY_STEP" spellcasting="Fey Touched" />
+			<select type="Spell" name="1st-level Spell (Fey Touched)" supports="(Divination||Enchantment),1,1" number="1" spellcasting="Fey Touched" />
+		</rules>
+	</element>
+	<!-- /Fey Touched -->
+	<element name="Fighting Initiate" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_FIGHTING_INITIATE">
+		<prerequisite>Proficiency with martial weapon</prerequisite>
+		<description>
+			<p>Your martial training has helped you develop a particular style of fighting. As a result, you learn one Fighting Style option of your choice from the fighter class. If you already have a style, the one you choose must be different.</p>
+			<p class="indent">Whenever you reach a level that grants the Ability Score Improvement feature, you can replace this feat's fighting style with another one from the fighter class that you don't have.</p>
+		</description>
+		<sheet>
+			<description>Fighting style from the fighter class. When earned an ability score improvement, you can replace the style for another of the fighter you don't have.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Fighting Style" supports="Fighting Style, Fighter" />
+		</rules>
+	</element>
+	<element name="Gunner" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_GUNNER">
+		<description>
+			<p>You have a quick hand and keen eye when employing firearms, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>You gain proficiency with firearms (see "Firearms" in the <em>Dungeon Master's Guide</em>).</li>
+				<li>You ignore the loading property of firearms.</li>
+				<li>Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You ignore the loading property of firearms. Being within 5 feet of a hostile creature doesn't impose disadvantage on your ranged attack rolls.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+			<grant type="Proficiency" id="ID_WOTC_DMG_PROFICIENCY_WEAPON_FIREARMS" />
+		</rules>
+	</element>
+	<element name="Metamagic Adept" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_METAMAGIC_ADEPT">
+		<prerequisite>Spellcasting or Pact Magic feature</prerequisite>
+		<requirements>[type:spell]||ID_WOTC_PHB_CLASS_FEATURE_WARLOCK_SPELLCASTING_WARLOCK_PACT_MAGIC</requirements>		
+		<description>
+			<p>You've learned how to exert your will on your spells to alter how they function:</p>
+			<ul>
+				<li>You learn two Metamagic options of your choice from the sorcerer class. You can use only one Metamagic option on a spell when you cast it, unless the option says otherwise. Whenever you reach a level that grants the Ability Score Improvement feature, you can replace one of these Metamagic options with another one from the sorcerer class.</li>
+				<li>You gain 2 sorcery points to spend on Metamagic (these points are added to any sorcery points you have from another source but can be used only on Metamagic). You regain all spent sorcery points when you finish a long rest.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Learned two Metamagic options, and have {{sorcery-points}} sorcery points in total, 2 of which can only be used on Metamagic.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Metamagic" supports="Metamagic" number="2" />
+			<stat name="sorcery-points" value="2" />
+		</rules>
+	</element>
+	<element name="Piercer" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_PIERCER">
+		<description>
+			<p>You have achieved a penetrating precision in combat, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li>Once per turn, when you hit a creature with an attack that deals piercing damage, you can reroll one of the attack's damage dice, and you must use the new roll.</li>
+				<li>When you score a critical hit that deals piercing damage to a creature, you can roll one additional damage die when determining the extra piercing damage the target takes.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>1/turn, when you hit a creature with attack that deals piercing damage, you can reroll one of the damage dice, but must use the new roll.
+			When scoring critical hit with piercing damage to creature, you can roll one additional damage die when determining extra piercing damage.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Piercer" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+	<element name="Poisoner" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_POISONER">
+		<description>
+			<p>You can prepare and deliver deadly poisons, granting you the following benefits:</p>
+			<ul>
+				<li>When you make a damage roll that deals poison damage, it ignores resistance to poison damage.</li>
+				<li>You can apply poison to a weapon or piece of ammunition as a bonus action, instead of an action.</li>
+				<li>You gain proficiency with the poisoner's kit if you don't already have it. With one hour of work using a poisoner's kit and expending 50 gp worth of materials, you can create a number of doses of potent poison equal to your proficiency bonus. Once applied to a weapon or piece of ammunition, the poison retains its potency for 1 minute or until you hit with the weapon or ammunition. When a creature takes damage from the coated weapon or ammunition, that creature must succeed on a DC 14 Constitution saving throw or take 2d8 poison damage and become poisoned until the end of your next turn.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>When dealing poison damage, it ignores resistance to poison damage. Can apply poison as bonus action instead of action.
+			In 1 hour of work, using kit and expending 50gp you can craft {{poisoner:poisons}} potent poisons.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_POISONERS_KIT" />
+			<stat name="poisoner:poisons" value="proficiency" />
+		</rules>
+	</element>
+	<!-- Shadow Touched, any spell of level 1 from Illusion / Necromancy schools -->
+	<element name="Shadow Touched" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SHADOW_TOUCHED">
+		<description>
+			<p>Your exposure to the Shadowfell's magic has changed you, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <em>invisibility</em> spell and one 1st-level spell of your choice. The 1st-level spell must be from the illusion or necromancy school of magic. You can cast each of these spells without expending a spell slot. Once you cast either of these spells in this way, you can't cast that spell in this way again until you finish a long rest. You can also cast these spells using spell slots you have of the appropriate level. The spells' spellcasting ability is the ability increased by this feat.</li>
+			</ul>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<stat name="shadow touched:spellcasting:slots:0" value="1" level="1" />
+			<select type="Feat Feature" name="Shadow Touched Attribute" supports="Shadow Touched Attribute" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SHADOW_TOUCHED_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Shadow Touched Attribute</supports>
+		<description>
+			<p>You increase your Intelligence attribute by 1. Your selected spell casting ability is Intelligence.</p>
+		</description>
+		<sheet alt="Shadow Touched, Intelligence">
+			<description>Learned invisibility and 1 extra illusion or necromancy 1st level spell. Your spellcasting ability is Intelligence.</description>
+		</sheet>
+		<spellcasting name="Shadow Touched" ability="Intelligence" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Shadow Touched" />
+			<select type="Spell" name="1st-level Spell (Shadow Touched)" supports="(Illusion||Necromancy),1,1" number="1" spellcasting="Shadow Touched" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SHADOW_TOUCHED_WISDOM">
+		<compendium display="false" />
+		<supports>Shadow Touched Attribute</supports>
+		<description>
+			<p>You increase your Wisdom attribute by 1. Your selected spell casting ability is Wisdom.</p>
+		</description>
+		<sheet alt="Shadow Touched, Wisdom">
+			<description>Learned invisibility and 1 extra illusion or necromancy 1st level spell. Your spellcasting ability is Wisdom.</description>
+		</sheet>
+		<spellcasting name="Shadow Touched" ability="Wisdom" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Shadow Touched" />
+			<select type="Spell" name="1st-level Spell (Shadow Touched)" supports="(Illusion||Necromancy),1,1" number="1" spellcasting="Shadow Touched" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SHADOW_TOUCHED_CHARISMA">
+		<compendium display="false" />
+		<supports>Shadow Touched Attribute</supports>
+		<description>
+			<p>You increase your Charisma attribute by 1. Your selected spell casting ability is Charisma.</p>
+		</description>
+		<sheet alt="Shadow Touched, Charisma">
+			<description>Learned invisibility and 1 extra illusion or necromancy 1st level spell. Your spellcasting ability is Charisma.</description>
+		</sheet>
+		<spellcasting name="Shadow Touched" ability="Charisma" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_INVISIBILITY" spellcasting="Shadow Touched" />
+			<select type="Spell" name="1st-level Spell (Shadow Touched)" supports="(Illusion||Necromancy),1,1" number="1" spellcasting="Shadow Touched" />
+		</rules>
+	</element>
+	<!-- /Shadow Touched -->
+	<element name="Skill Expert" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SKILL_EXPERT">
+		<description>
+			<p>You have honed your proficiency with particular skills, granting you the following benefits:</p>
+			<ul>
+				<li>Increase one ability score of your choice by 1, to a maximum of 20.</li>
+				<li>You gain proficiency in one skill of your choice.</li>
+				<li>Choose one skill in which you have proficiency. You gain expertise with that skill, which means your proficiency bonus is doubled for any ability check you make with it. The skill you choose must be one that isn't already benefiting from a feature, such as Expertise, that doubles your proficiency bonus.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>One additional skill proficiency and Expertise in one skill.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Skill Expert" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY|ID_PHB_FEAT_ASI_CONSTITUTION|ID_PHB_FEAT_ASI_INTELLIGENCE|ID_PHB_FEAT_ASI_WISDOM|ID_PHB_FEAT_ASI_CHARISMA" />
+			<select type="Proficiency" name="Skill Proficiency (Skill Expert)" supports="Skill" number="1" />
+			<select type="Class Feature" name="Expertise (Skill Expert)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
+		</rules>
+	</element>
+	<element name="Slasher" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_SLASHER">
+		<description>
+			<p>You've learned where to cut to have the greatest results, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Strength or Dexterity score by 1, to a maximum of 20.</li>
+				<li>Once per turn, when you hit a creature with an attack that deals slashing damage, you can reduce the speed of the target by 10 feet until the start of your next turn.</li>
+				<li>When you score a critical hit that deals slashing damage to a creature, you grievously wound it. Until the start of your next turn, the target has disadvantage on all attack rolls.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>1/turn, when you hit a creature with attack that deals slashing damage, you can reduce the speed of the target by 10 ft. until the start of your next turn.
+			When scoring critical hit with slashing damage to creature, and until start of your next turn, target has disadvantage on all attack rolls.</description>
+		</sheet>
+		<rules>
+			<select type="Ability Score Improvement" name="Slasher" supports="ID_PHB_FEAT_ASI_STRENGTH|ID_PHB_FEAT_ASI_DEXTERITY" />
+		</rules>
+	</element>
+	<!-- Telekinetic Feat -->
+	<element name="Telekinetic" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEKINETIC">
+		<description>
+			<p>You learn to move things with your mind, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <em>mage hand</em> cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.</li>
+				<li>As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Can cast mage hand without V,S components.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinetic:spellcasting:slots:0" value="1" level="1" />
+			<select type="Feat Feature" name="Telekinetic Attribute" supports="Telekinetic Attribute" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEKINETIC_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Telekinetic Attribute</supports>
+		<description>
+			<p>You increase your Intelligence attribute by 1. Your selected spell casting ability is Intelligence.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can try to shove one creature you can see within 30ft, target must do a Strength DC {{telekinetic:dc}} or be moved toward or away from you 5ft. A creature can willing fail the roll.</description>
+		</sheet>
+		<spellcasting name="Telekinetic" ability="Intelligence" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="Telekinetic" />
+			<stat name="telekinetic:dc:base" value="8" bonus="base" />
+			<stat name="telekinetic:dc:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="telekinetic:dc:ability" value="intelligence:modifier" bonus="ability" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:base" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:proficiency" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:ability" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEKINETIC_WISDOM">
+		<compendium display="false" />
+		<supports>Telekinetic Attribute</supports>
+		<description>
+			<p>You increase your Wisdom attribute by 1. Your selected spell casting ability is Wisdom.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can try to shove one creature you can see within 30ft, target must do a Strength DC {{telekinetic:dc}} or be moved toward or away from you 5ft. A creature can willing fail the roll.</description>
+		</sheet>
+		<spellcasting name="Telekinetic" ability="Wisdom" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="Telekinetic" />
+			<stat name="telekinetic:dc:base" value="8" bonus="base" />
+			<stat name="telekinetic:dc:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="telekinetic:dc:ability" value="wisdom:modifier" bonus="ability" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:base" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:proficiency" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:ability" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEKINETIC_CHARISMA">
+		<compendium display="false" />
+		<supports>Telekinetic Attribute</supports>
+		<description>
+			<p>You increase your Charisma attribute by 1. Your selected spell casting ability is Charisma.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can try to shove one creature you can see within 30ft, target must do a Strength DC {{telekinetic:dc}} or be moved toward or away from you 5ft. A creature can willing fail the roll.</description>
+		</sheet>
+		<spellcasting name="Telekinetic" ability="Charisma" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_MAGE_HAND" spellcasting="Telekinetic" />
+			<stat name="telekinetic:dc:base" value="8" bonus="base" />
+			<stat name="telekinetic:dc:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="telekinetic:dc:ability" value="wisdom:modifier" bonus="ability" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:base" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:proficiency" />
+			<stat name="telekinetic:dc" value="telekinetic:dc:ability" />
+		</rules>
+	</element>
+	<!-- /Telekinetic -->
+	<!-- Telepathic Feat -->
+	<element name="Telepathic" type="Feat" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEPATHIC">
+		<description>
+			<p>You learn to move things with your mind, granting you the following benefits:</p>
+			<ul>
+				<li>Increase your Intelligence, Wisdom, or Charisma score by 1, to a maximum of 20.</li>
+				<li>You learn the <em>mage hand</em> cantrip. You can cast it without verbal or somatic components, and you can make the spectral hand invisible. If you already know this spell, its range increases by 30 feet when you cast it. Its spellcasting ability is the ability increased by this feat.</li>
+				<li>As a bonus action, you can try to telekinetically shove one creature you can see within 30 feet of you. When you do so, the target must succeed on a Strength saving throw (DC 8 + your proficiency bonus + the ability modifier of the score increased by this feat) or be moved 5 feet toward you or away from you. A creature can willingly fail this save.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>Can speak telepathically with any creature within 60ft., in a language you know and the creature understands you if it knows your language. It doesn't give ability to other creatures to respond back telepathically.
+			If you have 2nd level spell slots or higher, can cast detect thoughts normally with them.</description>
+		</sheet>
+		<rules>
+			<stat name="telekinetic:spellcasting:slots:0" value="1" level="1" />
+			<select type="Feat Feature" name="Telepathic Attribute" supports="Telepathic Attribute" />
+		</rules>
+	</element>
+	<element name="Intelligence" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEPATHIC_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Telepathic Attribute</supports>
+		<description>
+			<p>You increase your Intelligence attribute by 1. Your selected spell casting ability is Intelligence.</p>
+		</description>
+		<sheet action="1/Long Rest">
+			<description>Can cast detect thoughts without components or requiring spell slots.</description>
+		</sheet>
+		<spellcasting name="Telepathic" ability="Intelligence" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="intelligence" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Telepathic" />
+		</rules>
+	</element>
+	<element name="Wisdom" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEPATHIC_WISDOM">
+		<compendium display="false" />
+		<supports>Telepathic Attribute</supports>
+		<description>
+			<p>You increase your Wisdom attribute by 1. Your selected spell casting ability is Wisdom.</p>
+		</description>
+		<sheet action="1/Long Rest">
+			<description>Can cast detect thoughts without components or requiring spell slots.</description>
+		</sheet>
+		<spellcasting name="Telepathic" ability="Wisdom" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="wisdom" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Telepathic" />
+		</rules>
+	</element>
+	<element name="Charisma" type="Feat Feature" source="Tasha’s Cauldron of Everything" id="ID_TCOE_FEAT_TELEPATHIC_CHARISMA">
+		<compendium display="false" />
+		<supports>Telepathic Attribute</supports>
+		<description>
+			<p>You increase your Charisma attribute by 1. Your selected spell casting ability is Charisma.</p>
+		</description>
+		<sheet action="1/Long Rest">
+			<description>Can cast detect thoughts without components or requiring spell slots.</description>
+		</sheet>
+		<spellcasting name="Telepathic" ability="Charisma" prepare="false" allowReplace="false">
+			<list>(0),(Illusion||Necromancy)</list>
+		</spellcasting>
+		<rules>
+			<stat name="charisma" value="1" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Telepathic" />
+		</rules>
+	</element>
+	<!-- /Telekinetic -->
+
+	<!-- Fighting Styles -->
+	<element name="Blessed Fighter" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_BLESSED_FIGHTER">
+		<supports>Fighting Style, Paladin</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>You learn two cantrips of your choice from the cleric spell list. They count as paladin spells for you, and Charisma is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</p>
+		</description>
+		<sheet>
+			<description>Learned 2 cantrips from cleric list. Whenever you earn a level, you can change your cantrip for a different one on cleric list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Blessed Fighter)" supports="0,Cleric" number="2" spellcasting="Paladin" prepared="true" />
+		</rules>
+	</element>
+	<element name="Blind Fighting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_BLIND_FIGHTING">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>You have blindsight with a range of 10 feet. Within that range, you can effectively see anything that isn't behind total cover, even if you're blinded or in darkness. Moreover, you can see an invisible creature within that range, unless the creature successfully hides from you.</p>
+		</description>
+		<sheet>
+			<description>Have blindsight with 10ft. range.</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_TCOE_VISION_BLINDSIGHT" />
+		</rules>
+	</element>
+	<element name="Blindsight" type="Vision" source="Tasha’s Cauldron of Everything" id="ID_TCOE_VISION_BLINDSIGHT" >
+		<compendium display="false" />
+		<sheet display="false" />
+	</element>
+	<element name="Druidic Warrior" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_DRUIDIC_WARRIOR">
+		<supports>Fighting Style, Ranger</supports>
+		<requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>You learn two cantrips of your choice from the druid spell list. They count as ranger spells for you, and Wisdom is your spellcasting ability for them. Whenever you gain a level in this class, you can replace one of these cantrips with another cantrip from the cleric spell list.</p>
+		</description>
+		<sheet>
+			<description>Learned 2 cantrips from druid list. Whenever you earn a level, you can change your cantrip for a different one on druid list.</description>
+		</sheet>
+		<rules>
+			<select type="Spell" name="Cantrip (Druidic Warrior)" supports="0,Druid" number="2" spellcasting="Ranger" />
+		</rules>
+	</element>
+	<element name="Interception" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_INTERCEPTION">
+		<supports>Fighting Style, Fighter, Paladin, Ranger</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>When a creature you can see hits a target, other than you, within 5 feet of you with an attack, you can use your reaction to reduce the damage the target takes by 1d10 + your proficiency bonus (to a minimum of 0 damage). You must be wielding a shield or a simple or martial weapon to use this reaction.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>Melee weapon/shield required, when another creature is hit within 5ft of you, reduce 1d10+{{proficiency}} (to minimum of 0).</description>
+		</sheet>
+	</element>
+	<element name="Superior Technique" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_SUPERIOR_TECHNIQUE">
+		<supports>Fighting Style, Fighter</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>You learn one maneuver of your choice from among those available to the Battle Master archetype. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice).</p>
+			<p class="indent">You gain one superiority die, which is a d6 (this die is added to any superiority dice you have from another source). This die is used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest.</p>
+		</description>
+		<sheet>
+			<description>Earn Battle Master maneuver, earn 1d6 (or an additional 1d6 superiority die if you have already). Regain expended die after short or long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="superior technique dice:dc" value="8" />
+			<stat name="superior technique dice:dc" value="proficiency" />
+			<!-- create selection option -->
+			<stat name="superior technique dice:dc:ability" value="strength:modifier" bonus="ability"/>
+			<stat name="superior technique dice:dc:ability" value="dexterity:modifier" bonus="ability"/>
+			<stat name="superior technique dice:dc" value="superior technique dice:dc:ability" />
+			<select type="Archetype Feature" name="Maneuver (Superior Technique)" supports="Maneuver,Battle Master" number="1" />
+		</rules>
+	</element>
+	<element name="Thrown Weapon Fighting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_THROWN_WEAPON_FIGHTING">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>You can draw a weapon that has the thrown property as part of the attack you make with the weapon.</p>
+			<p class="indent">In addition, when you hit with a ranged attack using a thrown weapon, you gain a +2 bonus to the damage roll.</p>
+		</description>
+		<sheet>
+			<description>Can draw thrown weapon as part of attack. Earn +2 to damage on ranged attacks with thrown weapons.</description>
+		</sheet>
+		<rules>
+			<!-- <stat name="ranged:damage" value="2" equipped="[weapon:thrown]" /> -->
+		</rules>
+	</element>
+	<element name="Unarmed Fighting" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_FIGHTING_STYLE_UNARMED_FIGHTING">
+		<supports>Fighting Style, Fighter, Ranger</supports>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER_ADDITIONAL_FIGHTING_STYLE||ID_TCOE_FEAT_FIGHTING_INITIATE</requirements>
+		<description>
+			<p>Your unarmed strikes can deal bludgeoning damage equal to 1d6 + your Strength modifier on a hit. If you aren't wielding any weapons or a shield when you make the attack roll, the d6 becomes a d8.</p>
+			<p class="indent">At the start of each of your turns, you can deal 1d4 bludgeoning damage to one creature grappled by you.</p>
+		</description>
+		<sheet>
+			<description>Unarmed attacks deal 1d{{unarmed fighting:dice:size}} + {{proficiency}} bludgeoning damage.
+			At the start of each turn, you can deal 1d4 bludgeoning damage to creature grappled by you.</description>
+		</sheet>
+		<rules>
+			<stat name="unarmed fighting:dice:size" value="6" bonus="base" />
+			<stat name="unarmed fighting:dice:size" value="8" bonus="base" equipped="[primary:none],[secondary:none],[shield:none]" />
+		</rules>
+	</element>
+
+	<!-- Maneuver Options -->
+	<element name="Ambush" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_AMBUSH">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you make a Dexterity (Stealth) check or an initiative roll, you can expend one superiority die and add the die to the roll, provided you aren't incapacitated.</p>
+		</description>
+		<sheet>
+			<description>When you make a Dexterity (Stealth) check or an initiative roll, you can expend one die and add it to the ability check, provided you aren't incapacitated.</description>
+		</sheet>
+	</element>
+	<element name="Bait and Switch" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_BAIT_AND_SWITCH">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you're within 5 feet of a creature on your turn, you can expend one superiority die and switch places with that creature, provided you spend at least 5 feet of movement and the creature is willing and isn't incapacitated. This movement doesn't provoke opportunity attacks.</p>
+			<p class="indent">Roll the superiority die. Until the start of your next turn, you or the other creature (your choice) gains a bonus to AC equal to the number rolled.</p>
+		</description>
+		<sheet>
+			<description>Expend 1 die and switch with willing creature within 5ft, movement doesn't provoke opportunity attacks.
+			Roll the superiority die, until start of your next turn, you or the other creature gains bonus AC to number rolled.</description>
+		</sheet>
+	</element>
+	<element name="Brace" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_MANEUVER_BRACE">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When a creature you can see moves into the reach you have with the melee weapon you're wielding, you can use your reaction to expend one superiority die and make one attack against the creature, using that weapon. If the attack hits, add the superiority die to the weapon's damage roll.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When a creature moves to melee reach of weapon you're wielding, expend 1 die and make an attack against it. If it hits, add the superiority die to the damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Commanding Presence" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_COMMANDING_PRESENCE">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you make a Charisma (Intimidation), a Charisma (Performance), or a Charisma (Persuasion) check, you can expend one superiority die and add the superiority die to the ability check.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When making an Intimidation, Performance or Persuasion check, you can expend one die and add it to the ability check.</description>
+		</sheet>
+	</element>
+	<element name="Grappling Strike" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GRAPPLING_STRIKE">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>Immediately after you hit a creature with a melee attack on your turn, you can expend one superiority die and then try to grapple the target as a bonus action (see the Player's Handbook for rules on grappling). Add the superiority die to your Strength (Athletics) check.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Immediately after a melee attack hit, you can expend 1 superiority die and try to grapple your target, you add your superiority die to the Strength check.</description>
+		</sheet>
+	</element>
+	<element name="Quick Toss" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_QUICK_TOSS">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>As a bonus action, you can expend one superiority die and make a ranged attack with a weapon that has the thrown property. You can draw the weapon as part of making this attack. If you hit, add the superiority die to the weapon's damage roll.</p>
+		</description>
+		<sheet action="Bonus Action">
+			<description>Expend 1 die, make a ranged attack with a thrown weapon, can draw the weapon as part of attack. If you hit, add the superiority die to damage roll.</description>
+		</sheet>
+	</element>
+	<element name="Tactical Assessment" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_TACTICAL_ASSESSMENT">
+		<supports>Maneuver, Battle Master</supports>
+		<description>
+			<p>When you make an Intelligence (Investigation), an Intelligence (History), or a Wisdom (Insight) check, you can expend one superiority die and add the superiority die to the ability check.</p>
+		</description>
+		<sheet action="Reaction">
+			<description>When making an Investigation, History or Insight check, you can expend one die and add it to the ability check.</description>
+		</sheet>
+	</element>
+	<!-- /Maneuvers -->
+</elements>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Blind Bard Bazaar Resources</name>
+		<description></description>
+		<author url="">Eterean</author>
+		<update version="0.0.1">
+			<file name="blind-bard-bazaar.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar.index" />
+		</update>
+	</info>
+	<files>
+		
+		<!-- material -->
+		<file name="crone-magical-brew.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew.index" />
+		
+	</files>
+</index>

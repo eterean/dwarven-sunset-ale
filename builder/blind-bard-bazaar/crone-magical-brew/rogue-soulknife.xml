@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Soulknife</name>
+		<update version="0.0.1">
+			<file name="rogue-soulknife.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/rogue-soulknife.xml" />
+		</update>
+	</info>
+	<element name="Soulknife" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE">
+		<supports>Roguish Archetype</supports>
+		<description>
+			<div class="sidebar">
+				<p>I also have the ability to manifest my thoughts in ways that cut people. I call this power... words.</p>
+				<p align="right">TASHA</p>
+			</div>
+			<p>Many rogues walk a fine line between life and death, risking their own lives and taking the lives of others. While adventuring on that line, some rogues discover a mystical connection to death itself. These rogues take knowledge from the dead and become immersed in negative energy, eventually becoming like ghosts. Thieves' guilds value them as highly effective information gatherers and spies. though they are often mistrusted by rogues who are leery of anyone using strange mind powers to conduct their business. Most governments would also be happy to employ a Soulknife as a spy.</p>			
+			<p class="indent">Amid the trees of ancient forests on the Material Plane and in the Feywild, some wood elves walk the path of the Soulknife, serving as silent, lethal guardians of their woods. In the endless war among the gith, a githzerai is encouraged to become a Soulknife when stealth is required against the githyanki foe.</p>
+			<p class="indent">As a Soulknife, your psionic abilities might have haunted you since you were a child, only revealing their full potential as you experienced the stress of adventure. Or you might have sought out a reclusive order of psychic adepts and spent years learning how to manifest your power.</p>
+			<div element="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSIONIC_POWER" />
+			<div element="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_BLADES" />
+			<div element="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES" />
+			<div element="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_VEIL" />
+			<div element="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_REND_MIND" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSIONIC_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_BLADES" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES" level="9" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_VEIL" level="13" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_REND_MIND" level="17" />
+		</rules>
+	</element>
+	<element name="Psionic Power" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSIONIC_POWER">
+		<description>
+			<p><em>3rd-level Soulknife feature</em></p>
+			<p>You harbor a wellspring of psionic energy within yourself. This energy is represented by your Psionic Energy dice, which are each a d6. You have a number of these dice equal to twice your proficiency bonus, and they fuel various psionic powers you have, which are detailed below</p>
+			<p class="indent">Some of your powers expend the Psionic Energy die they use, as specified in a power's description, and you can't use a power if it requires you to use a die when your dice are all expended. You regain all your expended Psionic Energy dice when you finish a long rest. In addition, as a bonus action, you can regain one expended Psionic Energy die, but you can't do so again until you finish a short or long rest.</p>
+			<p class="indent">When you reach certain levels in this class, the size of your Psionic Energy dice increases: at 5th level (d8), 11th level (d10), and 17th level (d12).</p>
+			<p class="indent">The powers below use your Psionic Energy dice.</p>
+			<ul>
+				<li><strong><em>Psi-Bolstered Knack.</em></strong> When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.</li>
+				<li><strong><em>Psychic Whispers.</em></strong> You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other. The first time you use this power after each long rest, you don't expend the Psionic Energy die. All other times you use the power, you expend the die.</li>
+			</ul>			
+		</description>
+		<sheet>
+			<description>You have {{psionic power:die:amount}} d{{psionic power:die:size}} psionic power dice, regain all expended die after a long rest. As a bonus action, you can regain 1 expended die, regain this action after either a short/long rest.</description>
+		</sheet>
+		<rules>
+			<stat name="psionic power:die:amount" value="proficiency" bonus="base" />
+			<stat name="psionic power:die:amount" value="proficiency" />
+			<stat name="psionic power:die:size" value="6" bonus="base" />
+			<stat name="psionic power:die:size" value="2" level="5" />
+			<stat name="psionic power:die:size" value="2" level="11" />
+			<stat name="psionic power:die:size" value="2" level="17" />
+			<select type="Archetype Feature" name="Regain Psionic Die" supports="Regain Psionic Die" requirements="[rogue:9]" default="ID_WOTC_TCOE_ARCHETYPE_ROGUE_PSIONIC_POWER_REGAIN_DIE" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_PSIONIC_POWER_PSI_BOLSTERED_ATTACK" />
+			<grant type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_PSIONIC_POWER_PSYCHIC_WHISPERS" />
+		</rules>
+	</element>
+	<element name="Regain die" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_PSIONIC_POWER_REGAIN_DIE">
+		<supports>Regain Psionic Die</supports>
+		<compendium display="false" />
+		<sheet action="Bonus Action" usage="1/Rest">
+			<description>Can regain one expended Psionic Energy die</description>
+		</sheet>
+	</element>
+	<element name="Psi-Bolstered Attack" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_PSIONIC_POWER_PSI_BOLSTERED_ATTACK">
+		<description>
+			<p><em>3rd-level Psionic Power, Soulknife feature</em></p>
+			<p>When your nonpsionic training fails you, your psionic power can help: if you fail an ability check using a skill or tool with which you have proficiency, you can roll one Psionic Energy die and add the number rolled to the check, potentially turning failure into success. You expend the die only if the roll succeeds.</p>
+		</description>
+		<sheet>
+			<description>When failing an ability or proficient tool check, roll 1 Psionic Power die and add the result to your check. Expend the die if check succeeds.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Whispers" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_PSIONIC_POWER_PSYCHIC_WHISPERS">
+		<description>
+			<p><em>3rd-level Psionic Power, Soulknife feature</em></p>
+			<p>You can establish telepathic communication between yourself and others-perfect for quiet infiltration. As an action, choose one or more creatures you can see, up to a number of creatures equal to your proficiency bonus, and then roll one Psionic Energy die. For a number of hours equal to the number rolled, the chosen creatures can speak telepathically with you, and you can speak telepathically with them. To send or receive a message (no action required), you and the other creature must be within 1 mile of each other. A creature can't use this telepathy if it can't speak any languages, and a creature can end the telepathic connection at any time (no action required). You and the creature don't need to speak a common language to understand each other.</p>
+		</description>
+		<sheet action="Action" usage="1st use after Long Rest doesn't expend die">
+			<description>Choose up to {{proficiency}} creatures you can see and roll 1 Psionic power die, for up to the result of the die in hours, all selected creatures can speak telepathically to you and you to them up to a 1 mile away. For telepathy the creature must speak at least 1 language.</description>
+		</sheet>
+	</element>
+	<element name="Psychic Blades" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_BLADES">
+		<description>
+			<p><em>3rd-level Soulknife feature</em></p>
+			<p>You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage.</p>
+			<p class="indent">After you attack with the blade, you can make a melee or ranged weapon attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.</p>
+		</description>
+		<sheet action="Taking Attack Action">
+			<description>Manifest psychic blade on free hand and attack with it, simple weapon, finesse and thrown properties, range 60ft and on hit does psychic damage = 1d6 psychic + ability used on the attack. As a bonus action, can create another blade on your free hand, the damage die is 1d4 instead of 1d6.</description>
+		</sheet>
+		<rules>
+			<stat name="grave wails:usage" value="proficiency" bonus="base" />
+			<stat name="grave wails:die:amount" value="proficiency:half:up" bonus="base" />
+		</rules>
+	</element>
+	<element name="Soul Blades" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES">
+		<description>
+			<p><em>9th-level Soulknife feature</em></p>
+			<p>Your Psychic Blades are now an expression of your psi-suffused soul, giving you these powers that use your Psionic Energy dice:</p>
+			<ul>
+				<li><strong><em>Homing Strikes.</em></strong> If you make an attack roll with your Psychic Blades and miss the target, you can roll one Psionic Energy die and add the number rolled to the attack roll. If this causes the attack to hit, you expend the Psionic Energy die.</li>
+				<li><strong><em>Psychic Teleportation.</em></strong> As a bonus action, you manifest one of your Psychic Blades, expend one Psionic Energy die and roll it, and throw the blade at an unoccupied space you can see, up to a number of feet away equal to 10 times the number rolled. You then teleport to that space, and the blade vanishes.</li>			
+			</ul>
+		</description>
+		<sheet>
+			<description>Your Psychic Blades improved.</description>
+		</sheet>
+		<rules>
+			<select type="Archetype Feature" name="Soul Blades" supports="Soul Blades" requirements="[rogue:9]" default="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING" />
+			<select type="Archetype Feature" name="Soul Blades" supports="Soul Blades" requirements="[rogue:9]" default="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES_TELEPORTATION" />
+		</rules>
+	</element>
+	<element name="Homing Strikes" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES_HOMING">
+		<supports>Soul Blades</supports>
+		<compendium display="false" />
+		<sheet>
+			<description>On a miss with your Psychic Blades, roll 1 Psionic die and add the result to the attack. If the attack did hit, expend the die.</description>
+		</sheet>		
+	</element>
+	<element name="Psychic Teleportation" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_SOUL_BLADES_TELEPORTATION">
+		<supports>Soul Blades</supports>
+		<compendium display="false" />
+		<sheet action="Bonus Action">
+			<description>Manifest blade, expend and roll 1 die, throw your blade equal up to 10 times the distance in feet of the result. You teleport to that unoccupied space and the blade vanishes.</description>
+		</sheet>		
+	</element>
+	<element name="Psychic Veil" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_PSYCHIC_VEIL">
+		<description>
+			<p><em>13th-level Soulknife feature</em></p>
+			<p>You can weave a veil of psychic static to mask yourself. As an action, you can magically become invisible, along with anything you are wearing or carrying, for 1 hour or until you dismiss this effect (no action required). This invisibility ends early immediately after you deal damage to a creature or you force a creature to make a saving throw.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest, unless you expend a Psionic Energy die to use this feature again.</p>
+		</description>
+		<sheet action="Action" usage="1/Long Rest or expend Psionic die">
+			<description>Become magically invisible for 1 hour or until you dismiss it. It end immediately if you deal damage or force a saving throw on a creature.</description>
+		</sheet>
+	</element>
+	<element name="Rend Mind" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_SOULKNIFE_REND_MIND">
+		<description>
+			<p><em>17th-level Swarmkeeper feature</em></p>
+			<p>You can sweep your Psychic Blades directly through a creature's mind. When you use your Psychic Blades to deal Sneak Attack damage to a creature, you can force that target to make a Wisdom saving throw (DC equal to 8 + your proficiency bonus + your Dexterity modifier). If the save fails, the target is stunned for 1 minute. The stunned target can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+			<p class="indent">Once you use this feature, you can't do so again until you finish a long rest, unless you expend three Psionic Energy dice to use it again.</p>
+		</description>
+		<sheet usage="1/Long Rest or expend 3 Psionic dice">
+			<description>When dealing Sneak Attack damage to creature, force a Wisdom DC {{rend mind:dc}} and on a fail be stunned for 1 minute. It can repeat it save at end of each turn.</description>
+		</sheet>
+		<rules>
+			<stat name="rend mind:dc:base" value="8" bonus="base" />
+			<stat name="rend mind:dc:proficiency" value="proficiency" bonus="proficiency" />
+			<stat name="rend mind:dc:ability" value="dexterity:modifier" bonus="ability" />
+			<stat name="rend mind:dc" value="rend mind:dc:base" />
+			<stat name="rend mind:dc" value="rend mind:dc:proficiency" />
+			<stat name="rend mind:dc" value="rend mind:dc:ability" />
+		</rules>
+	</element>
+</elements>
