@@ -2,12 +2,13 @@
 <elements>
 	<info>
 		<name>Custom Lineage</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="race-customlineage.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/race-customlineage.xml" />
 		</update>
 	</info>
 
 	<element name="Variant Humanoid (Custom Lineage)" type="Race" source="Tasha’s Cauldron of Everything" id="ID_RACE_VARIANT_CUSTOM">
+		<requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES</requirements>
 		<description>
 			<h4>CUSTOM LINEAGE</h4>
 			<p>Instead of choosing one of the game's races for your character at 1st level, you can use the following traits to represent your character's lineage, giving you full control over how your character's origin shaped them.</p>
