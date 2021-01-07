@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Path of the Beast</name>
-		<update version="0.0.1">
-			<file name="barbarian-wildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-wildmagic.xml" />
+		<update version="0.0.2">
+			<file name="barbarian-wildmagic.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/barbarian-wildmagic.xml" />
 		</update>
 	</info>
 	
@@ -21,7 +21,7 @@
 			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_WILD_MAGIC_UNSTABLE_BACKLASH" />
 			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_WILD_MAGIC_CONTROLLED_SURGE" />
 		</description>
-		<sheet display="true">
+		<sheet display="false">
 			<description>You are specially susceptible to wild influences, being transformed by magic.</description>
 		</sheet>
 		<rules>
@@ -51,8 +51,8 @@
 			<p><em>3rd-level Path of Wild Magic feature</em></p>
 			<p>The magical energy roiling inside you sometimes erupts from you. When you enter your rage, roll on the Wild Magic table to determine the magical effect produced.</p>
 			<p class="indent">If the effect requires a saving throw, the DC equals 8 + your proficiency bonus + your Constitution modifier.</p>
+			<h5 class="caption">Wild Magic</h5>
 			<table>
-				<h5 class="caption">Wild Magic</h5>
 				<thead>
 					<tr><td>d8</td><td>Magical Effect</td></tr>
 				</thead>

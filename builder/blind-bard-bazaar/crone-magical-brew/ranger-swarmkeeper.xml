@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Fey Wanderer</name>
-		<update version="0.0.1">
-			<file name="ranger-swarmkeeper.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/ranger-swarmkeeper.xml" />
+		<update version="0.0.2">
+			<file name="ranger-swarmkeeper.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/ranger-swarmkeeper.xml" />
 		</update>
 	</info>
 	<element name="Swarmkeeper" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_RANGER_SWARMKEEPER">

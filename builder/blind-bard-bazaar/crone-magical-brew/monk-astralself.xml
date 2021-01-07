@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Way of the Astral Self</name>
-		<update version="0.0.1">
-			<file name="monk-astralself.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/monk-astralself.xml" />
+		<update version="0.0.2">
+			<file name="monk-astralself.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/monk-astralself.xml" />
 		</update>
 	</info>
     <element name="Way of the Astral Self" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_MONK_ASTRAL_SELF">

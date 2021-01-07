@@ -2,8 +2,8 @@
 <elements>
   <info>
     <name>Spells</name>
-    <update version="0.0.2">
-      <file name="spells.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/spells.xml" />
+    <update version="0.0.3">
+      <file name="spells.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/spells.xml" />
     </update>
   </info>
 
@@ -182,7 +182,7 @@
   <element name="Summon Aberration" type="Spell" source="Tasha’s Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_ABERRATION">
     <supports>Warlock, Wizard</supports>
     <description>
-      <p>You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Aberrant Spirit stat block. When you cast the spell, choose Beholderkin, Slaad, or Star Spawn. The creature resembles an aberration of that kind, which determines certain traits in its stat block. The creature disappears when it drops to O hit points or when the spell ends.</p>
+      <p>You call forth an aberrant spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Aberrant Spirit stat block. When you cast the spell, choose Beholderkin, Slaad, or Star Spawn. The creature resembles an aberration of that kind, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
       <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
     </description>
@@ -370,7 +370,7 @@
   <element name="Summon Construct" type="Spell" source="Tasha’s Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_CONSTRUCT">
     <supports>Arificer, Wizard</supports>
     <description>
-      <p>You call forth the spirit of a construct. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Construct Spirit stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles a golem or a modron (your choice) made of the chosen material, which determines certain traits in its stat block. The creature disappears when it drops to O hit points or when the spell ends.</p>
+      <p>You call forth the spirit of a construct. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Construct Spirit stat block. When you cast the spell, choose a material: Clay, Metal, or Stone. The creature resembles a golem or a modron (your choice) made of the chosen material, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
       <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
     </description>
@@ -437,7 +437,7 @@
   <element name="Summon Elemental" type="Spell" source="Tasha’s Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_ELEMENTAL">
     <supports>Druid, Ranger, Wizard</supports>
     <description>
-      <p>You call forth an elemental spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Elemental Spirit stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain traits in its stat block. The creature disappears when it drops to O hit points or when the spell ends.</p>
+      <p>You call forth an elemental spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Elemental Spirit stat block. When you cast the spell, choose an element: Air, Earth, Fire, or Water. The creature resembles a bipedal form wreathed in the chosen element, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
       <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 5th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
     </description>
@@ -500,7 +500,7 @@
   <element name="Summon Fey" type="Spell" source="Tasha’s Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_FEY">
     <supports>Druid, Ranger, Warlock, Wizard</supports>
     <description>
-      <p>You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a fey creature of your choice marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to O hit points or when the spell ends.</p>
+      <p>You call forth a fey spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Fey Spirit stat block. When you cast the spell, choose a mood: Fuming, Mirthful, or Tricksy. The creature resembles a fey creature of your choice marked by the chosen mood, which determines one of the traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
       <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
     </description>
@@ -602,7 +602,7 @@
         <strong>Challenge</strong> - <br/>
         <strong>Proficiency Bonus (PB)</strong> equals your bonus<br/>
         --------------------------------------------------------------<br/>
-        <strong><em>Death Throes (Demon Only).</em></strong> When the fiend drops to O hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes 2d10 + this spell's level fire damage on a failed save, or half as much damage on a successful one.<br/>
+        <strong><em>Death Throes (Demon Only).</em></strong> When the fiend drops to 0 hit points or the spell ends, the fiend explodes, and each creature within 10 feet of it must make a Dexterity saving throw against your spell save DC. A creature takes 2d10 + this spell's level fire damage on a failed save, or half as much damage on a successful one.<br/>
         <strong><em>Devil's Sight (Devil Only).</em></strong> Magical darkness doesn't impede the fiend's darkvision.<br/>
         <strong><em>Magic Resistance.</em></strong> The fiend has advantage on saving throws against spells and other magical effects.<br/>
         --------------------------------------------------------------</p>
@@ -631,7 +631,7 @@
   <element name="Summon Shadowspawn" type="Spell" source="Tasha’s Cauldron of Everything" id="ID_TCOE_SPELL_SUMMON_SHADOWSPAWN">
     <supports>Warlock, Wizard</supports>
     <description>
-      <p>You call forth a shadowy spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Shadow Spirit stat block. When you cast the spell, choose an emotion: Fury, Despair, or Fear. The creature resembles a misshapen biped marked by the chosen emotion, which determines certain traits in its stat block. The creature disappears when it drops to O hit points or when the spell ends.</p>
+      <p>You call forth a shadowy spirit. It manifests in an unoccupied space that you can see within range. This corporeal form uses the Shadow Spirit stat block. When you cast the spell, choose an emotion: Fury, Despair, or Fear. The creature resembles a misshapen biped marked by the chosen emotion, which determines certain traits in its stat block. The creature disappears when it drops to 0 hit points or when the spell ends.</p>
       <p class="indent">The creature is an ally to you and your companions. In combat, the creature shares your initiative count, but it takes its turn immediately after yours. It obeys your verbal commands (no action required by you). If you don't issue any, it takes the Dodge action and uses its move to avoid danger.</p>
       <p class="indent"><b><i>At Higher Levels.</i></b> When you cast this spell using a spell slot of 4th level or higher, use the higher level wherever the spell's level appears in the stat block.</p>
     </description>

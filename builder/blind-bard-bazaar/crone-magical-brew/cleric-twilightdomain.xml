@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Twilight Domain</name>
-		<update version="0.0.2">
-			<file name="cleric-twilightdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/cleric-twilightdomain.xml" />
+		<update version="0.0.3">
+			<file name="cleric-twilightdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/cleric-twilightdomain.xml" />
 		</update>
 	</info>
 	
@@ -16,8 +16,8 @@
 			</div>
 			<p>The twilit transition from light into darkness often brings calm and even joy, as the day's labors end and the hours of rest begin. The darkness can also bring terrors, but the gods of twilight guard against the horrors of the night.</p>
 			<p class="indent">Clerics who serve these deities-examples of which appear on the Twilight Deities table-bring comfort to those who seek rest and protect them by venturing into the encroaching darkness to ensure that the dark is a comfort, not a terror.</p>
+            <h5 class="caption">Twilight Deities</h5>
             <table>
-				<h5 class="caption">Twilight Deities</h5>
 				<thead>
 					<tr><td>Example Deity</td><td>Pantheon</td></tr>
 				</thead>

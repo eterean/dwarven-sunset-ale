@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Path of the Beast</name>
-		<update version="0.0.1">
-			<file name="barbarian-thebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/barbarian-thebeast.xml" />
+		<update version="0.0.2">
+			<file name="barbarian-thebeast.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/barbarian-thebeast.xml" />
 		</update>
 	</info>
 	
@@ -31,7 +31,7 @@
 			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_INFECTIOUS_FURY" />
 			<div element="ID_WOTC_TCOE_ARCHETYPE_FEATURE_PATH_OF_THE_BEAST_CALL_THE_HUNT" />
 		</description>
-		<sheet display="true">
+		<sheet display="false">
 			<description>You draw your rage from the bestial spark of your soul, physically transforming you.</description>
 		</sheet>
 		<rules>

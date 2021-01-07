@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Fey Wanderer</name>
-		<update version="0.0.1">
-			<file name="rogue-phantom.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/rogue-phantom.xml" />
+		<update version="0.0.2">
+			<file name="rogue-phantom.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/rogue-phantom.xml" />
 		</update>
 	</info>
 	<element name="Phantom" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_ROGUE_PHANTOM">

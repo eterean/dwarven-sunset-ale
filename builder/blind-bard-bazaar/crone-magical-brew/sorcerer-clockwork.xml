@@ -3,8 +3,8 @@
 	<info>
 		<name>Clockwork Soul Sorcerous Origin</name>
 		<description>The Clockwork Soul Sorcerous Origin from Tasha’s Cauldron of Everything</description>
-		<update version="0.0.1">
-			<file name="sorcerer-clockwork.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/sorcerer-clockwork.xml" />
+		<update version="0.0.2">
+			<file name="sorcerer-clockwork.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/sorcerer-clockwork.xml" />
 		</update>
 	</info>
 	<element name="Clockwork Soul" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_CLOCKWORK_SOUL">

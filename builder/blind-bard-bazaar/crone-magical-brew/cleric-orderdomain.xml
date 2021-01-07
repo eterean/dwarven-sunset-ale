@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Order Domain</name>
-		<update version="0.0.4">
-			<file name="cleric-orderdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/cleric-orderdomain.xml" />
+		<update version="0.0.5">
+			<file name="cleric-orderdomain.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/cleric-orderdomain.xml" />
 		</update>
 	</info>
 	

@@ -4,15 +4,15 @@
     <name>The Genie</name>
     <description>The Genie Otherworldly Patron from Tasha’s Cauldron of Everything</description>
     <author url="">Tasha’s Cauldron of Everything</author>
-    <update version="0.0.1">
-      <file name="warlock-genie.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/warlock-genie.xml" />
+    <update version="0.0.2">
+      <file name="warlock-genie.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/warlock-genie.xml" />
     </update>
   </info>
   <element name="The Genie" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_GENIE">
     <supports>Otherworldly Patron</supports>
     <description>
       <div class="sidebar">
-				<p>I know finding housing in Greyhawk is rought, but when genies or warlocks offer you cheap rent, run.</p>
+				<p>I know finding housing in Greyhawk is rough, but when genies or warlocks offer you cheap rent, run.</p>
 				<p align="right">TASHA</p>
 			</div>
       <p>You have made a pact with one of the rarest kinds of genie, a noble genie. Such entities rule vast fiefs on the Elemental Planes and have great influence over lesser genies and elemental creatures. Noble genies are varied in their motivations, but most are arrogant and wield power that rivals that of lesser deities. They delight in turning the table on mortals, who often bind genies into servitude, and readily enter into pacts that expand their reach.</p>

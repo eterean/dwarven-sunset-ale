@@ -2,8 +2,8 @@
 <elements>
 	<info>
 		<name>Oath of Glory</name>
-		<update version="0.0.1">
-			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/paladin-glory.xml" />
+		<update version="0.0.2">
+			<file name="paladin-glory.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/paladin-glory.xml" />
 		</update>
 	</info>
 	<element name="Oath of Glory" type="Archetype" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_PALADIN_OATH_OF_GLORY">

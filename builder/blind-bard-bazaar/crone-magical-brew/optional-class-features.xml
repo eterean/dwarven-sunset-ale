@@ -4,8 +4,8 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.3">
-			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/optional-class-features.xml" />
+		<update version="0.0.4">
+			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
 
@@ -952,7 +952,7 @@
         	<h5>OPTIONAL CLASS FEATURES</h5>
 			<p></p>
 			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
-			<h2>FAVORED FOE</h2>
+			<h2>DEFT EXPLORER</h2>
             <p><em>1st-level ranger feature, which replaces the Natural Explorer feature</em></p>
 			<p>You are an unsurpassed explorer and survivor, both in the wilderness and in dealing with others on your travels. You gain the Canny benefit below, and you gain an additional benefit below when you reach 6th level and 10th level in this class.</p>
 			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY" />
@@ -1509,7 +1509,7 @@
 			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
 			<h2>STEADY AIM</h2>
             <p><em>3rd-level rogue feature</em></p>
-			<p>As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is O until the end of the current turn.</p>
+			<p>As a bonus action, you give yourself advantage on your next attack roll on the current turn. You can use this bonus action only if you haven't moved during this turn, and after you use the bonus action, your speed is 0 until the end of the current turn.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Haven't moved this turn">
 			<description>Give yourself advantage on next attack roll on your current turn. After using this action, your speed is 0 until end of current turn.</description>

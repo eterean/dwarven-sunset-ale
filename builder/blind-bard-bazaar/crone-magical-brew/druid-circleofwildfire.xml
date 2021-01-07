@@ -4,8 +4,8 @@
 		<name>Circle of Wildfire</name>
 		<description></description>
 		<author url="">Tasha’s Cauldron of Everything</author>
-		<update version="0.0.2">
-			<file name="druid-circleofwildfire.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/supplements/tashas-cauldron-of-everything/druid-circleofwildfire.xml" />
+		<update version="0.0.3">
+			<file name="druid-circleofwildfire.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/druid-circleofwildfire.xml" />
 		</update>
 	</info>
 
@@ -91,7 +91,7 @@
 			</div>
 			<p></p>
 			<p class="indent">In combat, the spirit shares your initiative count, but it takes its turn immediately after yours. The only action it takes on its turn is the Dodge action, unless you take a bonus action on your turn to command it to take another action. That action can be one in its stat block or some other action. If you are incapacitated, the spirit can take any action of its choice, not just Dodge.</p>
-			<p class="indent">The spirit manifests for 1 hour, until it is reduced to O hit points, until you use this feature to summon the spirit again, or until you die.</p>
+			<p class="indent">The spirit manifests for 1 hour, until it is reduced to 0 hit points, until you use this feature to summon the spirit again, or until you die.</p>
 		</description>
 		<sheet>
 			<description>Expend a Wild Shape use and summon a wildfire spirit instead of assuming beast form. Lasts for 1 hour, until reduced to 0 hit points, you use this feature again or you die.</description>
@@ -127,7 +127,7 @@
 	<element name="Blazing Revival" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_CIRCLE_WILDFIRE_BLAZING_REVIVAL">
 		<description>
 			<p><em>14th-level Circle of Wildfire feature</em></p>
-			<p>The bond with your wildfire spirit can save you from death. If the spirit is within 120 feet of you when you are reduced to O hit points and thereby fall unconscious, you can cause the spirit to drop to O hit points. You then regain half your hit points and immediately rise to your feet.</p>
+			<p>The bond with your wildfire spirit can save you from death. If the spirit is within 120 feet of you when you are reduced to 0 hit points and thereby fall unconscious, you can cause the spirit to drop to 0 hit points. You then regain half your hit points and immediately rise to your feet.</p>
 			<p class="indent">Once you use this feature, you can't use it again until you finish a long rest.</p>
 		</description>
 		<sheet usage="1/Long Rest">
