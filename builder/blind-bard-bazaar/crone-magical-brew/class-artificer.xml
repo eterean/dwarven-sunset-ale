@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <elements>
 	<info>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="class-artificer.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/class-artificer.xml" />
 		</update>
 	</info>
@@ -1122,8 +1122,8 @@
 	</element>
 	<element name="Improved Defender" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_BATTLE_SMITH_IMPROVED_DEFENDER">
 		<requirements>ID_WOTC_TCOE_CLASS_ARTIFICER</requirements>
-		<p><em>15th-level Battle Smith feature</em></p>
 		<description>
+			<p><em>15th-level Battle Smith feature</em></p>
 			<p>Your Arcane jolt and steel defender become more powerful:</p>
 			<ul>
 				<li>The extra damage and the healing of your Arcane jolt both increase to 4d6.</li>
