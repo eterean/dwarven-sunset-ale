@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -37,8 +37,8 @@
 	</element>
 	
 	<!-- Barbarian Optionals -->
-	<element name="Optional Class Features: Barbarian" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN" requirements="[barbarian:3]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_BARBARIAN||ID_WOTC_PHB_MULTICLASS_BARBARIAN)</requirements>
+	<element name="Optional Class Features: Barbarian" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARBARIAN">
+        <requirements>[barbarian:3],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_BARBARIAN||ID_WOTC_PHB_MULTICLASS_BARBARIAN)</requirements>
 		<description>
 			<p>The barbarian class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -87,8 +87,8 @@
 	<!-- /Barbarian Optionals -->
 
 	<!-- Bard Optionals -->
-	<element name="Optional Class Features: Bard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD" requirements="[bard:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_BARD||ID_WOTC_PHB_MULTICLASS_BARD)</requirements>
+	<element name="Optional Class Features: Bard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_BARD">
+        <requirements>[bard:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_BARD||ID_WOTC_PHB_MULTICLASS_BARD)</requirements>
 		<description>
 			<p>The bard class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -185,8 +185,8 @@
 	<!-- /Bard Optionals -->
 
 	<!-- Cleric Optionals -->
-	<element name="Optional Class Features: Cleric" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC" requirements="[cleric:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_MULTICLASS_CLERIC)</requirements>
+	<element name="Optional Class Features: Cleric" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_CLERIC">
+        <requirements>[cleric:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_MULTICLASS_CLERIC)</requirements>
 		<description>
 			<p>The cleric class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -492,8 +492,8 @@
 	<!-- /Default Divine Strike or Potent Spellcasting assignments -->
 
 	<!-- Druid Optionals -->
-	<element name="Optional Class Features: Druid" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID" requirements="[druid:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_MULTICLASS_DRUID)</requirements>
+	<element name="Optional Class Features: Druid" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_DRUID">
+        <requirements>[druid:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_MULTICLASS_DRUID)</requirements>
 		<description>
 			<p>The druid class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -589,8 +589,8 @@
 	<!-- /Druid Optionals -->
 
 	<!-- Fighter Optionals -->
-	<element name="Optional Class Features: Fighter" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER" requirements="[fighter:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_FIGHTER||ID_WOTC_PHB_MULTICLASS_FIGHTER)</requirements>
+	<element name="Optional Class Features: Fighter" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_FIGHTER">
+        <requirements>[fighter:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_FIGHTER||ID_WOTC_PHB_MULTICLASS_FIGHTER)</requirements>
 		<description>
 			<p>The fighter class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -652,8 +652,8 @@
 	<!-- /Fighter Optionals -->
 
 	<!-- Monk Optionals -->
-	<element name="Optional Class Features: Monk" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK" requirements="[monk:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_MONK||ID_WOTC_PHB_MULTICLASS_MONK)</requirements>
+	<element name="Optional Class Features: Monk" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_MONK">
+        <requirements>[monk:2],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_MONK||ID_WOTC_PHB_MULTICLASS_MONK)</requirements>
 		<description>
 			<p>The monk class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -733,8 +733,8 @@
 	<!-- /Monk Optionals -->
 
 	<!-- Paladin Optionals -->
-	<element name="Optional Class Features: Paladin" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN" requirements="[paladin:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_MULTICLASS_PALADIN)</requirements>
+	<element name="Optional Class Features: Paladin" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_PALADIN">
+        <requirements>[paladin:2],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_MULTICLASS_PALADIN)</requirements>
 		<description>
 			<p>The fighter class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -838,8 +838,8 @@
 	<!-- /Paladin Optionals -->
 	
 	<!-- Ranger Optionals -->
-	<element name="Optional Class Features: Ranger" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER" requirements="[ranger:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_MULTICLASS_RANGER)</requirements>
+	<element name="Optional Class Features: Ranger" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER">
+        <requirements>[ranger:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_MULTICLASS_RANGER)</requirements>
 		<description>
 			<p>The ranger class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -1486,8 +1486,8 @@
 	</element>
 	<!-- /Ranger -->
 	<!-- Rogue Optionals -->
-	<element name="Optional Class Features: Rogue" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE" requirements="[rogue:3]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_ROGUE||ID_WOTC_PHB_MULTICLASS_ROGUE)</requirements>
+	<element name="Optional Class Features: Rogue" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_ROGUE">
+        <requirements>[rogue:3],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_ROGUE||ID_WOTC_PHB_MULTICLASS_ROGUE)</requirements>
 		<description>
 			<p>The rogue class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -1517,8 +1517,8 @@
 	</element>
 	<!-- /Rogue -->
 	<!-- Sorcerer Optionals -->
-	<element name="Optional Class Features: Sorcerer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER" requirements="[sorcerer:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_MULTICLASS_SORCERER)</requirements>
+	<element name="Optional Class Features: Sorcerer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER">
+        <requirements>[sorcerer:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_SORCERER||ID_WOTC_PHB_MULTICLASS_SORCERER)</requirements>
 		<description>
 			<p>The sorcerer class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -1658,8 +1658,8 @@
 	</element>
 	<!-- /Sorcerer -->
 	<!-- Warlock Optionals -->
-	<element name="Optional Class Features: Warlock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK" requirements="[warlock:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_WARLOCK||ID_WOTC_PHB_MULTICLASS_WARLOCK)</requirements>
+	<element name="Optional Class Features: Warlock" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK">
+        <requirements>[warlock:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_WARLOCK||ID_WOTC_PHB_MULTICLASS_WARLOCK)</requirements>
 		<description>
 			<p>The warlock class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
@@ -1701,7 +1701,7 @@
         <sheet display="false">
 			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
 		</sheet>
-		<spellcasting name="Sorcerer" extend="true">
+		<spellcasting name="Warlock" extend="true">
 			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>
 			<extend>ID_TCOE_SPELL_GREEN_FLAME_BLADE</extend>
 			<extend>ID_TCOE_SPELL_LIGHTNING_LURE</extend>
@@ -1776,8 +1776,8 @@
 	</element>
 	<!-- /Warlock -->	
 	<!-- Wizard Optionals -->
-	<element name="Optional Class Features: Wizard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD" requirements="[wizard:1]">
-        <requirements>ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB_MULTICLASS_WIZARD)</requirements>
+	<element name="Optional Class Features: Wizard" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WIZARD">
+        <requirements>[wizard:1],ID_WOTC_TCOE_OPTION_FEATURE_OPTIONAL_CLASS_FEATURES,(ID_WOTC_PHB_CLASS_WIZARD||ID_WOTC_PHB_MULTICLASS_WIZARD)</requirements>
 		<description>
 			<p>The wizard class receives new features and subclasses in this section.</p>
 			<h5>OPTIONAL CLASS FEATURES</h5>
