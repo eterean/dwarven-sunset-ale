@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -772,7 +772,7 @@
 			</table>
 		</description>
         <sheet display="false">
-			<description>Optional feature that lets you choose from an expanded list of spells when you learn a druid spell.</description>
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a paladin spell.</description>
 		</sheet>
 		<spellcasting name="Paladin" extend="true">
 			<extend>ID_PHB_SPELL_GENTLE_REPOSE</extend>
@@ -1545,7 +1545,7 @@
 			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
 			<h2>ADDITIONAL SORCERER SPELLS</h2>
 			<p><em>1st-level sorcerer feature</em></p>
-			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<p>The spells in the following list expand the sorcerer list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
 			<table>
 				<thead>
 					<tr><td>Spell Level</td><td>Spells</td></tr>
@@ -1684,7 +1684,7 @@
 			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
 			<h2>ADDITIONAL WARLOCK SPELLS</h2>
 			<p><em>1st-level warlock feature</em></p>
-			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<p>The spells in the following list expand the warlock list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
 			<table>
 				<thead>
 					<tr><td>Spell Level</td><td>Spells</td></tr>
@@ -1699,7 +1699,7 @@
 			</table>
 		</description>
         <sheet display="false">
-			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a warlock spell.</description>
 		</sheet>
 		<spellcasting name="Warlock" extend="true">
 			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>
@@ -1800,7 +1800,7 @@
 			<p class="indent">Unlike the features in the <em>Player's Handbook</em>, you don't gain the features here automatically. Consulting with your DM, you decide whether to gain a feature in this section if you meet the level requirement noted in the feature's description. These features can be selected separately from one another; you can use one, both, or none of them.</p>
 			<h2>ADDITIONAL WIZARD SPELLS</h2>
 			<p><em>1st-level wizard feature</em></p>
-			<p>The spells in the following list expand the cleric list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
+			<p>The spells in the following list expand the wizard list in the Player's Handbook. The list is organized by spell level, not character level. If a spell can be cast as a ritual, the ritual tag appears after the spell's name. Each spell is in the <em>Player's Handbook</em>, unless it has an asterisk (a spell in chapter 3). <em>Xanathar's Guide to Everything</em> also offers more spells.</p>
 			<table>
 				<thead>
 					<tr><td>Spell Level</td><td>Spells</td></tr>
@@ -1816,7 +1816,7 @@
 			</table>
 		</description>
         <sheet display="false">
-			<description>Optional feature that lets you choose from an expanded list of spells when you learn a sorcerer spell.</description>
+			<description>Optional feature that lets you choose from an expanded list of spells when you learn a wizard spell.</description>
 		</sheet>
 		<spellcasting name="Wizard" extend="true">
 			<extend>ID_TCOE_SPELL_BOOMING_BLADE</extend>

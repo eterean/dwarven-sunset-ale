@@ -3,7 +3,7 @@
 	<info>
 		<name>Clockwork Soul Sorcerous Origin</name>
 		<description>The Clockwork Soul Sorcerous Origin from Tasha’s Cauldron of Everything</description>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="sorcerer-clockwork.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/sorcerer-clockwork.xml" />
 		</update>
 	</info>
@@ -24,7 +24,7 @@
 			<div element="ID_WOTC_TCOE_SORCERER_ARCHETYPE_CLOCKWORK_SOUL_CLOCKWORK_CAVALCADE" />
 		</description>
 		<sheet>
-			<description>An alien influence gives you psionic power.</description>
+			<description>The cosmic force of order has suffused you with magic.</description>
 		</sheet>
 		<rules>
 			<grant type="Archetype Feature" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_CLOCKWORK_SOUL_CLOCKWORK_MAGIC" level="1" />
