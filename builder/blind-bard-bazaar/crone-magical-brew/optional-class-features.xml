@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -1676,7 +1676,7 @@
 			<select type="Class Feature" name="Warlock Optional Class Feature Lv. 4" supports="Warlock Optional Class Feature Lv. 4" optional="true" requirements="[warlock:4]" />
 		</rules>
 	</element>
-	<element name="Additional Warlock Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_SORCERER_ADDITIONAL_SORCERER_SPELLS">
+	<element name="Additional Warlock Spells" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_ADDITIONAL_WARLOCK_SPELLS">
 		<supports>Warlock Optional Class Feature Lv. 1</supports>
 		<description>
         	<h5>OPTIONAL CLASS FEATURES</h5>
