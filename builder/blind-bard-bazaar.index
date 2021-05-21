@@ -9,9 +9,8 @@
 		</update>
 	</info>
 	<files>
-		
 		<!-- material -->
 		<file name="crone-magical-brew.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew.index" />
-		
+		<file name="vampire-realm-guide.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide.index" />
 	</files>
 </index>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Reborn</name>
+		<update version="0.0.1">
+			<file name="lineage-reborn.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-reborn.xml" />
+		</update>
+	</info>
+
+	<element name="Lineage, Reborn" type="Race" source="Van Richten’s Guide to Ravenloft" id="ID_WOTC_VRGTR_LINEAGE_REBORN">
+		<description>
+			<p class="flavor">Death isn’t always the end. The reborn exemplify this, being individuals who have died yet, somehow, still live. Some reborn exhibit the scars of fatal ends, their ashen flesh or bloodless veins making it clear that they’ve been touched by death. Other reborn are marvels of magic or science, being stitched together from disparate beings or bearing mysterious minds in manufactured bodies. Whatever their origins, reborn know a new life and seek experiences and answers all their own.</p>            
+			<h4>FADED MEMORIES</h4>
+			<p>Reborn suffer from some manner of discontinuity, an interruption of their lives or physical state that their minds are ill equipped to deal with. Their memories of events before this interruption are often vague or absent. Occasionally, the most unexpected experiences might cause sensations or visions of the past to come rushing back.</p>
+            <p class="indent">Rather than sleeping, reborn regularly sit and dwell on the past, hoping for some revelation of what came before. Most of the time, these are dark, silent stretches. Occasionally, though, in a moment of peace, stress, or excitement, a reborn gains a glimpse of what came before. When you desire to have such a dreamlike vision, roll on the Lost Memories table to inspire its details.</p>			
+			<h5>LOST MEMORIES</h5>
+      		<table>
+        		<thead>
+          			<tr><td>d6</td><td>Memory</td></tr>
+        		</thead>
+        		<tr><td>1</td><td><em>You recall a physically painful moment. What mark or scar on your body does it relate to?</em></td></tr>
+        		<tr><td>2</td><td><em>A memory brings tears to your eyes. Is it a bitter or cheerful memory? Does recalling it make you feel the same way?</em></td></tr>
+        		<tr><td>3</td><td><em>You recall a childhood memory. What about that event or who you were still influences you?</em></td></tr>
+        		<tr><td>4</td><td><em>A memory brings with it the voice of someone once close to you. How do they advise you?</em></td></tr>
+        		<tr><td>5</td><td><em>You recall enjoying something that you can’t stand doing now. What is it? Why don’t you like it now?</em></td></tr>
+                <tr><td>6</td><td><em>A memory carries a vivid smell or sensation. What are you going to do to recreate that experience?</em></td></tr>                
+      		</table>
+            <h4>REBORN ORIGINS</h4>
+			<p>Reborn might originate from circumstances similar to those of various undead or constructs. The Reborn Origins table provides suggestions for how your character became reborn.</p>
+			<h5>REBORN ORIGINS</h5>
+      		<table>
+        		<thead>
+          			<tr><td>d8</td><td>Origin</td></tr>
+        		</thead>
+        		<tr><td>1</td><td><em>You were magically resurrected, but something went wrong.</em></td></tr>
+        		<tr><td>2</td><td><em>Stitches bind your body’s mismatched pieces, and your memories come from multiple different lives.</em></td></tr>
+        		<tr><td>3</td><td><em>After clawing free from your grave, you realized you have no memories except for a single name.</em></td></tr>
+        		<tr><td>4</td><td><em>You were a necromancer’s undead servant for years. One day, your consciousness returned.</em></td></tr>
+        		<tr><td>5</td><td><em>You awoke in an abandoned laboratory alongside complex designs for clockwork organs.</em></td></tr>
+                <tr><td>6</td><td><em>You were released after being petrified for generations. Your memories have faded, though, and your body isn’t what it once was.</em></td></tr>
+                <tr><td>7</td><td><em>Your body hosts a possessing spirit that shares its memories and replaces your missing appendages with phantasmal limbs.</em></td></tr>
+                <tr><td>8</td><td><em>In public, you pass as an unremarkable individual, but you can feel the itchy straw stu􀂨ng inside you.</em></td></tr>
+      		</table>
+			<h4>REBORN IN THE DOMAINS OF DREAD</h4>
+			<p>When creating a reborn, consult with your DM to see if it’s appropriate to tie your origins to one of the following Domains of Dread:</p>
+			<ul class="unstyled">
+				<li><strong>Har’Akir.</strong> You died and endured the burial rites of this desert realm, yet somehow a soul—yours or another’s—has taken refuge in your perfectly preserved remains.</li>
+				<li><strong>Kartakass.</strong> You awoke amid the bizarre experiments of an amoral scientist. They consider you their finest creation or have a task for you to fulfill.</li>
+				<li><strong>Tepest.</strong> You emerged from the mysterious device known as the Apparatus, your body a lifeless shell and your past a mystery.</li>
+			</ul>
+			<h4>REBORN TRAITS</h4>
+			<p>You have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>            
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Choose between increasing one ability score by 2 and other by 1, or increase three different scores by 1.</p>						
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you gain this lineage.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>			
+            <p class="indent"><strong><em>Ancestral Legacy.</em></strong> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+			<p class="indent"><strong><em>Deathless Nature.</em></strong> You have escaped death, a fact represented by the following benefits:</p>
+            <ul>
+                <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>
+                <li>You have advantage on death saving throws.</li>
+                <li>You don’t need to eat, drink, or breathe.</li>
+                <li>You don’t need to sleep, and magic can’t put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>
+            </ul>            
+			<p class="indent"><strong><em>Knowledge from a Past Life.</em></strong> You temporarily remember glimpses of the past, perhaps faded memories from ages ago or a previous life. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check. You can use this feature a number of times equal to your pro􀂦ciency bonus, and you regain all expended uses when you 􀂦nish a long rest.</p>
+		</description>
+		<sheet alt="Reborn Lineage" display="false" />
+		<setters>
+			<set name="names" type="male">Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos, Pelaios, Skamos, Therai</set>
+			<set name="names" type="female">Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista, Lerissa, Makaria, Nemeia, Orianna, Phelaia, Rieta</set>
+			<set name="names" type="virtue">Art, Carrion, Chant, Creed, Despair, Excellence, Fear, Glory, Hope, Ideal, Music, Nowhere, Open, Poetry, Quest, Random, Reverence, Sorrow, Temerity, Torment, Weary</set>
+			<set name="names-format">{{name}} “{{virtue}}”</set>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_HUMANOID" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY" />
+			<stat name="innate speed" value="30" bonus="base"/>
+            <select type="Racial Trait" name="Character Size (Reborn)" supports="Reborn Size" />			
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Reborn)" supports="Standard||Exotic" number="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_KNOWLEDGE_FROM_A_PAST_LIFE" />            
+            <select type="Racial Trait" name="Reborn Variant" supports="Reborn Variant" optional="true" />
+		</rules>
+	</element>
+    <element name="Humanoid" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_HUMANOID">
+        <compendium display="false" />
+		<description>        	
+			<p>Your creature type is Humanoid.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your creature type is Humanoid.</p>
+		    </description>
+        </sheet>        
+	</element>
+    <element name="Medium Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_SIZE_MEDIUM">
+        <compendium display="false" />
+		<supports>Reborn Size</supports>
+		<description>        	
+			<p>Your character size is Medium.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Medium.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+        </rules>
+	</element>
+    <element name="Small Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_SIZE_SMALL">
+        <compendium display="false" />
+		<supports>Reborn Size</supports>
+		<description>        	
+			<p>Your character size is Small.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Small.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+        </rules>
+	</element>
+	<element name="Ancestral Legacy" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY">
+		<description>
+			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" supports="Skill" number="2" />
+		</rules>
+	</element>
+	<element name="Deathless Nature" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE">
+		<description>
+			<p>You have escaped death, a fact represented by the following benefits:</p>
+            <ul>
+                <li>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</li>
+                <li>You have advantage on death saving throws.</li>
+                <li>You don’t need to eat, drink, or breathe.</li>
+                <li>You don’t need to sleep, and magic can’t put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive, motionless state, during which you retain consciousness.</li>
+            </ul>
+		</description>
+		<sheet>
+			<description>You don’t need to eat, drink, or breathe. Also, you don’t need to sleep, and magic can’t put you to sleep. You can finish a long rest in 4 hours in an inactive, motionless state, during which you retain consciousness. You also gain:</description>
+		</sheet>
+        <rules>
+            <select type="Racial Trait" select="Deathless Nature" supports="Deathless Nature" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES" default="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES_POISON" />
+            <select type="Racial Trait" select="Deathless Nature" supports="Deathless Nature" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES" default="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES_DEATH" />
+        </rules>
+	</element>
+    <element name="Disease and Poison Advantage" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES_POISON">
+        <compendium display="false" />
+        <supports>Deathless Nature</supports>
+		<description>
+			<p>You have advantage on saving throws against disease and being poisoned, and you have resistance to poison damage.</p>            
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against disease and being poisoned.</description>
+		</sheet>
+        <rules>
+            <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+        </rules>
+	</element>
+    <element name="Death Saving Throws Advantage" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEATHLESS_NATURE_ADVANTAGES_DEATH">
+        <compendium display="false" />
+        <supports>Deathless Nature</supports>
+		<description>
+			<p>You have advantage on death saving throws.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on death saving throws.</description>
+		</sheet>
+	</element>
+    <element name="Knowledge from a Past Life" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_KNOWLEDGE_FROM_A_PAST_LIFE">
+		<description>
+			<p>You temporarily remember glimpses of the past, perhaps faded memories from ages ago or a previous life. When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check. You can use this feature a number of times equal to your pro􀂦ciency bonus, and you regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet usage="{{past life knowledge:usage}}/Long Rest">
+			<description>When you make an ability check that uses a skill, you can roll a d6 immediately after seeing the number on the d20 and add the number on the d6 to the check.</description>
+		</sheet>
+        <rules>
+            <stat name="past life knowledge:usage" value="proficiency" bonus="base" />
+        </rules>
+	</element>
+    
+    <!--Reborn Ability Score Selection-->
+    <element name="Default Score" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY">
+        <compendium display="false" />
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_SCORE</requirements>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <select type="Racial Trait" name="Ability Score Increase (Reborn)" supports="Reborn Primary" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase (Reborn)" supports="Reborn Score" number="1" />
+        </rules>
+	</element>
+    <element name="Variant Reborn, +1/+1/+1" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT">
+        <compendium display="false" />
+		<supports>Reborn Variant</supports>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_SCORE" />
+        </rules>
+	</element>
+    <element name="Variant: Three +1" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_SCORE">
+        <compendium display="false" />
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Ability Score Increase (Reborn Variant)" supports="Reborn Score" number="3" />
+        </rules>
+	</element>
+
+    <!--Reborn Primary Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_STRENGTH">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Strength score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="2" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_DEXTERITY">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Dexterity score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Constitution score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Intelligence score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_WISDOM">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Wisdom score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="2" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_CHARISMA">
+        <compendium display="false" />
+        <supports>Reborn Primary</supports>
+        <description>
+            <p>Your Charisma score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="2" alt="Reborn" />
+        </rules>
+    </element>
+
+    <!--Reborn Variant Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_STRENGTH">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_STRENGTH</requirements>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_DEXTERITY">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_DEXTERITY</requirements>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_CONSTITUTION</requirements>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_INTELLIGENCE</requirements>
+        <description>
+            <p>Your Intelligence score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_WISDOM">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_WISDOM</requirements>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" alt="Reborn" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_CHARISMA">
+        <compendium display="false" />
+        <supports>Reborn Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_CHARISMA</requirements>
+        <description>
+            <p>Your Charisma score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" alt="Reborn" />
+        </rules>
+    </element>
+</elements>

@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Hexblood</name>
+		<update version="0.0.1">
+			<file name="lineage-hexblood.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-hexblood.xml" />
+		</update>
+	</info>
+
+	<element name="Lineage, Hexblood" type="Race" source="Van Richten’s Guide to Ravenloft" id="ID_WOTC_VRGTR_LINEAGE_HEXBLOOD">
+		<description>
+			<p class="flavor">Where wishing fails, ancient magic can offer a heart’s desire—at least, for a time. Hexbloods are individuals infused with eldritch magic, fey energy, or mysterious witchcraft. Some who enter into bargains with hags gain their deepest wishes but eventually find themselves transformed. These changes evidence a hag’s influence: ears that split in forked points, skin in lurid shades, long hair that regrows if cut, and an irremovable living crown. Along with these marks, hexbloods manifest hag-like traits, such as darkvision and a variety of magical methods to beguile the senses and avoid the same.</p>
+            <p class="indent">While many hexbloods gain their lineage after making a deal with a hag, others reveal their nature as they age—particularly if a hag influenced them early in life or even before their birth. Many hexbloods turn to lives of adventure, seeking to discover the mysteries of their magic, to forge a connection with their fey natures, or to avoid a hag that obsesses over them.</p>
+			<h4>HEIR OF HAGS</h4>
+			<p>One way hags create more of their kind is through the creation of hexbloods. Every hexblood exhibits features suggestive of the hag whose magic inspires their powers. This includes an unusual crown, often called an eldercross or a witch’s turn. This living, garland-like part of a hexblood’s body extends from their temples and wraps behind the head, serving as a visible mark of the bargain between hag and hexblood, a debt owed, or a change to come.</p>            
+			<h4>HEXBLOOD ORIGINS</h4>
+			<p>A bargain with a hag or other eerie forces transformed your character into a magical being. Roll on or choose an option from the Hexblood Origins table to determine how your character gained their lineage.</p>
+			<h5>HEXBLOOD ORIGINS</h5>
+      		<table>
+        		<thead>
+          			<tr><td>d6</td><td>Origin</td></tr>
+        		</thead>
+        		<tr><td>1</td><td><em>Seeking a child, your parent made a bargain with a hag. You are the result of that arrangement.</em></td></tr>
+        		<tr><td>2</td><td><em>Fey kidnappers swapped you and your parents’ child.</em></td></tr>
+        		<tr><td>3</td><td><em>A coven of hags lost one of its members. You were created to replace the lost hag.</em></td></tr>
+        		<tr><td>4</td><td><em>You were cursed as a child. A deal with the spirits of the forest transformed you into a hexblood, now free of the curse.</em></td></tr>
+        		<tr><td>5</td><td><em>You began life as a fey creature, but an accident changed you and forced you from your home.</em></td></tr>
+                <tr><td>6</td><td><em>A slighted druid transformed you and bound you to live only so long as a sacred tree bears fruit.</em></td></tr>                
+      		</table>
+			<h4>HEXBLOOD IN THE DOMAINS OF DREAD</h4>
+			<p>When creating a hexblood, consult with your DM to see if it’s appropriate to tie your origins to one of the following Domains of Dread:</p>
+			<ul class="unstyled">
+				<li><strong>Hazlan.</strong> The bizarre magic of this crumbling domain exposes the populace to supernatural forces, occasionally giving rise to hexbloods.</li>
+				<li><strong>Kartakass.</strong> Whimsical witches make their homes in the forests of Kartakass. They eagerly grant the wishes of locals seeking grand fortunes for their children.</li>
+				<li><strong>Tepest.</strong> Many of the children in the town of Viktal are hexbloods who exhibit their supernatural natures from a young age. Each youngster is considered a gift from the town’s patron deity, who is known as Mother.</li>
+			</ul>
+			<h4>HEXBLOOD TRAITS</h4>
+			<p>You have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> You are a Fey.</p>            
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Choose between increasing one ability score by 2 and other by 1, or increase three different scores by 1.</p>						
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you gain this lineage.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 30 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+            <p class="indent"><strong><em>Ancestral Legacy.</em></strong> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+			<p class="indent"><strong><em>Eerie Token.</em></strong> As a bonus action, you can harmlessly remove a lock of your hair, one of your nails, or one of your teeth. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can take these actions:</p>
+            <ul>
+                <li><strong>Telepathic Message.</strong> As an action, you can send a telepathic message to the creature holding or carrying the token, as long as you are within 10 miles of it. The message can contain up to twenty-five words.</li>
+                <li><strong>Remote Viewing.</strong> If you are within 10 miles of the token, you can enter a trance as an action. The trance lasts for 1 minute, but it ends early if you dismiss it (no action required) or are incapacitated. During this trance, you can see and hear from the token as if you were located where it is. While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.</li>
+            </ul>
+            <p class="indent">Once you create a token using this feature, you can’t do so again until you finish a long rest, at which point your missing part regrows.</p>
+			<p class="indent"><strong><em>Hex Magic.</em></strong> You can cast the <em>disguise self</em> and <em>hex</em> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you gain this lineage).</p>
+            <div class="sidebar">
+                <h5>BECOMING A HAG</h5>
+				<p>Hags can undertake a ritual to irreversibly transform a hexblood they created into a new hag, either one of their own kind or that embodies the hexblood's nature. This requires that both the hag and hexblood be in the same place and consent to the lengthy ritual - circumstances most hexbloods shun but might come to accept over the course of centuries. Once a hexblood undergoes this irreversible ritual, they emerge as a hag NPC no longer under the control of the hexblood's player, unless the DM rules otherwise.</p>
+			</div>
+		</description>
+		<sheet alt="Hexblood Lineage" display="false" />
+		<setters>
+			<set name="names" type="male">Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos, Pelaios, Skamos, Therai</set>
+			<set name="names" type="female">Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista, Lerissa, Makaria, Nemeia, Orianna, Phelaia, Rieta</set>
+			<set name="names" type="virtue">Art, Carrion, Chant, Creed, Despair, Excellence, Fear, Glory, Hope, Ideal, Music, Nowhere, Open, Poetry, Quest, Random, Reverence, Sorrow, Temerity, Torment, Weary</set>
+			<set name="names-format">{{name}} “{{virtue}}”</set>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_FEY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_ABILITY" />
+			<stat name="innate speed" value="30" bonus="base"/>
+            <select type="Racial Trait" name="Character Size (Hexblood)" supports="Hexblood Size" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Hexblood)" supports="Standard||Exotic" number="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC" />            
+            <select type="Racial Trait" name="Hexblood Variant" supports="Hexblood Variant" optional="true" />
+		</rules>
+	</element>
+    <element name="Fey" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_FEY">
+        <compendium display="false" />
+		<description>        	
+			<p>Your creature type is Fey.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your creature type is Fey.</p>
+		    </description>
+        </sheet>        
+	</element>
+    <element name="Medium Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_SIZE_MEDIUM">
+        <compendium display="false" />
+		<supports>Hexblood Size</supports>
+		<description>        	
+			<p>Your character size is Medium.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Medium.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+        </rules>
+	</element>
+    <element name="Small Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_SIZE_SMALL">
+        <compendium display="false" />
+		<supports>Hexblood Size</supports>
+		<description>        	
+			<p>Your character size is Small.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Small.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+        </rules>
+	</element>
+	<element name="Ancestral Legacy" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY">
+		<description>
+			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" supports="Skill" number="2" />
+		</rules>
+	</element>
+	<element name="Eerie Token" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN">
+		<description>
+			<p>As a bonus action, you can harmlessly remove a lock of your hair, one of your nails, or one of your teeth. This token is imbued with magic until you finish a long rest. While the token is imbued in this way, you can take these actions:</p>
+            <ul>
+                <li><strong>Telepathic Message.</strong> As an action, you can send a telepathic message to the creature holding or carrying the token, as long as you are within 10 miles of it. The message can contain up to twenty-five words.</li>
+                <li><strong>Remote Viewing.</strong> If you are within 10 miles of the token, you can enter a trance as an action. The trance lasts for 1 minute, but it ends early if you dismiss it (no action required) or are incapacitated. During this trance, you can see and hear from the token as if you were located where it is. While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.</li>
+            </ul>
+            <p class="indent">Once you create a token using this feature, you can’t do so again until you finish a long rest, at which point your missing part regrows.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Long Rest">
+			<description>You imbue a token until you finish a long rest, while imbued you can do:</description>
+		</sheet>
+        <rules>
+            <select type="Racial Trait" select="Eerie Token" supports="Eerie Token" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN_ACTIONS" default="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_TELEPATHIC_MESSAGE" />
+            <select type="Racial Trait" select="Eerie Token" supports="Eerie Token" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN_ACTIONS" default="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_REMOTE_VIEWING" />
+        </rules>
+	</element>
+    <element name="Telepathic Message" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_TELEPATHIC_MESSAGE">
+        <supports>Eerie Token</supports>
+		<description>
+			<p>As an action, you can send a telepathic message to the creature holding or carrying the token, as long as you are within 10 miles of it. The message can contain up to twenty-five words.</p>            
+		</description>
+		<sheet action="Action">
+			<description>You can send a telepathic message to the creature holding or carrying the token, as long as you are within 10 miles of it. The message can contain up to twenty-five words.</description>
+		</sheet>
+	</element>
+    <element name="Remote Viewing" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_REMOTE_VIEWING">
+        <supports>Eerie Token</supports>
+		<description>
+			<p>If you are within 10 miles of the token, you can enter a trance as an action. The trance lasts for 1 minute, but it ends early if you dismiss it (no action required) or are incapacitated. During this trance, you can see and hear from the token as if you were located where it is. While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.</p>            
+		</description>
+		<sheet action="Action">
+			<description>While within 10 miles, you can enter a trance state, in which you can see and hear from the token as if you were located where it is. While you are using your senses at the token’s location, you are blinded and deafened in regard to your own surroundings. When the trance ends, the token is harmlessly destroyed.</description>
+		</sheet>
+	</element>
+    
+    <!-- Hex Magic -->
+    <element name="Hex Magic" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC">
+		<description>
+			<p>You can cast the <em>disguise self</em> and <em>hex</em> spells with this trait. Once you cast either of these spells with this trait, you can’t cast that spell with it again until you finish a long rest. You can also cast these spells using any spell slots you have.</p>
+            <p class="indent">Intelligence, Wisdom, or Charisma is your spellcasting ability for these spells (choose the ability when you gain this lineage).</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <stat name="hex magic:spellcasting:slots:0" value="1" level="1" />
+            <select type="Racial Trait" name="Hex Magic Attribute" supports="Hex Magic Attribute" />
+        </rules>
+	</element>
+    <element name="Intelligence" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC_INTELLIGENCE">
+		<compendium display="false" />
+		<supports>Hex Magic Attribute</supports>
+		<description>
+			<p>You cast your Hex Magic spells with your Intelligence attribute.</p>
+		</description>
+		<sheet alt="Hex Magic (Intelligence)">
+			<description>You know the disguise self and hex spell. Your spellcasting ability is Intelligence.</description>
+		</sheet>
+		<spellcasting name="Hex Magic" ability="Intelligence" prepare="false" allowReplace="false" />
+		<rules>			
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Hex Magic" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEX" spellcasting="Hex Magic" />			
+		</rules>
+	</element>
+	<element name="Wisdom" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC_WISDOM">
+		<compendium display="false" />
+		<supports>Hex Magic Attribute</supports>
+		<description>
+			<p>You cast your Hex Magic spells with your Wisdom attribute.</p>
+		</description>
+		<sheet alt="Hex Magic (Wisdom)">
+			<description>You know the disguise self and hex spell. Your spellcasting ability is Wisdom.</description>
+		</sheet>
+		<spellcasting name="Hex Magic" ability="Wisdom" prepare="false" allowReplace="false" />
+		<rules>			
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Hex Magic" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEX" spellcasting="Hex Magic" />			
+		</rules>
+	</element>
+	<element name="Charisma" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC_CHARISMA">
+		<compendium display="false" />
+		<supports>Hex Magic Attribute</supports>
+		<description>
+			<p>You cast your Hex Magic spells with your Charisma attribute.</p>
+		</description>
+		<sheet alt="Hex Magic (Charisma)">
+			<description>You know the disguise self and hex spell. Your spellcasting ability is Charisma.</description>
+		</sheet>
+		<spellcasting name="Hex Magic" ability="Charisma" prepare="false" allowReplace="false" />
+		<rules>			
+			<grant type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" spellcasting="Hex Magic" />
+            <grant type="Spell" id="ID_PHB_SPELL_HEX" spellcasting="Hex Magic" />			
+		</rules>
+	</element>
+    <!-- /Hex Magic -->
+
+    <!--Hexblood Ability Score Selection-->
+    <element name="Default Score" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_ABILITY">
+        <compendium display="false" />
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_SCORE</requirements>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <select type="Racial Trait" name="Ability Score Increase (Hexblood)" supports="Hexblood Primary" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase (Hexblood)" supports="Hexblood Score" number="1" />
+        </rules>
+	</element>
+    <element name="Variant Hexblood, +1/+1/+1" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT">
+        <compendium display="false" />
+		<supports>Hexblood Variant</supports>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_SCORE" />
+        </rules>
+	</element>
+    <element name="Variant: Three +1" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_SCORE">
+        <compendium display="false" />
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Ability Score Increase (Hexblood Variant)" supports="Hexblood Score" number="3" />
+        </rules>
+	</element>
+
+    <!--Hexblood Primary Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_STRENGTH">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Strength score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_DEXTERITY">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Dexterity score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Constitution score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Intelligence score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_WISDOM">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Wisdom score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_CHARISMA">
+        <compendium display="false" />
+        <supports>Hexblood Primary</supports>
+        <description>
+            <p>Your Charisma score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="2" alt="Hexblood" />
+        </rules>
+    </element>
+
+    <!--Hexblood Variant Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_STRENGTH">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_STRENGTH</requirements>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_DEXTERITY">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_DEXTERITY</requirements>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_CONSTITUTION</requirements>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_INTELLIGENCE</requirements>
+        <description>
+            <p>Your Intelligence score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_WISDOM">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_WISDOM</requirements>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_VARIANT_CHARISMA">
+        <compendium display="false" />
+        <supports>Hexblood Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_CHARISMA</requirements>
+        <description>
+            <p>Your Charisma score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" alt="Hexblood" />
+        </rules>
+    </element>
+</elements>

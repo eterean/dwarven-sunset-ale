@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Dhampir</name>
+		<update version="0.0.1">
+			<file name="lineage-dhampir.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-dhampir.xml" />
+		</update>
+	</info>
+
+	<element name="Lineage, Dhampir" type="Race" source="Van Richten’s Guide to Ravenloft" id="ID_WOTC_VRGTR_LINEAGE_DHAMPIR">
+		<description>
+			<p class="flavor">Poised between the worlds of the living and the dead, dhampirs retain their grip on life yet are endlessly tested by vicious hungers. Their ties to the undead grant dhampirs a taste of a vampire’s deathless prowess in the form of increased speed, darkvision, and a life-draining bite.</p>
+			<h4>DHAMPIR HUNGERS</h4>
+			<p>Every dhampir knows a thirst slaked only by the living. Those who overindulge their thirst risk losing control and forever viewing others as prey. Those who resist might find exceptional ways of controlling their urges or suppress them through constant, molar-grinding restraint. In any case, temptation haunts dhampirs, and circumstances conspire to give them endless reasons to indulge.</p>
+            <p class="indent">While many dhampirs thirst for blood, your character might otherwise gain sustenance from the living. Roll on or choose an option from the Dhampir Hungers table to determine what tempts your character to feed.</p>
+            <h5>DHAMPIR HUNGERS</h5>
+      		<table>
+        		<thead>
+          			<tr><td>d6</td><td>Hunger</td></tr>
+        		</thead>
+        		<tr><td>1</td><td><em>Blood</em></td></tr>
+        		<tr><td>2</td><td><em>Flesh or raw meat</em></td></tr>
+        		<tr><td>3</td><td><em>Cerebral spinal fluid</em></td></tr>
+        		<tr><td>4</td><td><em>Psychic energy</em></td></tr>
+        		<tr><td>5</td><td><em>Dreams</em></td></tr>
+                <tr><td>6</td><td><em>Life energy</em></td></tr>
+      		</table>
+			<h4>DHAMPIR ORIGINS</h4>
+			<p>Dhampirs often arise from encounters with vampires, but all manner of macabre bargains, necromantic in􀂧uences, and encounters with mysterious immortals might have transformed your character. The Dhampir Origins table provides suggestions for how your character gained their lineage.</p>
+			<h5>DHAMPIR ORIGINS</h5>
+      		<table>
+        		<thead>
+          			<tr><td>d8</td><td>Origin</td></tr>
+        		</thead>
+        		<tr><td>1</td><td><em>You are the reincarnation of an ancestor who was a vampiric tyrant.</em></td></tr>
+        		<tr><td>2</td><td><em>Your pact with a predatory deity, fiend, fey, or spirit causes you to share their hunger.</em></td></tr>
+        		<tr><td>3</td><td><em>You survived being attacked by a vampire but were forever changed.</em></td></tr>
+        		<tr><td>4</td><td><em>A parasite lives inside you. You indulge its hunger.</em></td></tr>
+        		<tr><td>5</td><td><em>Tragedy interrupted your transformation into an immortal.</em></td></tr>
+                <tr><td>6</td><td><em>You are a diminished form of an otherworldly being. Slaking your hunger hastens your renewal.</em></td></tr>
+                <tr><td>7</td><td><em>One of your parents was a vampire.</em></td></tr>
+                <tr><td>8</td><td><em>A radical experiment changed your body, making you reliant on others for vital fluids.</em></td></tr>
+      		</table>
+			<h4>DHAMPIRS IN THE DOMAINS OF DREAD</h4>
+			<p>When creating a dhampir, ask your DM if it makes sense for your character to have ties to one of the following Domains of Dread:</p>
+			<ul class="unstyled">
+				<li><strong>Barovia.</strong> In the shadow of Castle Ravenloft, tales 􀂧ourish of those who love or descend from vampires. You might have such a connection, but dread what would happen if others in your insular community found out.</li>
+				<li><strong>Darkon.</strong> The Kargat, this shattered domain’s secret police, supposedly know the secret of immortality. Perhaps you joined and advanced through their lesser ranks, known as the Kargatane, and were rewarded by being transformed into a dhampir.</li>
+				<li><strong>I’Cath.</strong> At night, the starving city of I’Cath is overrun by vampiric jiangshi (described in chapter 5). You were left with a cold hunger after an encounter with one of these unquiet ancestors.</li>
+			</ul>
+			<h4>DHAMPIR TRAITS</h4>
+			<p>You have the following racial traits.</p>
+            <p class="indent"><strong><em>Creature Type.</em></strong> You are a Humanoid.</p>            
+			<p class="indent"><strong><em>Ability Score Increase.</em></strong> Choose between increasing one ability score by 2 and other by 1, or increase three different scores by 1.</p>						
+			<p class="indent"><strong><em>Size.</em></strong> You are Medium or Small. You choose the size when you gain this lineage.</p>
+			<p class="indent"><strong><em>Speed.</em></strong> Your base walking speed is 35 feet.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You discern colors in that darkness as shades of gray.</p>
+            <p class="indent"><strong><em>Ancestral Legacy.</em></strong> If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+			<p class="indent"><strong><em>Deathless Nature.</em></strong> You don’t need to breathe.</p>
+			<p class="indent"><strong><em>Spider Climb.</em></strong> You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+            <p class="indent"><strong><em>Vampiric Bite.</em></strong> Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.</p>
+            <p class="indent">When you attack with this bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice:</p>
+            <ul>
+                <li>You regain hit points equal to the piercing damage dealt by the bite.</li>
+                <li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite.</li>
+            </ul>
+            <p class="indent">You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
+			<p class="indent"><strong><em>Languages.</em></strong> You can speak, read, and write Common and one other language that you and your DM agree is appropiate for the character. The DM is free to add or remove languages from that list for a particular campaign. If you are replacing your race with a lineage, you retain any languages you had and gain no new languages.</p>
+		</description>
+		<sheet alt="Dhampir Lineage" display="false" />
+		<setters>
+			<set name="names" type="male">Akmenos, Amnon, Barakas, Damakos, Ekemon, Iados, Kairon, Leucis, Melech, Mordai, Morthos, Pelaios, Skamos, Therai</set>
+			<set name="names" type="female">Akta, Anakis, Bryseis, Criella, Damaia, Ea, Kallista, Lerissa, Makaria, Nemeia, Orianna, Phelaia, Rieta</set>
+			<set name="names" type="virtue">Art, Carrion, Chant, Creed, Despair, Excellence, Fear, Glory, Hope, Ideal, Music, Nowhere, Open, Poetry, Quest, Random, Reverence, Sorrow, Temerity, Torment, Weary</set>
+			<set name="names-format">{{name}} “{{virtue}}”</set>
+			<set name="height" modifier="2d8">4'9"</set>
+			<set name="weight" modifier="2d4">110 lb.</set>
+		</setters>
+		<rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_HUMANOID" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_ABILITY" />
+			<stat name="innate speed" value="35" bonus="base"/>
+            <select type="Racial Trait" name="Character Size (Dhampir)" supports="Dhampir Size" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" />
+			<select type="Language" name="Language (Dhampir)" supports="Standard||Exotic" number="1" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_DEATHLESS_NATURE" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_SPIDER_CLIMB" />
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VAMPIRIC_BITE" />
+            <select type="Racial Trait" name="Dhampir Variant" supports="Dhampir Variant" optional="true" />
+		</rules>
+	</element>
+    <element name="Humanoid" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_HUMANOID">
+        <compendium display="false" />
+		<description>        	
+			<p>Your creature type is Humanoid.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your creature type is Humanoid.</p>
+		    </description>
+        </sheet>        
+	</element>
+    <element name="Medium Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_SIZE_MEDIUM">
+        <compendium display="false" />
+		<supports>Dhampir Size</supports>
+		<description>        	
+			<p>Your character size is Medium.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Medium.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_MEDIUM" />
+        </rules>
+	</element>
+    <element name="Small Size" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_SIZE_SMALL">
+        <compendium display="false" />
+		<supports>Dhampir Size</supports>
+		<description>        	
+			<p>Your character size is Small.</p>
+		</description>
+        <sheet>
+            <description>        	
+			    <p>Your character size is Small.</p>
+		    </description>
+        </sheet>
+        <rules>
+            <grant type="Size" id="ID_SIZE_SMALL" />
+        </rules>
+	</element>
+	<element name="Ancestral Legacy" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY">
+		<description>
+			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
+            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" supports="Skill" number="2" />
+		</rules>
+	</element>
+	<element name="Deathless Nature" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_DEATHLESS_NATURE">
+		<description>
+			<p>You don’t need to breathe.</p>
+		</description>
+		<sheet>
+			<description>You don’t need to breathe.</description>
+		</sheet>
+	</element>
+    <element name="Spider Climb" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_SPIDER_CLIMB">
+		<description>
+			<p>You have a climbing speed equal to your walking speed. In addition, at 3rd level, you can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</p>
+		</description>
+		<sheet>
+            <description>You have a climbing speed equal to your walking speed.</description>
+			<description level="3">You can move up, down, and across vertical surfaces and upside down along ceilings, while leaving your hands free.</description>
+		</sheet>
+        <rules>
+            <stat name="speed:climb" value="speed" bonus="base" />
+        </rules>
+	</element>
+    <element name="Vampiric Bite" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VAMPIRIC_BITE">
+		<description>
+			<p>Your fanged bite is a natural weapon, which counts as a simple melee weapon with which you are proficient. You add your Constitution modifier, instead of your Strength modifier, to the attack and damage rolls when you attack with this bite. It deals 1d4 piercing damage on a hit. While you are missing half or more of your hit points, you have advantage on attack rolls you make with this bite.</p>
+            <p class="indent">When you attack with this bite and hit a creature that isn’t a Construct or an Undead, you can empower yourself in one of the following ways of your choice:</p>
+            <ul>
+                <li>You regain hit points equal to the piercing damage dealt by the bite.</li>
+                <li>You gain a bonus to the next ability check or attack roll you make; the bonus equals the piercing damage dealt by the bite.</li>
+            </ul>
+            <p class="indent">You can empower yourself with this bite a number of times equal to your proficiency bonus, and you regain all expended uses when you 􀂦nish a long rest.</p>
+		</description>
+		<sheet usage="{{vampiric bite:usage}}/Long Rest">
+			<description>You can empower yourself when you hit a creature (that's not Construct or Undead) with your bite, choose to regain hit points equal to the piercing damage dealt or gain a bonus to your next ability check or attack equal to the piercing damage dealt with the bite.</description>
+		</sheet>
+        <rules>
+            <stat name="vampiric bite:usage" value="proficiency" bonus="base" />
+        </rules>
+	</element>
+
+    <!--Dhampir Ability Score Selection-->
+    <element name="Default Score" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_ABILITY">
+        <compendium display="false" />
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_SCORE</requirements>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+            <select type="Racial Trait" name="Ability Score Increase (Dhampir)" supports="Dhampir Primary" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase (Dhampir)" supports="Dhampir Score" number="1" />
+        </rules>
+	</element>
+    <element name="Variant Dhampir, +1/+1/+1" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT">
+        <compendium display="false" />
+		<supports>Dhampir Variant</supports>
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_SCORE" />
+        </rules>
+	</element>
+    <element name="Variant: Three +1" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_SCORE">
+        <compendium display="false" />
+		<description>        	
+			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
+            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
+            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+		</description>
+		<sheet display="false" />
+        <rules>
+            <select type="Racial Trait" name="Ability Score Increase (Dhampir Variant)" supports="Dhampir Score" number="3" />
+        </rules>
+	</element>
+
+    <!--Dhampir Primary Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_STRENGTH">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Strength score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_DEXTERITY">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Dexterity score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Constitution score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Intelligence score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_WISDOM">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Wisdom score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_CHARISMA">
+        <compendium display="false" />
+        <supports>Dhampir Primary</supports>
+        <description>
+            <p>Your Charisma score increases by 2.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="2" alt="Dhampir" />
+        </rules>
+    </element>
+
+    <!--Dhampir Variant Ability Score Increase-->
+    <element name="Ability Score Increase (Strength)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_STRENGTH">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_STRENGTH</requirements>
+        <description>
+            <p>Your Strength score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="strength" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Dexterity)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_DEXTERITY">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_DEXTERITY</requirements>
+        <description>
+            <p>Your Dexterity score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="dexterity" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Constitution)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_CONSTITUTION">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_CONSTITUTION</requirements>
+        <description>
+            <p>Your Constitution score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="constitution" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Intelligence)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_INTELLIGENCE">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_INTELLIGENCE</requirements>
+        <description>
+            <p>Your Intelligence score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="intelligence" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Wisdom)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_WISDOM">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_WISDOM</requirements>
+        <description>
+            <p>Your Wisdom score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="wisdom" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+    <element name="Ability Score Increase (Charisma)" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_VARIANT_CHARISMA">
+        <compendium display="false" />
+        <supports>Dhampir Score</supports>
+        <requirements>!ID_RACIAL_TRAIT_LINEAGE_DHAMPIR_CHARISMA</requirements>
+        <description>
+            <p>Your Charisma score increases by 1.</p>
+        </description>
+        <sheet display="false" />
+        <rules>
+            <stat name="charisma" value="1" alt="Dhampir" />
+        </rules>
+    </element>
+</elements>

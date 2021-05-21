@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Van Richten’s Guide to Ravenloft</name>
+		<description></description>
+		<author url="http://dnd.wizards.com/products/van-richtens-guide-ravenloft">Wizards of the Coast</author>
+		<update version="0.0.1">
+			<file name="vampire-realm-guide.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide.index" />
+		</update>
+	</info>
+	<files>
+		<file name="source.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/source.xml" />
+
+		<!-- archetypes -->
+		<file name="bard-spirits.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/bard-spirits.xml" />
+		<file name="warlock-undead.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/warlock-undead.xml" />
+		
+		<file name="background-options.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/background-options.xml" />		
+		<file name="background-haunted-one.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/background-haunted-one.xml" />
+		<file name="background-investigator.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/investigator.xml" />
+
+		<file name="lineage-dhampir.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-dhampir.xml" />
+		<file name="lineage-hexblood.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-hexblood.xml" />
+		<file name="lineage-reborn.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-reborn.xml" />
+		
+		<file name="items.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/items.xml" />
+	</files>
+</index>
