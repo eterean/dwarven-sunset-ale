@@ -4,7 +4,7 @@
 		<name>Blind Bard Bazaar Resources</name>
 		<description></description>
 		<author url="">Eterean</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="blind-bard-bazaar.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar.index" />
 		</update>
 	</info>

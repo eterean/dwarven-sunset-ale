@@ -4,7 +4,7 @@
 		<name>Van Richten’s Guide to Ravenloft</name>
 		<description></description>
 		<author url="http://dnd.wizards.com/products/van-richtens-guide-ravenloft">Wizards of the Coast</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="vampire-realm-guide.index" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide.index" />
 		</update>
 	</info>
