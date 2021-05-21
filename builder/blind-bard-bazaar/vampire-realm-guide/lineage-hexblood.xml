@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Hexblood</name>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lineage-hexblood.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-hexblood.xml" />
 		</update>
 	</info>
@@ -73,6 +73,7 @@
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
 			<grant type="Language" id="ID_LANGUAGE_COMMON" />
 			<select type="Language" name="Language (Hexblood)" supports="Standard||Exotic" number="1" />
+            <!-- Ancestral Legacy feature in source.xml -->
 			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY" />
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN" />
             <grant type="Racial Trait" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_HEX_MAGIC" />            
@@ -119,16 +120,6 @@
         <rules>
             <grant type="Size" id="ID_SIZE_SMALL" />
         </rules>
-	</element>
-	<element name="Ancestral Legacy" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_ANCESTRAL_LEGACY">
-		<description>
-			<p>If you replace a race with this lineage, you can keep the following elements of that race: any skill proficiencies you gained from it and any climbing, flying, or swimming speed you gained from it.</p>
-            <p class="indent">If you don’t keep any of those elements or you choose this lineage at character creation, you gain proficiency in two skills of your choice.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<select type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" supports="Skill" number="2" />
-		</rules>
 	</element>
 	<element name="Eerie Token" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_HEXBLOOD_EERIE_TOKEN">
 		<description>
