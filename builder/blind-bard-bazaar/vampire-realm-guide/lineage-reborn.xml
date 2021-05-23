@@ -2,7 +2,7 @@
 <elements>
 	<info>
 		<name>Reborn</name>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="lineage-reborn.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/vampire-realm-guide/lineage-reborn.xml" />
 		</update>
 	</info>
@@ -183,7 +183,7 @@
 	</element>
     
     <!--Reborn Ability Score Selection-->
-    <element name="Default Score" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY">
+    <element name="Lineage Ability Score" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY">
         <compendium display="false" />
         <requirements>!ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_SCORE</requirements>
 		<description>        	
@@ -193,17 +193,15 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-            <select type="Racial Trait" name="Ability Score Increase (Reborn)" supports="Reborn Primary" number="1" />
-            <select type="Racial Trait" name="Ability Score Increase (Reborn)" supports="Reborn Score" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase +2 (Reborn)" supports="Reborn Primary" number="1" />
+            <select type="Racial Trait" name="Ability Score Increase +1 (Reborn)" supports="Reborn Score" number="1" />
         </rules>
 	</element>
     <element name="Variant Reborn, +1/+1/+1" type="Racial Trait" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT">
         <compendium display="false" />
 		<supports>Reborn Variant</supports>
 		<description>        	
-			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
-            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
-            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+			<div element="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY" />
 		</description>
 		<sheet display="false" />
         <rules>
@@ -213,13 +211,11 @@
     <element name="Variant: Three +1" type="Racial Feature" source="Van Richten’s Guide to Ravenloft" id="ID_RACIAL_TRAIT_LINEAGE_REBORN_VARIANT_SCORE">
         <compendium display="false" />
 		<description>        	
-			<p>When determining your ability scores, you increase one of those scores by 2 and increase a different score by 1, or you increase three different scores by 1. You follow this rule regardless of the method you use to determine the scores, such as rolling or point buy.</p>
-            <p class="indent">Your class’s “Quick Build” section offers suggestions on which scores to increase. You’re free to follow those suggestions or to ignore them. Whichever scores you decide to increase, none of the scores can be raised above 20.</p>
-            <p class="indent">If you are replacing your race with a lineage, replace any Ability Score Increase you previously had with these.</p>
+			<div element="ID_RACIAL_TRAIT_LINEAGE_REBORN_ABILITY" />
 		</description>
 		<sheet display="false" />
         <rules>
-            <select type="Racial Trait" name="Ability Score Increase (Reborn Variant)" supports="Reborn Score" number="3" />
+            <select type="Racial Trait" name="Ability Score Increase +1 (Reborn Variant)" supports="Reborn Score" number="3" />
         </rules>
 	</element>
 

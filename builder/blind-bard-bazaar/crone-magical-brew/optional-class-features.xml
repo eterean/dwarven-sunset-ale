@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.1.0">
+		<update version="0.1.1">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -987,29 +987,23 @@
 			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING" />
 			<div element="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS" />
 		</description>
-		<sheet display="false" />
+		<sheet alt="Variant Feature: Deft Explorer" />
 		<rules>
-			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER_2" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY" requirements="[ranger:1]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING" requirements="[ranger:6]" />
+			<grant type="Class Feature" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS" requirements="[ranger:10]" />
 		</rules>	
-	</element>
-	<element name="Variant Feature: Deft Explorer" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER_2">
-		<compendium display="false" />
-		<rules>
-			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:1]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY" />
-			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:6]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING" />
-			<select type="Class Feature" name="Deft Explorer" supports="Deft Explorer" requirements="[ranger:10]" default="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS" />
-		</rules>
 	</element>
 	<element name="Canny" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY">
 		<supports>Deft Explorer</supports>
-		<requirements>[ranger:1],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>1st-level ranger ability</em></p>
 			<p>Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.</p>
-			<p class="indent">You can also speak, read, and write two additionallanguages of your choice.</p>
+			<p class="indent">You can also speak, read, and write two additional languages of your choice.</p>
 		</description>
-		<sheet>
-			<description>Double proficiency on one skill and 2 additional languages.</description>
+		<sheet alt="Deft Explorer, Canny" display="false" >
+			<description>Double proficiency on one skill and 2 additional languages of your choice.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Double Proficiency (Canny)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
@@ -1018,12 +1012,12 @@
 	</element>
 	<element name="Roving" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING">
 		<supports>Deft Explorer</supports>
-		<requirements>[ranger:6],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>6th-level ranger ability</em></p>
 			<p>Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.</p>
 		</description>
-		<sheet>
+		<sheet alt="Deft Explorer, Roving" display="false" >
 			<description>Walking speed increased by 5ft, also gain climb and swim speed equal to your walking speed.</description>
 		</sheet>
 		<rules>
@@ -1035,13 +1029,13 @@
 	</element>
 	<element name="Tireless" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS">
 		<supports>Deft Explorer</supports>
-		<requirements>[ranger:10],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>10th-level ranger ability</em></p>
 			<p>As an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 			<p class="indent">In addition, whenever you finish a short rest, your exhaustion level, if any, is decreased by 1.</p>
 		</description>
-		<sheet alt="Tireless" action="Action" usage="{{tireless:usage}}/Long Rest">
+		<sheet alt="Deft Explorer, Tireless" action="Action" usage="{{tireless:usage}}/Long Rest">
 			<description>Gain 1d8 + {{wisdom:modifier}} temporal hit points.</description>
 		</sheet>
 		<rules>
