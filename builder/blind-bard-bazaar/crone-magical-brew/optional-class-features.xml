@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -768,8 +768,7 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 2" supports="Paladin Optional Class Feature Lv. 2" optional="true" requirements="[paladin:2]" />
-			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 2" supports="Paladin Optional Class Feature Lv. 2" optional="true" requirements="[paladin:2]" />
+			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 2" supports="Paladin Optional Class Feature Lv. 2" optional="true" number="2" requirements="[paladin:2]" />
 			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 3" supports="Paladin Optional Class Feature Lv. 3" optional="true" requirements="[paladin:3]" />
 			<select type="Class Feature" name="Paladin Optional Class Feature Lv. 4" supports="Paladin Optional Class Feature Lv. 4" optional="true" requirements="[paladin:4]" />
 		</rules>
