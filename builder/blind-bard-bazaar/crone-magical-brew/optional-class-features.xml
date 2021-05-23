@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.9">
+		<update version="0.1.0">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -1013,7 +1013,7 @@
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Double Proficiency (Canny)" number="1" supports="ID_INTERNAL_SUPPORT_EXPERTISE"/>
-			<select type="Language" name="Canny" number="2" supports="Standard||Exotic||Secret" />
+			<select type="Language" name="Language (Deft Explorer, Canny)" number="2" supports="Standard||Exotic" />
 		</rules>
 	</element>
 	<element name="Roving" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING">
