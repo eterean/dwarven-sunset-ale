@@ -4,7 +4,7 @@
 		<name>Tasha’s Optional Class Features</name>
 		<description>Tasha’s Optional Class Features.</description>
 		<author url="">Wizards of the Coast</author>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="optional-class-features.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/optional-class-features.xml" />
 		</update>
 	</info>
@@ -962,7 +962,7 @@
 			<p class="indent">You can use this feature to mark a favored enemy a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
 			<p class="indent">This feature's extra damage increases when you reach certain levels in this class: to 1d6 at 6th level and to 1d8 at 14th level.</p>
 		</description>
-		<sheet usage="{{favored foe:usage}}/Long Rest">
+		<sheet alt="Variant Feature: Favored Foe" usage="{{favored foe:usage}}/Long Rest">
 			<description>When you attack and hit a creature, can mark it for 1 minute or until concentration is lost. First hit each turn that damages can be increased by 1d{{favored foe:die:size}}.</description>
 		</sheet>
 		<rules>
@@ -1002,7 +1002,7 @@
 	</element>
 	<element name="Canny" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_CANNY">
 		<supports>Deft Explorer</supports>
-		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>[ranger:1],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>1st-level ranger ability</em></p>
 			<p>Choose one of your skill proficiencies. Your proficiency bonus is doubled for any ability check you make that uses the chosen skill.</p>
@@ -1018,7 +1018,7 @@
 	</element>
 	<element name="Roving" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_ROVING">
 		<supports>Deft Explorer</supports>
-		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>[ranger:6],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>6th-level ranger ability</em></p>
 			<p>Your walking speed increases by 5, and you gain a climbing speed and a swimming speed equal to your walking speed.</p>
@@ -1035,7 +1035,7 @@
 	</element>
 	<element name="Tireless" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_TIRELESS">
 		<supports>Deft Explorer</supports>
-		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
+		<requirements>[ranger:10],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_DEFT_EXPLORER</requirements>
 		<description>
 			<p><em>10th-level ranger ability</em></p>
 			<p>As an action, you can give yourself a number of temporary hit points equal to 1d8 + your Wisdom modifier (minimum of 1 temporary hit point). You can use this action a number of times equal to your proficiency bonus, and you regain all expended uses when you finish a long rest.</p>
@@ -1188,7 +1188,7 @@
 		</sheet>
 	</element>
 	<element name="Hide in Plain Sight" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_CLASSFEATURE_RANGER_HIDE_IN_PLAIN_SIGHT">
-		<requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_NATURES_VEIL</requirements>
+		<requirements>!ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_RANGER_NATURES_VEIL</requirements>
 		<description>
 			<p>Starting at 10th level, you can spend 1 minute creating camouflage for yourself. You must have access to fresh mud, dirt, plants, soot, and other naturally occurring materials with which to create your camouflage.</p>
 			<p class="indent">Once you are camouflaged in this way, you can try to hide by pressing yourself up against a solid surface, such as a tree or wall, that is at least as tall and wide as you are. You gain a +10 bonus to Dexterity (Stealth) checks as long as you remain there without moving or taking actions. Once you move or take an action or a reaction, you must camouflage yourself again to gain this benefit.</p>
