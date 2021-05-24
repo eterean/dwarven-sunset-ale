@@ -3,7 +3,7 @@
     <info>
         <name>Eldrich Invocations</name>
         <description>The Eldrich Invocations from Tasha’s Cauldron of Everything</description>
-        <update version="0.0.2">
+        <update version="0.0.3">
             <file name="eldritch-invocations.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/eldritch-invocations.xml" />
         </update>
     </info>
@@ -11,7 +11,7 @@
     <element name="Bond of the Talisman" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_ELDRITCH_INVOCATION_BOND_OF_THE_TALISMAN">
         <supports>Eldritch Invocation, Pact of the Talisman</supports>
         <prerequisite>12th-level warlock, Pact of the Talisman feature</prerequisite>
-        <requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN,[warlock:12]</requirements>
+        <requirements>ID_WOTC_TCOE_OCF_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN,[warlock:12]</requirements>
         <description>
             <p class="flavor">Prerequisite: 12th-level warlock, Pact of the Talisman feature</p>
             <p>While someone else is wearing your talisman, you can use your action to teleport to the unoccupied space closest to them, provided the two of you are on the same plane of existence. The wearer of your talisman can do the same thing, using their action to teleport to you. The teleportation can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p>
@@ -89,7 +89,7 @@
     <element name="Protection of the Talisman" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_ELDRITCH_INVOCATION_PROTECTION_OF_THE_TALISMAN">
         <supports>Eldritch Invocation, Pact of the Talisman</supports>
         <prerequisite>7th-level warlock, Pact of the Talisman feature</prerequisite>
-        <requirements>[warlock:7],ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
+        <requirements>[warlock:7],ID_WOTC_TCOE_OCF_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
         <description>
             <p class="flavor">Prerequisite: 7th-level warlock, Pact of the Talisman feature</p>
             <p>When the wearer of your talisman fails a saving throw, they can add a d4 to the roll, potentially turning the save into a success. This benefit can be used a number of times equal to your proficiency bonus, and all expended uses are restored when you finish a long rest.</p>
@@ -101,7 +101,7 @@
     <element name="Rebuke of the Talisman" type="Class Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_CLASS_FEATURE_ELDRITCH_INVOCATION_REBUKE_OF_THE_TALISMAN">
         <supports>Eldritch Invocation, Pact of the Talisman</supports>
         <prerequisite>Pact of the Talisman</prerequisite>
-        <requirements>ID_WOTC_TCOE_CLASS_FEATURE_OPTIONAL_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
+        <requirements>ID_WOTC_TCOE_OCF_WARLOCK_PACT_BOON_PACT_OF_THE_TALISMAN</requirements>
         <description>
             <p class="flavor">Prerequisite: Pact of the Talisman</p>
             <p>When the wearer of your talisman is hit by an attacker you can see within 30 feet of you, you can use your reaction to deal psychic damage to the attacker equal to your proficiency bonus and push it up to 10 feet away from the talisman's wearer.</p>
