@@ -3,7 +3,7 @@
 	<info>
 		<name>Clockwork Soul Sorcerous Origin</name>
 		<description>The Clockwork Soul Sorcerous Origin from Tasha’s Cauldron of Everything</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="sorcerer-clockwork.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/sorcerer-clockwork.xml" />
 		</update>
 	</info>
@@ -64,20 +64,20 @@
 				<tr><td>6</td><td>The ticking of gears or ringing of a clock can be heard by you and those affected by your magic.</td></tr>
 			</table>
 		</description>
-		<sheet>
+		<sheet display="false">
 			<description>You learn additional spells.</description>
 		</sheet>
-		<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_ALARM" spellcasting="Sorcerer" level="1" />
-			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Sorcerer" level="1" />
-			<grant type="Spell" id="ID_PHB_SPELL_AID" spellcasting="Sorcerer" level="3" />
-			<grant type="Spell" id="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" level="3" />
-			<grant type="Spell" id="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Sorcerer" level="5" />
-			<grant type="Spell" id="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Sorcerer" level="5" />
-			<grant type="Spell" id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" level="7" />
-			<grant type="Spell" id="ID_TCOE_SPELL_SUMMON_CONSTRUCT" spellcasting="Sorcerer" level="7" />
-			<grant type="Spell" id="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" level="9" />
-			<grant type="Spell" id="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" level="9" />
+		<rules>			
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Alarm" level="1" default="ID_PHB_SPELL_ALARM" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Protection from Evil and Good" level="1" default="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Aid" level="3" default="ID_PHB_SPELL_AID" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Lesser Restoration" level="3" default="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Freedom of Movement" level="7" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Summon Construct" level="7" default="ID_TCOE_SPELL_SUMMON_CONSTRUCT" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Greater Restoration" level="9" default="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Wall of Force" level="9" default="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" />
 		</rules>
 	</element>
 	<element name="Restore Balance" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_CLOCKWORK_SOUL_RESTORE_BALANCE">
@@ -125,4 +125,28 @@
 			<description>Summon a 30ft cube of spirits, these spirits restore up to 100 hit points, any damaged objects are repaired instantly and every spell of 6th level or lower end on creatures and objects of your choice in cube.</description>
 		</sheet>
 	</element>
+	<append id="ID_PHB_SPELL_ALARM">
+		<supports>Alarm</supports>
+	</append>
+	<append id="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD">
+		<supports>Protection from Evil and Good</supports>
+	</append>
+	<append id="ID_PHB_SPELL_AID">
+		<supports>Aid</supports>
+	</append>
+	<append id="ID_PHB_SPELL_LESSER_RESTORATION">
+		<supports>Lesser Restoration</supports>
+	</append>
+	<append id="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT">
+		<supports>Freedom of Movement</supports>
+	</append>
+	<append id="ID_TCOE_SPELL_SUMMON_CONSTRUCT">
+		<supports>Summon Construct</supports>
+	</append>
+	<append id="ID_PHB_SPELL_GREATER_RESTORATION">
+		<supports>Greater Restoration</supports>
+	</append>
+	<append id="ID_PHB_SPELL_WALL_OF_FORCE">
+		<supports>Wall of Force</supports>
+	</append>
 </elements>
