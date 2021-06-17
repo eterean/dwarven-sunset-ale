@@ -3,7 +3,7 @@
 	<info>
 		<name>Aberrant Mind Sorcerous Origin</name>
 		<description>The Aberrant Mind Sorcerous Origin from Tasha’s Cauldron of Everything</description>
-		<update version="0.0.3">
+		<update version="0.0.4">
 			<file name="sorcerer-aberrantmind.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/sorcerer-aberrantmind.xml" />
 		</update>
 	</info>
@@ -68,17 +68,17 @@
 			<description>You learn additional spells.</description>
 		</sheet>
 		<rules>
-			<select type="Spell" name="Spell (Psionic Spells)" supports="0,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="1" default="ID_TCOE_SPELL_MIND_SLIVER" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="1,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Arms of Hadar" level="1" default="ID_PHB_SPELL_ARMS_OF_HADAR" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="1,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Dissonant Whispers" level="1" default="ID_PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="2,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Calm Emotions" level="3" default="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="2,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="3" default="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="3,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Hunger of Hadar" level="5" default="ID_PHB_SPELL_HUNGER_OF_HADAR" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="3,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Sending" level="5" default="ID_PHB_SPELL_SENDING" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="4,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Evards Black Tentacles" level="7" default="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="4,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Summon Aberration" level="7" default="ID_TCOE_SPELL_SUMMON_ABERRATION" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="5,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="9" default="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Psionic Spells)" supports="5,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Telekinesis" level="9" default="ID_PHB_SPELL_TELEKINESIS" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="0,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="1" default="ID_TCOE_SPELL_MIND_SLIVER" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="1,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Arms of Hadar" level="1" default="ID_PHB_SPELL_ARMS_OF_HADAR" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="1,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Dissonant Whispers" level="1" default="ID_PHB_SPELL_DISSONANT_WHISPERS" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="2,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Calm Emotions" level="3" default="ID_PHB_SPELL_CALM_EMOTIONS" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="2,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="3" default="ID_PHB_SPELL_DETECT_THOUGHTS" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="3,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Hunger of Hadar" level="5" default="ID_PHB_SPELL_HUNGER_OF_HADAR" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="3,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Sending" level="5" default="ID_PHB_SPELL_SENDING" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="4,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Evards Black Tentacles" level="7" default="ID_PHB_SPELL_EVARDS_BLACK_TENTACLES" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="4,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Summon Aberration" level="7" default="ID_TCOE_SPELL_SUMMON_ABERRATION" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="5,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)" level="9" default="ID_PHB_SPELL_RARYS_TELEPATHIC_BOND" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Psionic Spells)" supports="5,(Divination||Enchantment),(Sorcerer||Warlock||Wizard)||Telekinesis" level="9" default="ID_PHB_SPELL_TELEKINESIS" spellcasting="Sorcerer" allowReplace="false" />
 		</rules>
 	</element>
 	<element name="Telepathic Speech" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_ABERRANT_MIND_TELEPATHIC_SPEECH">

@@ -3,7 +3,7 @@
 	<info>
 		<name>Clockwork Soul Sorcerous Origin</name>
 		<description>The Clockwork Soul Sorcerous Origin from Tasha’s Cauldron of Everything</description>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="sorcerer-clockwork.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/sorcerer-clockwork.xml" />
 		</update>
 	</info>
@@ -68,16 +68,16 @@
 			<description>You learn additional spells.</description>
 		</sheet>
 		<rules>			
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Alarm" level="1" default="ID_PHB_SPELL_ALARM" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Protection from Evil and Good" level="1" default="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Aid" level="3" default="ID_PHB_SPELL_AID" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Lesser Restoration" level="3" default="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Freedom of Movement" level="7" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Summon Construct" level="7" default="ID_TCOE_SPELL_SUMMON_CONSTRUCT" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Greater Restoration" level="9" default="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" />
-			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Wall of Force" level="9" default="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Alarm" level="1" default="ID_PHB_SPELL_ALARM" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="1,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Protection from Evil and Good" level="1" default="ID_PHB_SPELL_PROTECTION_FROM_EVIL_AND_GOOD" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Aid" level="3" default="ID_PHB_SPELL_AID" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="2,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Lesser Restoration" level="3" default="ID_PHB_SPELL_LESSER_RESTORATION" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_DISPEL_MAGIC" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="3,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)" level="5" default="ID_PHB_SPELL_PROTECTION_FROM_ENERGY" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Freedom of Movement" level="7" default="ID_PHB_SPELL_FREEDOM_OF_MOVEMENT" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="4,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Summon Construct" level="7" default="ID_TCOE_SPELL_SUMMON_CONSTRUCT" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Greater Restoration" level="9" default="ID_PHB_SPELL_GREATER_RESTORATION" spellcasting="Sorcerer" allowReplace="false" />
+			<select type="Spell" name="Spell (Clockwork Magic)" supports="5,(Abjuration||Transmutation),(Sorcerer||Warlock||Wizard)||Wall of Force" level="9" default="ID_PHB_SPELL_WALL_OF_FORCE" spellcasting="Sorcerer" allowReplace="false" />
 		</rules>
 	</element>
 	<element name="Restore Balance" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_SORCERER_ARCHETYPE_CLOCKWORK_SOUL_RESTORE_BALANCE">
