@@ -4,7 +4,7 @@
     <name>The Genie</name>
     <description>The Genie Otherworldly Patron from Tasha’s Cauldron of Everything</description>
     <author url="">Tasha’s Cauldron of Everything</author>
-    <update version="0.0.2">
+    <update version="0.0.3">
       <file name="warlock-genie.xml" url="https://raw.githubusercontent.com/eterean/dwarven-sunset-ale/master/builder/blind-bard-bazaar/crone-magical-brew/warlock-genie.xml" />
     </update>
   </info>
@@ -62,6 +62,10 @@
       <description>Your Genie's Wrath damage type is bludgeoning.</description>
       <description level="6">Gain bludgeoning damage resistance and your Genie's Wrath damage type is bludgeoning.</description>
     </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_BLUDGEONING" level="6" />
+      <stat inline="true" name="genie wrath:damage type" value="Bludgeoning" />
+    </rules>
   </element>
   <element name="Djinni (Air Element)" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GENIE_DJINNI">
     <supports>Genie Type</supports>
@@ -76,6 +80,10 @@
      <description>Your Genie's Wrath damage type is thunder.</description>
       <description level="6">Gain thunder damage resistance and your Genie's Wrath damage type is thunder.</description>
     </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" level="6" />
+      <stat inline="true" name="genie wrath:damage type" value="Thunder" />
+    </rules>
   </element>
   <element name="Efreeti (Fire Element)" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GENIE_EFREETI">
     <supports>Genie Type</supports>
@@ -90,6 +98,10 @@
       <description>Your Genie's Wrath damage type is fire.</description>
       <description level="6">Gain fire damage resistance and your Genie's Wrath damage type is fire.</description>
     </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" level="6" />
+      <stat inline="true" name="genie wrath:damage type" value="Fire" />
+    </rules>
   </element>
   <element name="Marid (Water Element)" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GENIE_MARID">
     <supports>Genie Type</supports>
@@ -104,6 +116,10 @@
       <description>Your Genie's Wrath damage type is cold.</description>
       <description level="6">Gain cold damage resistance and your Genie's Wrath damage type is cold.</description>
     </sheet>
+    <rules>
+      <grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" level="6" />
+      <stat inline="true" name="genie wrath:damage type" value="Cold" />
+    </rules>
   </element>
   <element name="Expanded Spell List" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GENIE_EXPANDED_SPELL_LIST">
     <supports>Warlock</supports>
@@ -291,7 +307,7 @@
       <p>As an action, you can magically vanish and enter your vessel, which remains in the space you left. The interior of the vessel is an extradimensional space in the shape of a 20-foot-radius cylinder, 20 feet high, and resembles your vessel. The interior is appointed with cushions and low tables and is a comfortable temperature. While inside, you can hear the area around your vessel as if you were in its space. You can remain inside the vessel up to a number of hours equal to twice your proficiency bonus. You exit the vessel early if you use a bonus action to leave, if you die, or if the vessel is destroyed. When you exit the vessel, you appear in the unoccupied space closest to it. Any objects left in the vessel remain there until carried out, and if the vessel is destroyed, every object stored there harmlessly appears in the unoccupied spaces closest to the vessel's former space. Once you enter the vessel, you can't enter again until you finish a long rest.</p>
     </description>
     <sheet action="Action" usage="1/Long Rest">
-      <description>Can magically enter vessel, inside it's an extradimensional cylinder of 20ft. radius, 20ft. high. While inside you can hear area around vessel, and can remain {{genie respite:hours}}. You can leave early with bonus action, or if you die or vessesl is destroyed.</description>
+      <description>Can magically enter vessel, inside it's an extradimensional cylinder of 20ft. radius, 20ft. high. While inside you can hear area around vessel, and can remain {{genie respite:hours}} hours. You can leave early with bonus action, or if you die or vessesl is destroyed.</description>
     </sheet>
     <rules>
       <stat name="genie respite:hours" value="proficiency" bonus="base" />
@@ -305,7 +321,7 @@
       <p>Once during each of your turns when you hit with an attack roll, you can deal extra damage to the target equal to your proficiency bonus. The type of this damage is determined by your patron: bludgeoning (dao), thunder (djinni), fire (efreeti), or cold (marid).</p>
     </description>
     <sheet usage="1/Turn">
-      <description>When you hit with an attack roll, can deal extra {{proficiency}} damage. Genie determines damage type.</description>
+      <description>When you hit with an attack roll, you can deal extra {{proficiency}} {{genie wrath:damage type}} damage.</description>
     </sheet>
   </element>
   <element name="Elemental Gift" type="Archetype Feature" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_GENIE_ELEMENTAL_GIFT">
